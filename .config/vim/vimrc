@@ -1,0 +1,34 @@
+" nilognap's vimrc
+
+function! LoadPlugins()
+	call plug#begin()
+
+	echom "hello"
+
+	call plug#end()
+endfunction
+" call LoadPlugins()
+
+function! LoadConfig()
+	runtime config/settings.vim
+	runtime config/ui.vim
+	runtime config/colorscheme.vim
+
+	runtime config/indent.vim
+	runtime config/search.vim
+
+	runtime config/helpers.vim
+
+	runtime config/autocmds.vim
+	runtime config/functions.vim
+	runtime config/utilities.vim
+
+	runtime config/snippets.vim
+	runtime config/tab.vim
+	runtime autocomplete.vim
+
+	runtime config/mappings.vim
+endfunction
+" call LoadConfig()
+
+runtime! config/*.vim

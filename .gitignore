@@ -1,0 +1,13 @@
+# .gitignore for nilognap/dotfiles
+
+.DS_Store
+
+*.swp
+
+.config/vim/viminfo
+.config/vim/.netrwhist
+.config/vim/dump/
+.config/vim/plugged/
+.config/vim/swap/
+.config/vim/undo/
+

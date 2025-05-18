@@ -1,0 +1,15 @@
+# nilognap's ghostty config
+
+# theme
+# theme = OneHalfDark
+theme = tokyonight
+
+# font
+font-size = 24
+font-feature = -calt
+
+# "maximize" does not work 2025/4/17
+# maximize = true
+
+window-height = 40
+window-width = 200
