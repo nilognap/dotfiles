@@ -1,18 +1,27 @@
 " ~/.config/vim/config/helpers.vim
 
-function! CenterCursor()
-	if (winline() == 1 && line(".") != 1) || winline() == winheight(0)
-		normal! zz
-		if line(".") == line("$") " weird ass } snapping
-			call cursor(".", col(".") + 1)
-		endif
-	endif
-endfunction
+" function! CenterCursor()
+	" if (winline() == 1 && line(".") != 1) || winline() == winheight(0)
+		" normal! zz
+		" if line(".") == line("$") " weird ass } snapping
+			" call cursor(".", col(".") + 1)
+		" endif
+	" endif
+" endfunction
 
 function! DeleteTrailingSpaces() " no snapping
 	let c = getcurpos()
 	substitute/\s\+$//e
 	call setpos(".", c)
+endfunction
+
+function! CloseBuffer()
+	if len(getbufinfo({"buflisted": 1})) == 1
+		exit
+	else
+		update
+		bdelete
+	endif
 endfunction
 
 let comment_char_dict = {

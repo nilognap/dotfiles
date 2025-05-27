@@ -26,6 +26,8 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
 # ALIASES
+alias l=ls
+alias c=cd
 alias v="vim"
 alias h="hx"
 

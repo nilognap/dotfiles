@@ -11,6 +11,7 @@ set undodir=~/.config/vim/undo//
 set undofile
 
 " misc
+set scrolloff=999
 set hidden
 
 " fold

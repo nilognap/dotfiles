@@ -5,7 +5,7 @@
 " no advanced features like tabstops
 
 " load snippets.json
-let snippet_path = expand("~/.vim/config/snippets.json")
+let snippet_path = expand("~/.config/vim/config/snippets.json")
 if filereadable(snippet_path)
 	try
 		let snippet_dict = json_decode(join(readfile(snippet_path), "\n"))

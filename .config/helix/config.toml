@@ -3,8 +3,6 @@
 # theme = "onedark"
 theme = "tokyonight"
 
-# theme = "catppuccin_mocha"
-# theme = "tokyonight_moon"
 
 [editor]
 mouse = false
@@ -21,7 +19,7 @@ popup-border = "all"
 # left = ["mode", "spinner", "file-name"]
 
 [editor.lsp]
-snippets = false
+# snippets = false
 
 [editor.cursor-shape]
 insert = "bar"

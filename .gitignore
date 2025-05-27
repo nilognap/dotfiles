@@ -2,8 +2,6 @@
 
 .DS_Store
 
-*.swp
-
 .config/vim/viminfo
 .config/vim/.netrwhist
 .config/vim/dump/

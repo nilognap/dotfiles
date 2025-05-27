@@ -1,7 +1,6 @@
 # nilognap's ghostty config
 
 # theme
-# theme = OneHalfDark
 theme = tokyonight
 
 # font
@@ -13,3 +12,7 @@ font-feature = -calt
 
 window-height = 40
 window-width = 200
+
+background-opacity = 0.8
+
+

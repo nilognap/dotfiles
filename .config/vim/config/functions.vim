@@ -79,7 +79,8 @@ endfunction
 
 function! LoadTemplate()
 	call deletebufline("", 1, line("$"))
-	let f = expand("~/.vim/templates/template.") .. fnamemodify(bufname(), ":e")
+	let f = expand("~/.config/vim/templates/template.") .. fnamemodify(bufname(), ":e")
+	echom f
 	if filereadable(f)
 		execute "read " .. f
 		call deletebufline("", 1)

@@ -8,35 +8,47 @@ let mapleader = "\<Space>"
 
 " basic
 inoremap jk <Esc>
-" inoremap jj <Esc>
-" inoremap kk <Esc>
 
 nnoremap <leader>q :x<CR>
+nnoremap <leader>w :call CloseBuffer()<CR>
+nnoremap ZZ :call CloseBuffer()<CR>
 nnoremap U <C-r>
+nnoremap <silent> <CR> :update<Bar>:nohlsearch<CR>
 
-nnoremap <leader><CR> :update<CR>
 
+" tab
 inoremap <Tab> <Cmd>call Tab()<CR>
 inoremap <S-Tab> <Cmd>call ShiftTab()<CR>
 
-nnoremap <expr> ZZ len(getbufinfo({"buflisted": 1})) == 1 ? "ZZ" : ":update<Bar>bdelete<CR>"
+" navigation
+nnoremap H <C-u>
+nnoremap L <C-d>
+vnoremap H <C-u>
+vnoremap L <C-d>
+
+" buffer
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprev<CR>
+nnoremap <C-Tab> :bnext<CR>
+nnoremap <C-S-Tab> :bprev<CR>
+inoremap <C-Tab> :bnext<CR>
+inoremap <C-S-Tab> :bprev<CR>
 
+" uh
 nnoremap <leader>d :call deletebufline("", 1, line("$"))<Bar>startinsert<CR>
 
+" yank
 nnoremap <leader>y :update<Bar>:%y*<CR>
 nnoremap <leader>Y :y*<CR>
 vnoremap <leader>y "*y
 vnoremap <leader>Y "*Y
 vnoremap <leader>d "*d
+vnoremap <leader>D "*D
 
 " misc
-nnoremap <silent> <CR> :update<Bar>:nohlsearch<CR>
-
 nnoremap z<leader> za
-" nnoremap <leader>z za
 
+" sus
 nnoremap gb <C-o>
 nnoremap go <C-o>
 nnoremap gi <C-i>
