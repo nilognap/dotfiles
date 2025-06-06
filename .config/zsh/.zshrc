@@ -48,8 +48,9 @@ alias h=hx
 # ENVIRONMENT
 
 # my tools
-if [ -d "$HOME/code/tools" ]; then
-	export PATH="$HOME/code/tools:$PATH"
+tool_path="$HOME/code/dotfiles/tools"
+if [ -d "$tool_path" ]; then
+	export PATH="$tool_path:$PATH"
 fi
 
 # languages
