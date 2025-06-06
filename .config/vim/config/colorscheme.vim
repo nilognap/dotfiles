@@ -13,7 +13,12 @@ function! Transparent()
 	highlight EndOfBuffer NONE
 	highlight TabLineFill NONE
 	highlight StatusLine NONE
-	highlight CursorLine NONE
 	highlight folded NONE
+
+	" tokyonight
+	highlight SignColumn NONE
+
+	" optional
+	highlight CursorLine NONE
 endfunction
 " autocmd ColorScheme * call Transparent()

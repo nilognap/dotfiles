@@ -1,7 +1,7 @@
 " ~/.config/vim/config/autocomplete.vim
 
+" java shit
 filetype plugin on " for java import included files
-
 autocmd FileType java setlocal includeexpr=substitute(v:fname,'\\.','/','g')
 " why is this not default???
 autocmd FileType java setlocal include=^import

@@ -23,7 +23,17 @@ vnoremap t<CR> $
 
 
 " match mode
-nnoremap m v
+nnoremap miw viw
+nnoremap mi( vi(
+nnoremap mi) vi)
+nnoremap mi{ vi{
+nnoremap mi{ vi}
+nnoremap mi[ vi[
+nnoremap mi] vi]
+nnoremap mi< vi>
+nnoremap mi< vi>
+
+nnoremap mm %
 
 " misc
 nnoremap % ggVG

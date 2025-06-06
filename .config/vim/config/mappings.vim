@@ -8,12 +8,14 @@ let mapleader = "\<Space>"
 
 " basic
 inoremap jk <Esc>
+" inoremap kj <Esc>
 
-nnoremap <leader>q :x<CR>
-nnoremap <leader>w :call CloseBuffer()<CR>
-nnoremap ZZ :call CloseBuffer()<CR>
+" nnoremap <Leader>q <Cmd>x<CR>
+nnoremap <Leader>q <Cmd>q<CR>
+nnoremap <Leader>w <Cmd>call CloseBuffer()<CR>
+nnoremap ZZ <Cmd>call CloseBuffer()<CR>
 nnoremap U <C-r>
-nnoremap <silent> <CR> :update<Bar>:nohlsearch<CR>
+nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
 
 
 " tab
@@ -27,32 +29,36 @@ vnoremap H <C-u>
 vnoremap L <C-d>
 
 " buffer
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprev<CR>
-nnoremap <C-Tab> :bnext<CR>
-nnoremap <C-S-Tab> :bprev<CR>
-inoremap <C-Tab> :bnext<CR>
-inoremap <C-S-Tab> :bprev<CR>
+nnoremap <Tab> <Cmd>bnext<CR>
+nnoremap <S-Tab> <Cmd>bprev<CR>
+nnoremap <C-Tab> <Cmd>bnext<CR>
+nnoremap <C-S-Tab> <Cmd>bprev<CR>
+inoremap <C-Tab> <Cmd>bnext<CR>
+inoremap <C-S-Tab> <Cmd>bprev<CR>
+
+for n in range(1, 9)
+  execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
+endfor
 
 " uh
-nnoremap <leader>d :call deletebufline("", 1, line("$"))<Bar>startinsert<CR>
+nnoremap <Leader>d <Cmd>call deletebufline("", 1, line("$"))<Bar>startinsert<CR>
 
 " yank
-nnoremap <leader>y :update<Bar>:%y*<CR>
-nnoremap <leader>Y :y*<CR>
-vnoremap <leader>y "*y
-vnoremap <leader>Y "*Y
-vnoremap <leader>d "*d
-vnoremap <leader>D "*D
+nnoremap <Leader>y <Cmd>update<Bar>%y*<CR>
+nnoremap <Leader>Y <Cmd>y*<CR>
+vnoremap <Leader>y "*y
+vnoremap <Leader>Y "*Y
+vnoremap <Leader>d "*d
+vnoremap <Leader>D "*D
 
 " misc
-nnoremap z<leader> za
+nnoremap z<Leader> za
 
 " sus
 nnoremap gb <C-o>
 nnoremap go <C-o>
 nnoremap gi <C-i>
-nnoremap g<leader> 2g;
+nnoremap g<Leader> 2g;
 
 nnoremap ^ 0
 nnoremap 0 ^
@@ -61,27 +67,28 @@ vnoremap 0 ^
 
 
 " ~/.vim/config/functions.vim
-nnoremap <leader>r :call Run()<CR>
-nnoremap <leader>t :call LoadTemplate()<CR>
+nnoremap <Leader>r <Cmd>call Run()<CR>
+nnoremap <Leader>t <Cmd>call LoadTemplate()<CR>
 
-nnoremap <leader>c :call Comment("n")<CR>
-vnoremap <leader>c :<C-u>call Comment("v")<CR>
+nnoremap <Leader>c <Cmd>call Comment("n")<CR>
+" the only time <Cmd> is not good
+vnoremap <Leader>c :<C-u>call Comment("v")<CR>
 
-nnoremap <leader>T :call Test()<CR>
+nnoremap <Leader>T <Cmd>call Test()<CR>
 
 " windows DO NOT use windows :( buffers are good enough
 
-" nnoremap <leader>s <C-w>s
-" nnoremap <leader>v <C-w>v
-" nnoremap <leader>w <C-w>w
-" nnoremap <leader>p <C-w>p
+" nnoremap <Leader>s <C-w>s
+" nnoremap <Leader>v <C-w>v
+" nnoremap <Leader>w <C-w>w
+" nnoremap <Leader>p <C-w>p
 " 
-" nnoremap <leader>h <C-w>h
-" nnoremap <leader>j <C-w>j
-" nnoremap <leader>k <C-w>k
-" nnoremap <leader>l <C-w>l
+" nnoremap <Leader>h <C-w>h
+" nnoremap <Leader>j <C-w>j
+" nnoremap <Leader>k <C-w>k
+" nnoremap <Leader>l <C-w>l
 " 
-" nnoremap <leader>c <C-w>c
-" nnoremap <leader>o <C-w>o
-" nnoremap <leader>x <C-w>x
+" nnoremap <Leader>c <C-w>c
+" nnoremap <Leader>o <C-w>o
+" nnoremap <Leader>x <C-w>x
 

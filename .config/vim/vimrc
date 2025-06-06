@@ -20,14 +20,33 @@ function! LoadVimLsp()
 	nnoremap <buffer> gs <plug>(lsp-document-symbol-search)
 endfunction
 
+function! LoadEasyMotion()
+	Plug 'easymotion/vim-easymotion'
+
+	let g:EasyMotion_keys = 'asdfghjklqwertyuiopzxcvbnm'
+	let g:EasyMotion_do_mapping = 0
+
+	nnoremap gw <Plug>(easymotion-bd-w)
+	nnoremap <Leader>s <Plug>(easymotion-bd-w)
+	nnoremap <Leader>g <Plug>(easymotion-bd-w)
+
+	autocmd ColorScheme * highlight link EasyMotionTarget Title
+	" nnoremap s <Plug>(easymotion-s)
+" nnoremap gw <Plug>(easymotion-overwin-f2)
+endfunction
+
 function! LoadPlugins()
 	call plug#begin()
 
 	" call LoadVimLsp()
 
+	Plug 'LnL7/vim-nix'
+
+	call LoadEasyMotion()
+
 	call plug#end()
 endfunction
-" call LoadPlugins()
+call LoadPlugins()
 
 " function! LoadConfig()
 	" runtime config/settings.vim

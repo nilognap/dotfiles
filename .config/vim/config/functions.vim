@@ -2,10 +2,11 @@
 
 function! Run()
 	update
-	let run_path = expand("~/.config/vim/config/run.sh")
-	if executable(run_path)
-		execute run_path
+	let run_sh_path = expand("~/.config/scripts/run.sh")
+	if executable(run_sh_path)
+		execute "!" .. run_sh_path .. " %"
 	endif
+
 	" display .out file if there is one
 	if filereadable(expand("%<") .. ".out")
 		!cat %<.out
@@ -69,9 +70,49 @@ function! Comment(mode)
 		let line = getline(i)
 		let indent = matchstr(line, '^\s*')
 		if remove_comment
-			let line = substitute(line, '^\s*' .. comment_char .. '\s*', indent, "")
+			let line = substitute(line, '^\s*' .. comment_char .. '[ ]', indent, "")
 		elseif !IsCommented(line)
-				let line = indent .. comment_char .. " " .. strpart(line, strlen(indent))
+			let line = indent .. comment_char .. " " .. strpart(line, strlen(indent))
+		endif
+		call setline(i, line)
+	endfor
+endfunction
+
+function! SusComment(mode)
+	let comment_char = GetCommentChar()
+
+	" range
+	if a:mode == "n"
+		let start_line = line(".")
+		let end_line = line(".")
+	elseif a:mode == "v"
+		let start_line = line("'<")
+		let end_line = line("'>")
+	else
+		echo "wtf"
+		return
+	endif
+
+	" check if lines are commented already
+	" f: false = will add comment, true = will remove comment
+	let remove_comment = v:true
+	for i in range(start_line, end_line)
+		if !IsCommented(getline(i))
+			let remove_comment = v:false
+			break
+		endif
+	endfor
+
+	" take appropriate measures
+	for i in range(start_line, end_line)
+		let line = getline(i)
+		let indent = matchstr(line, '^\s*')
+		if remove_comment
+			" TBD
+			let line = substitute(line, '^\s*' .. comment_char .. '[ ]', indent, "")
+		elseif !IsCommented(line)
+			" DONE
+			let line = comment_char .. " " .. line
 		endif
 		call setline(i, line)
 	endfor

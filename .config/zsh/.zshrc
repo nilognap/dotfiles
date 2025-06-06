@@ -1,11 +1,18 @@
 # nilognap's zshrc
 
-# APPEARANCE
+# RICE
 
 setopt PROMPT_SUBST
-PROMPT=$'\n'"   %F{blue}%~%f"$'\n'" %F{magenta}➜%f %F{blue}%#%f "
+# too good
+PROMPT="
+   %F{blue}%~%f
+ %F{magenta}➜%f %F{blue}%#%f "
 
 # BASIC
+
+# case insensitive completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
 alias ls="ls -FG"
 
@@ -14,22 +21,29 @@ cdls() {
 }
 alias cd="cdls"
 
-alias du="du -sh"
-
 # confirmation
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 
-# case insensitive completion
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+# misc
+alias du="du -sh"
+
 
 # ALIASES
+
+# basic
 alias l=ls
 alias c=cd
-alias v="vim"
-alias h="hx"
+
+# good
+alias v=vim
+alias h=hx
+
+# sus
+# alias o=open
+# alias ff=fastfetch
+
 
 # ENVIRONMENT
 
@@ -39,9 +53,9 @@ if [ -d "$HOME/code/tools" ]; then
 fi
 
 # languages
-alias python=/usr/local/bin/python3.13
+# alias python=/usr/local/bin/python3.13
 # export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+# export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # pesky history files
 export LESSHISTFILE="$HOME/.config/less/history"
@@ -49,4 +63,5 @@ export PYTHONHISTFILE="$HOME/.config/python/.python_history"
 
 # SUSPICIOUS
 bindkey -v # vim mode
+bindkey -M viins 'jk' vi-cmd-mode
 
