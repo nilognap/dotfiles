@@ -3,6 +3,7 @@ let
   homeDirectory = config.home.homeDirectory;
   dotfilesSource = "${homeDirectory}/code/dotfiles";
   configSource = "${dotfilesSource}/.config";
+  configTarget = "${homeDirectory}/.config";
 in
 {
   programs.home-manager.enable = true;
@@ -22,24 +23,30 @@ in
       fastfetch
     ];
 
-    # dotfiles
     file = with config.lib.file; {
-        "${homeDirectory}/.config/zsh/.zshrc".source = mkOutOfStoreSymlink "${configSource}/zsh/.zshrc";
-        "${homeDirectory}/.config/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
+      "${configTarget}/zsh".source = mkOutOfStoreSymlink "${configSource}/zsh";
+      "${configTarget}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
+      "${configTarget}/ghostty".source = mkOutOfStoreSymlink "${configSource}/ghostty";
     };
   };
 
-  programs = {
+  # xdg.configFile = {
+    # "zsh/.zshrc" = {
+      # source = "${configSource}/zsh/.zshrc";
+    # };
+    # "vim" = {
+      # source = "${configSource}/vim";
+      # recursive = true;
+    # };
+    # "ghostty" = {
+      # source = "${configSource}/ghostty";
+      # recursive = true;
+    # };
+  # };
 
+  programs = {
     # git = {
       # enable = true;
     # };
-    vim = {
-      enable = true;
-      defaultEditor = true;
-    };
   };
-
-  # if this interferes with my vim config then remove it
-  # i probably dont need this anyways, even if it does not interfere
 }

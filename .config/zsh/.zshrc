@@ -1,6 +1,6 @@
 # nilognap's zshrc
 
-# RICE
+# UI
 
 setopt PROMPT_SUBST
 # too good
@@ -39,11 +39,6 @@ alias c=cd
 # good
 alias v=vim
 alias h=hx
-
-# sus
-# alias o=open
-# alias ff=fastfetch
-
 
 # ENVIRONMENT
 

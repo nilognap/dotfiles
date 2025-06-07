@@ -1,7 +1,9 @@
 # nilognap's ghostty config
 
-# theme
+# ui
 theme = tokyonight
+
+background-opacity = 0.8
 
 # font
 font-size = 24
@@ -13,6 +15,6 @@ font-feature = -calt
 window-height = 40
 window-width = 200
 
-background-opacity = 0.8
 
-
+# misc
+clipboard-paste-protection = false
