@@ -423,7 +423,7 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1749406206,,"\\s\\+$"
+|2,1,1749406417,,"\\s\\+$"
 ?/tools
 |2,1,1749406073,47,"tools"
 ?/vim
@@ -839,9 +839,9 @@ $
 "0	LINE	0
 	.PHONY: update
 |3,0,0,1,1,0,1749307549,".PHONY: update"
-""1	LINE	0
+"1	LINE	0
 		# rsync -av --delete "$dir" "$backup_path"
-|3,1,1,1,1,0,1749406205,"	# rsync -av --delete \"$dir\" \"$backup_path\""
+|3,0,1,1,1,0,1749406205,"	# rsync -av --delete \"$dir\" \"$backup_path\""
 "2	LINE	0
 			# If directory doesn't exist, print error and exit
 |3,0,2,1,1,0,1749406195,"		# If directory doesn't exist, print error and exit"
@@ -896,47 +896,175 @@ $
 "z	CHAR	0
 	llllll
 |3,0,35,0,1,0,1747493781,"llllll"
-"-	CHAR	0
-	code/
-|3,0,36,0,1,0,1749406191,"code/"
+""-	CHAR	0
+	.
+|3,1,36,0,1,0,1749406415,"."
 
 # File marks:
 'Z  8  0  ~/code/misc/code_sprint/practice/Qualifiers2023
 |4,90,8,0,1747506329,"~/code/misc/code_sprint/practice/Qualifiers2023"
-'0  13  0  ~/dotfiles/tools/backup_github.sh
-|4,48,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
-'1  12  25  ~/dotfiles/tools/backup_local.sh
-|4,49,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
-'2  46  17  ~/dotfiles/config/zsh/.zshrc
-|4,50,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
-'3  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,51,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
-'4  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,52,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
-'5  8  0  ~/code/dotfiles/.config/vim/config/colorscheme.vim
-|4,53,8,0,1749391134,"~/code/dotfiles/.config/vim/config/colorscheme.vim"
-'6  222  0  ~/code/misc/examples/ChatBot.java
-|4,54,222,0,1749391019,"~/code/misc/examples/ChatBot.java"
-'7  36  4  ~/code/dotfiles/.config/home-manager/home.nix
-|4,55,36,4,1749383065,"~/code/dotfiles/.config/home-manager/home.nix"
-'8  36  2  ~/code/dotfiles/.config/home-manager/home.nix
-|4,56,36,2,1749379276,"~/code/dotfiles/.config/home-manager/home.nix"
-'9  1  0  ~/code/dotfiles/.config/home-manager/flake.
-|4,57,1,0,1749377360,"~/code/dotfiles/.config/home-manager/flake."
+'0  19  0  ~/dotfiles/.gitignore
+|4,48,19,0,1749406418,"~/dotfiles/.gitignore"
+'1  2  4  ~/.config/gh/hosts.yml
+|4,49,2,4,1749406311,"~/.config/gh/hosts.yml"
+'2  19  0  ~/.config/gh/config.yml
+|4,50,19,0,1749406307,"~/.config/gh/config.yml"
+'3  13  0  ~/dotfiles/tools/backup_github.sh
+|4,51,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+'4  12  25  ~/dotfiles/tools/backup_local.sh
+|4,52,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+'5  46  17  ~/dotfiles/config/zsh/.zshrc
+|4,53,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
+'6  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
+|4,54,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
+'7  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
+|4,55,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
+'8  8  0  ~/code/dotfiles/.config/vim/config/colorscheme.vim
+|4,56,8,0,1749391134,"~/code/dotfiles/.config/vim/config/colorscheme.vim"
+'9  222  0  ~/code/misc/examples/ChatBot.java
+|4,57,222,0,1749391019,"~/code/misc/examples/ChatBot.java"
 
 # Jumplist (newest first):
+-'  19  0  ~/dotfiles/.gitignore
+|4,39,19,0,1749406418,"~/dotfiles/.gitignore"
+-'  1  0  ~/dotfiles/.gitignore
+|4,39,1,0,1749406399,"~/dotfiles/.gitignore"
+-'  2  4  ~/.config/gh/hosts.yml
+|4,39,2,4,1749406311,"~/.config/gh/hosts.yml"
+-'  2  4  ~/.config/gh/hosts.yml
+|4,39,2,4,1749406311,"~/.config/gh/hosts.yml"
+-'  19  0  ~/.config/gh/config.yml
+|4,39,19,0,1749406307,"~/.config/gh/config.yml"
+-'  19  0  ~/.config/gh/config.yml
+|4,39,19,0,1749406307,"~/.config/gh/config.yml"
+-'  19  0  ~/.config/gh/config.yml
+|4,39,19,0,1749406307,"~/.config/gh/config.yml"
+-'  19  0  ~/.config/gh/config.yml
+|4,39,19,0,1749406307,"~/.config/gh/config.yml"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
+-'  13  0  ~/dotfiles/tools/backup_github.sh
+|4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
 -'  13  0  ~/dotfiles/tools/backup_github.sh
 |4,39,13,0,1749406209,"~/dotfiles/tools/backup_github.sh"
 -'  9  0  ~/dotfiles/tools/backup_github.sh
 |4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
+-'  9  0  ~/dotfiles/tools/backup_github.sh
+|4,39,9,0,1749406193,"~/dotfiles/tools/backup_github.sh"
 -'  5  8  ~/dotfiles/tools/backup_github.sh
 |4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  5  8  ~/dotfiles/tools/backup_github.sh
+|4,39,5,8,1749406192,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
+-'  1  0  ~/dotfiles/tools/backup_github.sh
+|4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
 -'  1  0  ~/dotfiles/tools/backup_github.sh
 |4,39,1,0,1749406185,"~/dotfiles/tools/backup_github.sh"
 -'  12  25  ~/dotfiles/tools/backup_local.sh
 |4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
 -'  12  25  ~/dotfiles/tools/backup_local.sh
 |4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  12  25  ~/dotfiles/tools/backup_local.sh
+|4,39,12,25,1749406137,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
+-'  7  31  ~/dotfiles/tools/backup_local.sh
+|4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
 -'  7  31  ~/dotfiles/tools/backup_local.sh
 |4,39,7,31,1749406135,"~/dotfiles/tools/backup_local.sh"
 -'  7  31  ~/dotfiles/tools/backup_local.sh
@@ -945,188 +1073,84 @@ $
 |4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
 -'  4  8  ~/dotfiles/tools/backup_local.sh
 |4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
+-'  4  8  ~/dotfiles/tools/backup_local.sh
+|4,39,4,8,1749406117,"~/dotfiles/tools/backup_local.sh"
 -'  1  0  ~/dotfiles/tools/backup_local.sh
 |4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
 -'  1  0  ~/dotfiles/tools/backup_local.sh
 |4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
--'  46  17  ~/dotfiles/config/zsh/.zshrc
-|4,39,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
--'  46  17  ~/dotfiles/config/zsh/.zshrc
-|4,39,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
--'  46  17  ~/dotfiles/config/zsh/.zshrc
-|4,39,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
--'  46  17  ~/dotfiles/config/zsh/.zshrc
-|4,39,46,17,1749406077,"~/dotfiles/config/zsh/.zshrc"
--'  1  0  ~/dotfiles/config/zsh/.zshrc
-|4,39,1,0,1749406073,"~/dotfiles/config/zsh/.zshrc"
--'  1  0  ~/dotfiles/config/zsh/.zshrc
-|4,39,1,0,1749406073,"~/dotfiles/config/zsh/.zshrc"
--'  1  0  ~/dotfiles/config/zsh/.zshrc
-|4,39,1,0,1749406073,"~/dotfiles/config/zsh/.zshrc"
--'  1  0  ~/dotfiles/config/zsh/.zshrc
-|4,39,1,0,1749406073,"~/dotfiles/config/zsh/.zshrc"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  3  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,3,0,1749403221,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  1  0  ~/code/dotfiles/.config/home-manager/flake.lock
-|4,39,1,0,1749403219,"~/code/dotfiles/.config/home-manager/flake.lock"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  16  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,16,0,1749395070,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
--'  12  0  ~/code/dotfiles/.config/home-manager/flake.nix
-|4,39,12,0,1749394786,"~/code/dotfiles/.config/home-manager/flake.nix"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
+-'  1  0  ~/dotfiles/tools/backup_local.sh
+|4,39,1,0,1749406107,"~/dotfiles/tools/backup_local.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/dotfiles/.gitignore
+	*	1749406417	0
+	"	19	0
+	.	19	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+
+> ~/.config/gh/hosts.yml
+	*	1749406309	0
+	"	2	4
+
+> ~/.config/gh/config.yml
+	*	1749406304	0
+	"	19	0
 
 > ~/dotfiles/tools/backup_github.sh
 	*	1749406206	0
@@ -1372,14 +1396,6 @@ $
 	+	3	0
 	+	1	0
 	+	5	12
-
-> ~/.config/gh/hosts.yml
-	*	1749306360	0
-	"	2	0
-
-> ~/.config/gh/config.yml
-	*	1749306344	0
-	"	19	0
 
 > ~/code/dotfiles/tools/backup_local.sh
 	*	1749305510	0
@@ -2844,7 +2860,3 @@ $
 > /usr/local/Cellar/vim/9.1.1350/share/vim/vim91/doc/if_ole.txt
 	*	1748292131	0
 	"	152	7
-
-> ~/code/test/testj
-	*	1748290513	0
-	"	1	0
