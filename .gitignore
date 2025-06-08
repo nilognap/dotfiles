@@ -13,7 +13,9 @@ config/zsh/.zsh_sessions
 # vim
 config/vim/viminfo
 config/vim/.netrwhist
+
+config/vim/swap/*
+config/vim/undo/*
+
 config/vim/plugged/
-config/vim/swap/
-config/vim/undo/
 
