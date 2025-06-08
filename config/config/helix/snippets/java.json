@@ -1,6 +1,0 @@
-{
-	"sysout": {
-		"prefix": "sysout",
-		"body": "System.out.println($1);$0"
-	}
-}
