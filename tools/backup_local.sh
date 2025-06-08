@@ -1,12 +1,10 @@
 #!/usr/bin/env zsh
 
 local directories=(
-	"$HOME/code/dotfiles"
-	"$HOME/code/tools"
-	"$HOME/code/notes"
+	"$HOME/dotfiles"
 )
 
-local backup_root="$HOME/code/bak"
+local backup_root="$HOME/storage/bak"
 
 
 for dir in $directories; do

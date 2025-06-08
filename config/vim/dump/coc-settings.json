@@ -1,0 +1,7 @@
+{
+	"suggest.enablePreselect": false,
+	"suggest.autoTrigger": "trigger",
+	"java.completion.filteredTypes": [
+		"java.lang.Object._"
+	]
+}
