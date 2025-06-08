@@ -9,12 +9,11 @@ in
   programs.home-manager.enable = true;
 
   home = {
-    username = "nilo";
+    username = "nilo"; # replace this with a variable at one point
     homeDirectory = "/Users/nilo";
 
     # do not change stateVersion
     stateVersion = "25.05";
-    # stateVersion = "23.11";
 
     packages = with pkgs; [
       hello
@@ -25,14 +24,16 @@ in
 
     file = with config.lib.file; {
       "${configTarget}/zsh".source = mkOutOfStoreSymlink "${configSource}/zsh";
+      "${homeDirectory}/.zshenv".source = mkOutOfStoreSymlink "${configTarget}/zsh/.zshenv";
       "${configTarget}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
       "${configTarget}/ghostty".source = mkOutOfStoreSymlink "${configSource}/ghostty";
     };
   };
 
   programs = {
-    # git = {
-      # enable = true;
-    # };
+    git = {
+      enable = true;
+      userName = "nilognap";
+    };
   };
 }
