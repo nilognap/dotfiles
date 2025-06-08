@@ -1,0 +1,6 @@
+# ~/.config/helix/themes/tokyonight_transparent.toml
+
+inherits = "tokyonight"
+
+"ui.background" = { fg = "foreground" }
+# "ui.background" = {}

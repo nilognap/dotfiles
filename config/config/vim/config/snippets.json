@@ -1,0 +1,41 @@
+{
+	"c": {
+		"main": [
+			"int main()",
+			"{",
+			"\t|",
+			"}"
+		],
+		"print": [
+			"printf(|);"
+		]
+	},
+	"cpp": {
+		"main": [
+			"int main()",
+			"{",
+			"\t|",
+			"}"
+		],
+		"cout": [
+			"cout << | << endl;"
+		]
+	},
+	"java": {
+		"class": [
+			"public class <filename>",
+			"{",
+			"\t|",
+			"}"
+		],
+		"main": [
+			"public static void main(String[] args)",
+			"{",
+			"\t|",
+			"}"
+		],
+		"sysout": [
+			"System.out.println(|);"
+		]
+	}
+}
