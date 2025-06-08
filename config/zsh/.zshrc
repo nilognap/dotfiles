@@ -14,7 +14,7 @@ PROMPT="
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
-alias ls="ls -FG"
+alias ls="ls -F --color=auto"
 
 cdls() {
 	builtin cd "$@" && ls
