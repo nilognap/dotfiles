@@ -34,7 +34,7 @@ in
     git = {
       enable = true;
       userName = "nilognap";
-      userEmail = "";
+      userEmail = "wanghan4c3@gmail.com";
     };
   };
 }
