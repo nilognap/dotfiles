@@ -59,6 +59,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.defaultUserShell = pkgs.zsh;
   users.users.nilo = {
     isNormalUser = true;
     description = "nilo";
@@ -68,14 +69,19 @@
     ];
   };
 
-  programs.firefox.enable = true;
-  # programs.hyprland.enable = true;
+  programs = {
+    zsh.enable = true;
+    firefox.enable = true;
+    # programs.hyprland.enable = true;
+  };
 
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     vim
 	git
+    gh
+    gnumake
   ];
 
   # do not touch this
