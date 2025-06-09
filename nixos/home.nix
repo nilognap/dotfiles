@@ -19,6 +19,7 @@ in
       hello
       # google-chrome
       vim
+      fzf
       fastfetch
     ];
 

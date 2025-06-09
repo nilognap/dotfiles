@@ -40,7 +40,7 @@ function! LoadPlugins()
 
 	" call LoadVimLsp()
 
-	Plug 'LnL7/vim-nix'
+	Plug 'sheerun/vim-polyglot'
 
 	call LoadEasyMotion()
 
@@ -67,6 +67,8 @@ call LoadPlugins()
 	" runtime autocomplete.vim
 " 
 	" runtime config/mappings.vim
+	
+	runtime config/helix.vim
 " endfunction
 " call LoadConfig()
 

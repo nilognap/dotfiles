@@ -33,10 +33,22 @@ nnoremap mi] vi]
 nnoremap mi< vi>
 nnoremap mi< vi>
 
+vnoremap miw viw
+vnoremap mi( vi(
+vnoremap mi) vi)
+vnoremap mi{ vi{
+vnoremap mi{ vi}
+vnoremap mi[ vi[
+vnoremap mi] vi]
+vnoremap mi< vi>
+vnoremap mi< vi>
+
 nnoremap mm %
+vnoremap mm %
 
 " misc
 nnoremap % ggVG
+vnoremap % ggVG
 
 let g:is_recording = v:false
 function RecordMacro()
