@@ -40,10 +40,6 @@ function! GetIndent()
 	return &expandtab ? repeat("\<Space>", &shiftwidth) : "\<Tab>"
 endfunction
 
-function! IsCommented(line)
-	return matchstr(a:line, '^\s*' .. GetCommentChar()) != ""
-endfunction
-
 function! MoveCursorToPlaceholder()
 	let c = searchpos("|", "c")
 	if c != [0, 0]

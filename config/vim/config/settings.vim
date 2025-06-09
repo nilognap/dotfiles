@@ -5,10 +5,20 @@ set nocompatible
 set autochdir
 
 " centralize vim files
-set viminfofile=~/.config/vim/viminfo
-set directory=~/.config/vim/swap//
-set undodir=~/.config/vim/undo//
-set undofile
+let $VIMHOME=$HOME."/.config/vim"
+
+set viminfofile=$VIMHOME/viminfo
+set backupdir=$VIMHOME/backup//
+set directory=$VIMHOME/swap//
+set undodir=$VIMHOME/undo//
+
+for dir in [ &backupdir, &directory, &undodir ]
+	if !isdirectory(dir)
+		call mkdir(dir, "p")
+	endif
+endfor
+
+set backup swapfile undofile
 
 " misc
 set scrolloff=999

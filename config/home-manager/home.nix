@@ -18,7 +18,8 @@ in
     packages = with pkgs; [
       hello
       # google-chrome
-      vim
+      vim helix
+      fzf zoxide thefuck
       fastfetch
     ];
 

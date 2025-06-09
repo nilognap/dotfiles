@@ -40,6 +40,9 @@ function! ObsoleteRun()
 	endif
 endfunction
 
+function! NeedComment(line)
+	return a:line !~# '^\s*$' && matchstr(a:line, '^\s*' .. GetCommentChar()) == ""
+endfunction
 function! Comment(mode)
 	let comment_char = GetCommentChar()
 
@@ -59,7 +62,7 @@ function! Comment(mode)
 	" f: false = will add comment, true = will remove comment
 	let remove_comment = v:true
 	for i in range(start_line, end_line)
-		if !IsCommented(getline(i))
+		if NeedComment(getline(i))
 			let remove_comment = v:false
 			break
 		endif
@@ -71,48 +74,8 @@ function! Comment(mode)
 		let indent = matchstr(line, '^\s*')
 		if remove_comment
 			let line = substitute(line, '^\s*' .. comment_char .. '[ ]', indent, "")
-		elseif !IsCommented(line)
+		elseif NeedComment(line)
 			let line = indent .. comment_char .. " " .. strpart(line, strlen(indent))
-		endif
-		call setline(i, line)
-	endfor
-endfunction
-
-function! SusComment(mode)
-	let comment_char = GetCommentChar()
-
-	" range
-	if a:mode == "n"
-		let start_line = line(".")
-		let end_line = line(".")
-	elseif a:mode == "v"
-		let start_line = line("'<")
-		let end_line = line("'>")
-	else
-		echo "wtf"
-		return
-	endif
-
-	" check if lines are commented already
-	" f: false = will add comment, true = will remove comment
-	let remove_comment = v:true
-	for i in range(start_line, end_line)
-		if !IsCommented(getline(i))
-			let remove_comment = v:false
-			break
-		endif
-	endfor
-
-	" take appropriate measures
-	for i in range(start_line, end_line)
-		let line = getline(i)
-		let indent = matchstr(line, '^\s*')
-		if remove_comment
-			" TBD
-			let line = substitute(line, '^\s*' .. comment_char .. '[ ]', indent, "")
-		elseif !IsCommented(line)
-			" DONE
-			let line = comment_char .. " " .. line
 		endif
 		call setline(i, line)
 	endfor

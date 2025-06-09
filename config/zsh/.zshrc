@@ -61,3 +61,5 @@ export PYTHONHISTFILE="$HOME/.config/python/.python_history"
 bindkey -v # vim mode
 bindkey -M viins 'jk' vi-cmd-mode
 
+# PLUGINS
+# eval $(thefuck --alias) # this shit lags when opening a new shell

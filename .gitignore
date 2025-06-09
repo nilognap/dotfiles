@@ -12,11 +12,11 @@ config/zsh/.zsh_sessions/
 
 # vim
 config/vim/.netrwhist
+config/vim/viminfo
 
 config/vim/plugged/
 
+config/vim/backup
 config/vim/swap/
 config/vim/undo/
 
-
-config/vim/viminfo

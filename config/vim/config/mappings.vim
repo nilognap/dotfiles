@@ -58,7 +58,6 @@ nnoremap z<Leader> za
 nnoremap gb <C-o>
 nnoremap go <C-o>
 nnoremap gi <C-i>
-nnoremap g<Leader> 2g;
 
 nnoremap ^ 0
 nnoremap 0 ^
