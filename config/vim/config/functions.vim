@@ -2,7 +2,7 @@
 
 function! Run()
 	update
-	let run_sh_path = expand("~/.config/scripts/run.sh")
+	let run_sh_path = expand("~/.config/bin/run.sh")
 	if executable(run_sh_path)
 		execute "!" .. run_sh_path .. " %"
 	endif

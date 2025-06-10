@@ -6,13 +6,15 @@ let
   configTarget = "${homeDirectory}/.config";
 in
 {
-  programs.home-manager.enable = true;
+  imports = [
+    ./zsh.nix
+    ./dotfiles.nix
+  ];
 
   home = {
     username = "nilo"; # replace this with a variable at one point
     homeDirectory = "/Users/nilo";
-
-    # do not change stateVersion
+    # do not touch
     stateVersion = "25.05";
 
     packages = with pkgs; [
@@ -23,22 +25,23 @@ in
       fastfetch
     ];
 
-    file = with config.lib.file; {
-      "${configTarget}/zsh".source = mkOutOfStoreSymlink "${configSource}/zsh";
-      "${homeDirectory}/.zshenv".source = mkOutOfStoreSymlink "${configTarget}/zsh/.zshenv";
-      "${configTarget}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
-      "${configTarget}/scripts".source = mkOutOfStoreSymlink "${configSource}/scripts";
-      "${configTarget}/nix".source = mkOutOfStoreSymlink "${configSource}/nix";
-      "${configTarget}/ghostty".source = mkOutOfStoreSymlink "${configSource}/ghostty";
-
-      "${configTarget}/helix".source = mkOutOfStoreSymlink "${configSource}/helix";
-    };
   };
 
   programs = {
+    home-manager.enable = true;
+
     git = {
       enable = true;
       userName = "nilognap";
     };
+
+    # firefox = {
+      # enable = true;
+      # profiles.nilo = {
+        # extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+          # ublock-origin
+        # ];
+      # };
+    # };
   };
 }
