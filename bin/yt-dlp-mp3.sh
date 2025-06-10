@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
 # check for "url" argument
 if [ $# -ne 1 ]; then

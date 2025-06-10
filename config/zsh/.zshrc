@@ -42,10 +42,9 @@ alias h=hx
 
 # ENVIRONMENT
 
-# my tools
-tool_path="$HOME/dotfiles/tools"
-if [ -d "$tool_path" ]; then
-	export PATH="$tool_path:$PATH"
+bin_path="$HOME/dotfiles/bin"
+if [ -d "$bin_path" ]; then
+	export PATH="$bin_path:$PATH"
 fi
 
 # languages
@@ -61,5 +60,5 @@ export PYTHONHISTFILE="$HOME/.config/python/.python_history"
 bindkey -v # vim mode
 bindkey -M viins 'jk' vi-cmd-mode
 
-# PLUGINS
-# eval $(thefuck --alias) # this shit lags when opening a new shell
+# PLUGINS (do plugins with home manager)
+# eval "$(pay-respects zsh --alias)"

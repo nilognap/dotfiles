@@ -19,7 +19,7 @@ in
       hello
       # google-chrome
       vim helix
-      fzf zoxide thefuck
+      fzf zoxide pay-respects
       fastfetch
     ];
 
@@ -27,7 +27,11 @@ in
       "${configTarget}/zsh".source = mkOutOfStoreSymlink "${configSource}/zsh";
       "${homeDirectory}/.zshenv".source = mkOutOfStoreSymlink "${configTarget}/zsh/.zshenv";
       "${configTarget}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
+      "${configTarget}/scripts".source = mkOutOfStoreSymlink "${configSource}/scripts";
+      "${configTarget}/nix".source = mkOutOfStoreSymlink "${configSource}/nix";
       "${configTarget}/ghostty".source = mkOutOfStoreSymlink "${configSource}/ghostty";
+
+      "${configTarget}/helix".source = mkOutOfStoreSymlink "${configSource}/helix";
     };
   };
 

@@ -4,7 +4,7 @@
 set notimeout
 
 " leader
-let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 " basic
 inoremap jk <Esc>
@@ -33,8 +33,14 @@ nnoremap <Tab> <Cmd>bnext<CR>
 nnoremap <S-Tab> <Cmd>bprev<CR>
 nnoremap <C-Tab> <Cmd>bnext<CR>
 nnoremap <C-S-Tab> <Cmd>bprev<CR>
+
 inoremap <C-Tab> <Cmd>bnext<CR>
 inoremap <C-S-Tab> <Cmd>bprev<CR>
+
+vnoremap <Tab> <Cmd>bnext<CR>
+vnoremap <S-Tab> <Cmd>bprev<CR>
+vnoremap <C-Tab> <Cmd>bnext<CR>
+vnoremap <C-S-Tab> <Cmd>bprev<CR>
 
 for n in range(1, 9)
   execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"

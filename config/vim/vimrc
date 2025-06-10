@@ -23,12 +23,19 @@ endfunction
 function! LoadEasyMotion()
 	Plug 'easymotion/vim-easymotion'
 
-	let g:EasyMotion_keys = 'asdfghjklqwertyuiopzxcvbnm'
 	let g:EasyMotion_do_mapping = 0
+	let g:EasyMotion_keys = "asdghklqwertyuiopzxcvbnmfj"
 
+	let g:mapleader = "\<Space>"
+	" man, this is great
 	nnoremap gw <Plug>(easymotion-bd-w)
-	nnoremap <Leader>s <Plug>(easymotion-bd-w)
+	nnoremap <Leader>f <Plug>(easymotion-bd-w)
 	nnoremap <Leader>g <Plug>(easymotion-bd-w)
+	nnoremap <Leader>s <Plug>(easymotion-bd-w)
+	vnoremap gw <Plug>(easymotion-bd-w)
+	nnoremap <Leader>f <Plug>(easymotion-bd-w)
+	vnoremap <Leader>g <Plug>(easymotion-bd-w)
+	vnoremap <Leader>s <Plug>(easymotion-bd-w)
 
 	autocmd ColorScheme * highlight link EasyMotionTarget Title
 	" nnoremap s <Plug>(easymotion-s)
@@ -38,11 +45,12 @@ endfunction
 function! LoadPlugins()
 	call plug#begin()
 
+	" for maps
+
 	" call LoadVimLsp()
 
 	Plug 'sheerun/vim-polyglot'
 
-	let mapleader = "\<Space>"
 	call LoadEasyMotion()
 
 	call plug#end()
