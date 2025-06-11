@@ -12,3 +12,4 @@ for file in $HOME/.config/zsh/*.sh; do
     source "$file"
 done
 
+eval "$(zoxide init zsh)"

@@ -10,7 +10,7 @@
   programs.home-manager.enable = true;
 
   # uhhhh
-  # nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
   imports = [
     ./cli.nix

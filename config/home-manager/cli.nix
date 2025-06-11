@@ -18,13 +18,15 @@ in
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       initContent = "source ${configTarget}/zsh/.zshrc";
-      shellAliases = {
-        cd = "z";
-      };
     };
-    zoxide.enable = true;
+    zoxide = {
+      enable = true;
+      options = [
+        "--cmd cd"
+      ];
+    };
     fzf.enable = true;
-    pay-respects.enable = true;
+    # pay-respects.enable = true;
     git = {
       enable = true;
       userName = "nilognap";

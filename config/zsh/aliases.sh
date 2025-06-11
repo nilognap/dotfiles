@@ -1,12 +1,11 @@
 # nilo/.config/zsh/aliases.sh
 
-# cdls
+# good
 alias ls="ls -F --color=auto"
 
-cdls() {
-	builtin cd "$@" && ls
+function chpwd() {
+	ls
 }
-alias cd="cdls"
 
 # shortened
 alias l=ls
@@ -22,4 +21,5 @@ alias cp="cp -i"
 
 # misc
 alias du="du -sh"
+alias grep="grep -rnw . -e"
 
