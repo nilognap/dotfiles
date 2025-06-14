@@ -2,7 +2,7 @@
 
 " basic
 set nocompatible
-set autochdir
+" set autochdir " bad with fzf
 
 " centralize vim files
 let $VIMHOME=$HOME."/.config/vim"
@@ -26,6 +26,7 @@ set hidden
 
 " fold
 set foldmethod=indent
-set foldlevel=1
+" set foldlevel=1
+set foldlevel=999
 " autocmd Filetype * execute "setlocal foldignore=" .. GetCommentChar()
 

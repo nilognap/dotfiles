@@ -26,11 +26,10 @@ function! StatusLine()
 		\ "v": "VISUAL %* ",
 		\ "V": "V LINE %* ",
 		\ "c": "COMMAND %*"
-		\ }->get(mode(), "WHAT MODE ARE YOU ON??? %* ")
-	let s .= "  %#Cursor# %F %*"
+		\ }->get(mode(), "(^_^) %* ")
+	let s .= "  %<%#Cursor# %{getcwd()} %*"
 	let s .= " %#DiffText#%h%* %#DiffDelete#%r%* %#DiffAdd#%m%*"
 	let s .= "%="
-	" let s .= "%-15.(%l,%c%V%) %#ToolbarButton# %P %*   "
 	let s .= "%-15.(%l,%c%V%) %#ToolbarButton# %P %*   "
 	return s
 endfunction

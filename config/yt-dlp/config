@@ -1,0 +1,18 @@
+# nilo/.config/yt-dlp/config
+
+# audio only
+-x
+
+# do not overwrite
+-w
+
+# file format
+--audio-format mp3
+--audio-quality 320K
+
+
+# no "last modified" metadata
+--no-mtime
+
+# not the whole playlist
+--no-playlist

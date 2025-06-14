@@ -71,7 +71,6 @@ g.M = "jump_backward"
 # vim muslce memory
 # 0 = "goto_first_nonwhitespace"
 
-
 [keys.select]
 
 H = ["page_cursor_half_up", "align_view_center"]

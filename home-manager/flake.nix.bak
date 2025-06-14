@@ -1,12 +1,10 @@
 {
-  description = "nilognap's home manager configuration";
+  description = "nilognap/dotfiles/home-manager/flake.nix";
 
   inputs = {
-    # nixpkgs.url = "nixpkgs/nixos-25.05";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
-      # url = "github:nix-community/home-manager/release-25.05";
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -17,7 +15,8 @@
       lib = nixpkgs.lib;
       system = "x86_64-darwin";
       # system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
+      # pkgs = import nixpkgs { inherit system; };
+      pkgs = nixpkgs.legacyPackages.x84_64-linux;
     in {
       homeConfigurations = {
         nilo = home-manager.lib.homeManagerConfiguration {

@@ -82,10 +82,9 @@ function! Comment(mode)
 endfunction
 
 function! LoadTemplate()
-	call deletebufline("", 1, line("$"))
 	let f = expand("~/.config/vim/templates/template.") .. fnamemodify(bufname(), ":e")
-	echom f
 	if filereadable(f)
+		call deletebufline("", 1, line("$"))
 		execute "read " .. f
 		call deletebufline("", 1)
 		%s/<filename>/\=expand("%<")/ge

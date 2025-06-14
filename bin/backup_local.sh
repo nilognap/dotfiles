@@ -2,6 +2,7 @@
 
 local directories=(
 	"$HOME/dotfiles"
+	"$HOME/code/notes"
 )
 
 local backup_root="$HOME/storage/bak"

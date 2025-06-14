@@ -1,6 +1,10 @@
 { ... }:
 {
-  programms = {
+  home.packages = with pkgs; [
+    kdePackages.kwave
+  ];
+
+  programs = {
     firefox = {
       enable = true;
       profiles.nilo = {

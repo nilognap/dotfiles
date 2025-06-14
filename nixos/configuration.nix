@@ -7,23 +7,22 @@
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
-  # Bootloader.
   boot.loader.grub = {
     enable = true;
     device = "/dev/sda";
     useOSProber = true;
   };
 
-  networking.hostName = "brick";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "brick";
+    networkmanager.enable = true;
+  };
 
   time.timeZone = "Europe/Malta";
-
   i18n.defaultLocale = "en_US.UTF-8";
 
   services.displayManager.gdm.enable = true;
@@ -36,7 +35,6 @@
     };
   };
 
-  # Enable CUPS to print documents.
   # services.printing.enable = true;
 
   # Enable sound with pipewire.
@@ -58,30 +56,30 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.defaultUserShell = pkgs.zsh;
   users.users.nilo = {
     isNormalUser = true;
     description = "nilo";
     extraGroups = [ "networkmanager" "wheel" ];
+    defaultUserShell = pkgs.fish;
     packages = with pkgs; [
-      # helix
+      # things that go in home manager go in home manager
     ];
-  };
-
-  programs = {
-    zsh.enable = true;
-    firefox.enable = true;
-    # programs.hyprland.enable = true;
   };
 
   nixpkgs.config.allowUnfree = true;
 
+  # be careful what to put in here
+  programs = {
+    # hyprland.enable = true;
+    keyd.enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
-    vim
+    # vim
 	git
     gh
-    gnumake
+    # gnumake
+    # pythonVERSION
   ];
 
   # do not touch this
