@@ -16,7 +16,7 @@
       system = "x86_64-darwin";
       # system = "x86_64-linux";
       # pkgs = import nixpkgs { inherit system; };
-      pkgs = nixpkgs.legacyPackages.x84_64-linux;
+      pkgs = nixpkgs.legacyPackages.${system};
     in {
       homeConfigurations = {
         nilo = home-manager.lib.homeManagerConfiguration {

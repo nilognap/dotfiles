@@ -1,5 +1,9 @@
-{ ... }:
+{ config, ... }:
 {
+  home.sessionPath = [
+    "${config.home.homeDirectory}/.nix-profile/bin"
+    "/nix/var/nix/profiles/default/bin"
+  ];
   programs.fish = {
     enable = true;
     functions = {
@@ -20,6 +24,11 @@
     };
     interactiveShellInit = ''
       set fish_greeting
+      function ls_after_cd --on-variable PWD
+        if status --is-interactive
+          command ls --color=auto
+        end
+      end
       '';
   };
 }

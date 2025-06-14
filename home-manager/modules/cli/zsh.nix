@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   programs.zsh = {
     # enable = true;
@@ -6,14 +6,6 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    initContent = ''
-      function chpwd() {
-        ls
-      }
-      setopt PROMPT_SUBST
-      PROMPT="
-         %F{blue}%~%f
-       %F{magenta}➜%f %F{blue}%#%f "
-      '';
+    initContent = "source ${config.home.homeDirectory}/dotfiles/config/zsh/.zshrc";
   };
 }

@@ -7,6 +7,7 @@
       # ui
       theme = "catppuccin-mocha";
       background-opacity = 0.8;
+      cursor-opacity = 0.8;
       # font
       font-size = 24;
       font-feature = "-calt";

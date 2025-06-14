@@ -2,7 +2,6 @@
 {
   home = {
     sessionPath = [
-      "${config.home.homeDirectory}/.nix-profile/bin"
       "$HOME/dotfiles/bin"
     ];
     sessionVariables = {
