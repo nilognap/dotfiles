@@ -5,9 +5,9 @@
     package = lib.mkIf pkgs.stdenv.isDarwin null;
     settings = {
       # ui
-      theme = "catppuccin-mocha";
+      theme = "tokyonight";
       background-opacity = 0.8;
-      cursor-opacity = 0.8;
+      mouse-hide-while-typing = true;
       # font
       font-size = 24;
       font-feature = "-calt";

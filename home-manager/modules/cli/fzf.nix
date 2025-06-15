@@ -4,7 +4,7 @@
     enable = true;
     defaultOptions = [
       "--style full"
-      # "--preview 'fzf-preview.sh {}'"
+      "--preview 'fzf-preview.sh {}'"
     ];
   };
 }
