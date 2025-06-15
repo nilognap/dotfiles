@@ -6,9 +6,31 @@ set notimeout
 " leader
 let g:mapleader = "\<Space>"
 
+" sus
+noremap j h
+noremap k j
+noremap l k
+noremap ; l
+
+noremap J <C-u>
+noremap K j
+noremap L K
+noremap : <C-d>
+
+nnoremap <S-Del> J
+
+noremap ' :
+noremap " :
+
+" navigation
+
 " basic
-inoremap jk <Esc>
+" inoremap jk <Esc>
 " inoremap kj <Esc>
+" k and l because up and down are pressed
+" more often than h and l
+inoremap kl <Esc>
+inoremap lk <Esc>
 
 " nnoremap <Leader>q <Cmd>x<CR>
 nnoremap <Leader>q <Cmd>q<CR>
@@ -22,25 +44,15 @@ nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
 inoremap <Tab> <Cmd>call Tab()<CR>
 inoremap <S-Tab> <Cmd>call ShiftTab()<CR>
 
-" navigation
-nnoremap H <C-u>
-nnoremap L <C-d>
-vnoremap H <C-u>
-vnoremap L <C-d>
 
 " buffer
-nnoremap <Tab> <Cmd>bnext<CR>
-nnoremap <S-Tab> <Cmd>bprev<CR>
-nnoremap <C-Tab> <Cmd>bnext<CR>
-nnoremap <C-S-Tab> <Cmd>bprev<CR>
+noremap <Tab> <Cmd>bnext<CR>
+noremap <S-Tab> <Cmd>bprev<CR>
+noremap <C-Tab> <Cmd>bnext<CR>
+noremap <C-S-Tab> <Cmd>bprev<CR>
 
 inoremap <C-Tab> <Cmd>bnext<CR>
 inoremap <C-S-Tab> <Cmd>bprev<CR>
-
-vnoremap <Tab> <Cmd>bnext<CR>
-vnoremap <S-Tab> <Cmd>bprev<CR>
-vnoremap <C-Tab> <Cmd>bnext<CR>
-vnoremap <C-S-Tab> <Cmd>bprev<CR>
 
 for n in range(1, 9)
   execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
@@ -65,35 +77,14 @@ nnoremap gb <C-o>
 nnoremap go <C-o>
 nnoremap gi <C-i>
 
-nnoremap ^ 0
-nnoremap 0 ^
-vnoremap ^ 0
-vnoremap 0 ^
+noremap ^ 0
+noremap 0 ^
 
-
-" ~/.vim/config/functions.vim
+" functions.vim
 nnoremap <Leader>r <Cmd>call Run()<CR>
 nnoremap <Leader>t <Cmd>call LoadTemplate()<CR>
 
 nnoremap <Leader>c <Cmd>call Comment("n")<CR>
 " the only time <Cmd> is not good
 vnoremap <Leader>c :<C-u>call Comment("v")<CR>
-
-nnoremap <Leader>T <Cmd>call Test()<CR>
-
-" windows DO NOT use windows :( buffers are good enough
-
-" nnoremap <Leader>s <C-w>s
-" nnoremap <Leader>v <C-w>v
-" nnoremap <Leader>w <C-w>w
-" nnoremap <Leader>p <C-w>p
-" 
-" nnoremap <Leader>h <C-w>h
-" nnoremap <Leader>j <C-w>j
-" nnoremap <Leader>k <C-w>k
-" nnoremap <Leader>l <C-w>l
-" 
-" nnoremap <Leader>c <C-w>c
-" nnoremap <Leader>o <C-w>o
-" nnoremap <Leader>x <C-w>x
 

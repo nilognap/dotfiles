@@ -5,50 +5,32 @@
 " DO WORK
 
 " goto mode
-nnoremap gh 0
-nnoremap gl $
-nnoremap gs ^
-nnoremap g. g;
-nnoremap ge G
-
-vnoremap gh 0
-vnoremap gl $
-vnoremap gs ^
-vnoremap g. g;
-vnoremap ge G
+noremap gh 0
+noremap gl $
+noremap gs ^
+noremap g. g;
+noremap ge G
 
 " extra navigation
-nnoremap t<CR> $
-vnoremap t<CR> $
+noremap t<CR> $
 
 
 " match mode
-nnoremap miw viw
-nnoremap mi( vi(
-nnoremap mi) vi)
-nnoremap mi{ vi{
-nnoremap mi{ vi}
-nnoremap mi[ vi[
-nnoremap mi] vi]
-nnoremap mi< vi>
-nnoremap mi< vi>
+noremap miw viw
+noremap mi( vi(
+noremap mi) vi)
+noremap mi{ vi{
+noremap mi{ vi}
+noremap mi[ vi[
+noremap mi] vi]
+noremap mi< vi>
+noremap mi< vi>
 
-vnoremap miw viw
-vnoremap mi( vi(
-vnoremap mi) vi)
-vnoremap mi{ vi{
-vnoremap mi{ vi}
-vnoremap mi[ vi[
-vnoremap mi] vi]
-vnoremap mi< vi>
-vnoremap mi< vi>
-
-nnoremap mm %
-vnoremap mm %
+noremap mm %
+noremap mm %
 
 " misc
-nnoremap % ggVG
-vnoremap % ggVG
+noremap % ggVG
 
 let g:is_recording = v:false
 function RecordMacro()
