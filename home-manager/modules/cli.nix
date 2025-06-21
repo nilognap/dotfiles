@@ -5,11 +5,10 @@ in
 {
   imports = lib.filesystem.listFilesRecursive ./cli;
 
-  home = {
-    packages = with pkgs; [
-      hello
-      vim
-      helix
-    ];
-  };
+  home.packages = with pkgs; [
+    hello
+    vim
+    # ffmpeg
+    # helix
+  ];
 }

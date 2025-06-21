@@ -6,31 +6,7 @@ set notimeout
 " leader
 let g:mapleader = "\<Space>"
 
-" sus
-noremap j h
-noremap k j
-noremap l k
-noremap ; l
 
-noremap J <C-u>
-noremap K j
-noremap L K
-noremap : <C-d>
-
-nnoremap <S-Del> J
-
-noremap ' :
-noremap " :
-
-" navigation
-
-" basic
-" inoremap jk <Esc>
-" inoremap kj <Esc>
-" k and l because up and down are pressed
-" more often than h and l
-inoremap kl <Esc>
-inoremap lk <Esc>
 
 " nnoremap <Leader>q <Cmd>x<CR>
 nnoremap <Leader>q <Cmd>q<CR>

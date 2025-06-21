@@ -1,12 +1,8 @@
-" ~/.config/vim/config/helix.vim
-
-" HELIX KEYBINDS
-
-" DO WORK
+" nilo/.config/vim/config/helix.vim
 
 " goto mode
-noremap gh 0
-noremap gl $
+noremap gj 0
+noremap g; $
 noremap gs ^
 noremap g. g;
 noremap ge G
@@ -30,8 +26,9 @@ noremap mm %
 noremap mm %
 
 " misc
-noremap % ggVG
+nnoremap % ggVG
 
+" macro
 let g:is_recording = v:false
 function RecordMacro()
 	if g:is_recording
