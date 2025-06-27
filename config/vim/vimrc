@@ -2,3 +2,7 @@
 
 runtime! config/*.vim
 
+" runtime layout/qwerty.vim
+runtime layout/colemak_dh.vim
+" runtime layout/gallium_colstag.vim
+

@@ -1,0 +1,1002 @@
+vim config
+v config
+v config
+cd
+cd .config/vim
+vim vimrc
+cd ..
+cd zsh
+vim .zshrc
+l
+l
+ls
+l
+c java
+cd
+cd code/test
+vim Test.java
+cd
+ls -a
+cd .nix-defexpr
+cd
+cd .Trash
+sudo cd .Trash
+file .Trash
+ls -
+ls -a
+cd
+cd
+cd .config/vim
+vim vimrc
+vim vimrc
+vim vimrc
+vim autoload/plug.vim
+vim vimrc
+vim vimrc
+vim config/functions.vim
+vim config/sest
+vim config/settings.vim
+vim config/settings.vim
+clear
+cd ..
+cd helix
+vim languages.toml
+cd code/misc/java_code
+cd Bellamaris
+cd ..
+cd maven_test
+cd src/main/java/myproject
+vim App.java
+hx App.java
+clear
+cd ..
+cd ..
+cd ..
+cd ..
+hx src/main/java/App.java
+hx src/main/java/myproject/App.java
+hx src/main/java/myproject/App.java
+cd ..
+mvn archetype:generate
+ls
+cd test_project
+cd src
+cd main
+tree
+clear
+hx
+clear
+ls
+cd java
+cd gou
+cd group
+vim App.java
+vim App.java
+vim App.java
+ls
+cd ..
+vim group/App.java
+vim group/App.java
+cd ..
+mvn compile
+cd ..
+cd ..
+mvn compile
+cd src/main/java
+cd group
+ls -a
+vim App.java
+cd ..
+cd ..
+cd ..
+cd ..
+cd target
+cd classes
+cd group
+cd ..
+cd ..
+cd ..
+cd src/main
+cd java
+clear
+ls
+vim group/App.java
+vim group/App.java
+vim group/App.java
+clear
+hx group/App.java
+ls
+hx test.c
+clear
+vim helix/config.toml
+cd ..
+cd ..
+mkdir wallpapers
+c
+c storage
+c cosmetics
+open night_sky_pfp.png
+cp night_sky.mp4 night_sky.png ~/code/dotfiles/wallpapers
+cd
+cd code/dotfiles
+cd wallpapers
+go
+brew install quantonganh/tap/snippets-ls
+sudo xcode-select --install
+sudo xcode-select --update
+brew install quantonganh/tap/snippets-ls
+sudo rm -rf /Library/Developer/CommandLineTools
+sudo xcode-select --install
+clear
+brew install quantonganh/tap/snippets-ls
+cd code/dotfiles
+cd .config
+vim
+vim .
+ls
+cd vim
+cd config
+cd ..
+cd ..
+cd hel
+c hel
+c helpers
+vim run.sh
+ls
+vim run.sh
+vim run.sh
+cd
+cd .config/helix
+cd snippets
+vim java.json
+cd
+cd code/test
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.cpp
+hx test.py
+hx test.c
+hx test.c
+hx test.cpp
+h Test.java
+cd ..
+clear
+c
+c .config/helix
+v languages.toml
+h test.java
+h test.java
+ls
+vim languages.toml
+mkdir snippets
+cd snippets
+v java.json
+hx test.java
+cd ..
+h languages.toml
+h test.java
+ls
+rm test.java
+clear
+backup_dotfiles_local.sh
+clear
+cd
+cd code/test
+vim Test.java
+h Test.java
+clear
+cd
+cd code/dotfiles
+cd .config
+mv helpers scripts
+cd .config/
+mkdir scripts
+cd scripts
+ln -s ~/code/dotfiles/.config/helpers/run.sh
+ls -a
+./run.sh
+ln -s ~/code/dotfiles/.config/helpers/run.sh
+rm run.sh
+ln -s ~/code/dotfiles/.config/scripts/run.sh
+clear
+cd code/dotfiles
+cd .config/scripts
+clear
+cd
+cd .config
+cd nix
+cd ..
+ls -a
+cd .nix-profile
+vim .nix-profile
+ls -a
+readlink .nix-profile
+clear
+cd .config
+mkdir nix
+cd nix
+v nix.confg
+v nix.conf
+v nix.conf
+v nix.conf
+v ../vim/config/colorscheme.vim
+v nix.conf
+clear
+nix run nix
+nix run nixpkgs#hello
+v nix.conf
+nix run nixpkgs#hello
+nix run nixpkgs#hello
+nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz home-manager\
+nix-channel --update
+nix-shell '<home-manager>' -A install
+home-manager --version\
+
+clear
+hisotry
+history
+clear
+nix-channel
+nix-channel --list
+nix-env --list-generations
+nix-channel --update
+nix-channel --list
+nix repl
+vim
+c dotfiles/.config/vim
+v vimrc
+ls
+c dotfiles/.config/vim
+mkdir indent
+c indent
+v nix.vim
+c
+c .config/vim
+cd indent
+mv nix.vim nix.vim.bak
+cd ..
+v vimrc
+cd ..
+cd autoload
+mv onedark.vim onedark.vim.bak
+cd config
+cd ..
+c config
+v autocmds.vim
+v autocmds.vim
+v autocmds.vim
+v autocmds.vim
+c
+c .config/vim
+v vimrc
+v config/autoc
+v
+v
+v
+ls
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+vim vimrc
+zsh find "nnoremap q"
+find "nnoremap q"
+find . "nnoremap q"
+find . nnoremap q
+ls
+man grep
+man grep
+clear
+grep -rnw . -e 'nnoremap q'
+vim config/settings.vim
+vim config/settings.vim
+vim config/settings.vim
+v config/functions.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+v config/mappings.vim
+vim vimrc
+ls
+cd 
+c .config/vim
+v vimrc
+c
+c .config/vim
+v vimrc
+v vimrc
+v vimrc
+v vimrc
+c
+c .config/vim
+c indent
+mv nix.vim.bak nix.vim
+fortune
+cd code/test
+nix repl
+clear
+cd
+cd 
+c
+c code
+v flake.nix
+v flake.nix
+v flake.nix
+v flake.nix
+clear
+v flake.nix
+v flake.nix
+v flake.nix
+v flake.nix
+v flake.nix
+ls
+l
+cd ..
+c .config
+c home-manager
+v home.nix
+c .config/ghostty
+v ccon
+v config
+v config
+ls
+v .config/ghostty/config
+v .config/ghostty/config
+clear
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/vim/config/colorscheme.vim
+v .config/vim/config/colorscheme.vim
+v .config/vim/config/colorscheme.vim
+v .config/ghostty/config
+v .config/vim/config/colorscheme.vim
+c .config/vim
+c autoload
+mv onedark.vim.bak onedark.vim
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+neofetch
+brew install neofetch
+neofetch
+neofetch
+fastfetch
+neofetch
+neofetch
+fastfetch
+fetch
+fastfetch -c all
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+v .config/ghostty/config
+c .config
+mkdir fastfetch
+c 
+c
+c code/dotfiles
+c .config
+mkdir fastfetch
+c fastfetch
+v config.jsonc
+v config.jsonc
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch --gen-config
+c 
+c .config/fastfetch
+v config.jsonc
+fastfetch
+fastfetch
+v config.jsonc
+v config.jsonc
+fastfetch
+v config.jsonc
+clear
+v config.jsonc
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+hx
+fastfetch
+fastfetch
+fastfetch
+v config.jsonc
+v config.jsonc
+v
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+c
+c .config/vim
+grep -rnw . -e "signcolumn"
+v vimrc
+v vimrc
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim --clean
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim --clean
+v config/ui.vim --clean
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim --clean
+v config/ui.vim
+v config/ui.vim --clean
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+c ..
+v ghostty/config
+c vim
+backup_dotfiles_local.sh
+c
+c code/tools
+ls
+c ..
+c dotfiles
+ls -a
+v .gitignore
+c .config
+c scripts
+fastfetch
+c
+fastfetch
+clear
+clear
+clear
+fastfetch
+fastfetch
+c .config/fastfetch
+v config.jsonc
+fastfetch
+v config.jsonc
+v config.jsonc
+ls
+cp config.jsonc ~/code/dotfiles/.config/fastfetch
+rm config.jsonc
+ln -s ~/code/dotfiles/.config/fastfetch/config.jsonc 
+ls -a
+v config.jsonc
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+c .config/fastfetch
+mv config.jsonc config.jsonc.bak
+ls
+v config.jsonc
+mv config.jsonc config1.jsonc
+mv config.jsonc.bak config.jsonc
+v config
+v config.jsonc
+clear
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+clear
+fast
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+fastfetch
+clear
+fastfetch
+c .config/fastfetch
+v config1.jsonc.bak
+clear
+ls
+mv config.jsonc config.jsonc.bak
+v config.jsonc
+cp config.jsonc.bak config.jsonc
+fastfetch
+ff
+fastfetch
+whoami
+whomai
+whoami
+pwd
+hx
+fastfetch
+fastfetch
+c
+c .config
+neofetch
+ls
+c scripts
+c ..
+c home-manager
+c ..
+c
+c code
+v flake.nix
+mv v dotfiles
+mv flake.nix dotfiles
+c dotfiles
+mv flake.nix .config
+c .config
+mv ~/.config/home-manager .
+c home-manager
+mv ../flake.nix
+mv ../flake.nix .
+ls
+v home.nix
+clear
+fast fetch
+fastfetch
+fastfetch
+c 
+c code/test
+v Test.java
+c ..
+c misc/examples
+v ChatBot.java
+v ChatBot.java
+v ChatBot.java
+v ChatBot.java
+v ChatBot.java
+v ChatBot.java
+c ..
+c code_sprint/practice/Qualifiers2023
+c src
+c main
+c java
+c Qualifiers2023
+c ..
+c chatbot
+v ChatBot.java
+v ChatBot.java
+c
+c .config/vim
+v vimrc
+c .config
+c home-manager
+v home.nix
+v home_test.nix
+c 
+c .config
+c vim
+v config/mappings.vim
+clear
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+v config/ui.vim
+c config
+backup_dotfiles_local.sh
+backup_dotfiles_local.sh
+backup_dotfiles_local.sh
+ls
+v colorscheme.vim
+clear
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+v colorscheme.vim
+c ..
+v vimrc
+v vimrc
+v vimrc
+v vimrc
+v vimrc
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+ls 
+v vimrc
+v vimrc
+v vimrc
+v --clean config/ui.vim
+v vimrc
+v vimrc
+v vimrc
+v config/mappings.vim 
+v config/mappings.vim 
+v config/ui.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+v config/colorscheme.vim
+c config
+v mappings.vim
+v mappings.vim
+c
+c code
+c misc
+c code_sprint/practice
+c ..
+c snippets
+cp ChatBot.java ~/code
+c
+c code
+c misc
+mv ../ChatBot.java .
+ls
+mkdir examples
+mv ChatBot.java examples
+c examples
+v ChatBot.java
+v ChatBot.java
+v ChatBot.java
+c
+c .config/vim
+v vimrc
+v vimrc
+v vimrc
+v vimrc
+c
+c code/test
+v testj
+v Test.java
+v Test.java
+quit
+exit
+zsh
+exit
+c code/test
+v Test.java
+clear
+v
+c
+c .config/vim
+c config
+v mappings.vim
+v mappings.vim
+v *.vim
+v *.vim
+v *.vim
+v mappings.vim
+v mappings.vim
+v mappings.vim
+v mappings.vim
+backup_dotfiles_local.sh
+banner
+banner
+man banner
+banner -w 80
+bash
+exit
+c
+c code/test
+v Test.java
+v Test.java
+c 
+c code/misc/code_sprint
+c practice/Qualifiers2023.bak
+c chatbot
+v ChatBot.java
+ln -Ts
+ls -a
+c
+ls -a
+c src
+hx
+hx
+c
+c .config/helix
+c ..
+c helix
+c ..
+c xournalpp
+c ..
+du xournalpp
+rm -rf xournalpp
+fastfetch
+clear
+ls -a
+c karabiner
+ls -a
+c assets
+c complex_modifications
+ls -a
+c ..
+ls -a
+brew list
+ls
+c ..
+c ..
+rm -rf karabiner
+ls
+c helix
+mkdir themes
+c themes
+ls
+v tokyonight_transparent.toml
+h tokyonight_transparent.toml
+h tokyonight_transparent.toml
+h tokyonight_transparent.toml
+h tokyonight_transparent.toml
+h tokyonight_transparent.toml
+h tokyonight_transparent.toml
+man ln
+h tokyonight_transparent.toml
+c
+c code/dotfiles
+git status
+git add -all
+git add --all
+git status
+git commit -m "."
+git status
+git status
+git push
+c
+c code/dotfiles
+c .config
+c scripts
+c ..
+ln scripts ~/.config
+ln -s scripts ~/.config
+ls
+ln -s nix ~/.config
+ls
+fastfetch
+ls
+fastfetch
+fastfetch
+fastfetch
+ls
+c fastfetch
+c ..
+rm -rf fastfetch
+ln -s fastfetch ~/.config
+ls -a
+c home-manager
+hx
+c
+c .config/vim
+c config
+v mappings.vim tab.vim functions.vim
+c ..
+v vimrc
+c .con
+c config
+v functions.vim
+c ..
+v vimrc
+backup_dotfiles_local.sh
+ls
+c swap
+ls -a
+c ..
+c undo
+c ..
+v vimrc
+c
+c code/dotfiles
+c ..
+c
+c code/dotfiles/../tools
+v backup_dotfiles_github.sh
+clear
+c ..
+c
+c .config
+c nix
+v nix.conf
+c ..
+c neofetch
+v config.conf
+c ..
+neofetch
+fast fetch
+fastfetch
+neofetch
+fastfetch
+brew uninstall neofetch
+ls -a
+c neofetch
+c ..
+rm -rf neofetch/
+ls -a
+c scripts
+rm -rf .
+c ..
+rm -rf scripts
+mkdir aaa
+rm -rfi aaa
+ln ls 
+ls
+mv nix ~/code/dotfiles/.config
+ls
+c git
+ls -a
+v config
+c ..
+c gh
+c ..
+c kitty
+c ..
+mkdir dump
+mv kitty dump
+ls -a
+c fastfetch
+cat config.jsonc
+cat config.jsonc.bak
+v *
+ls
+v config1.jsonc
+rm config1.jsonc.bak
+v config1.jsonc
+ls
+rm config.jsonc.bak
+ls
+mv config1.jsonc config_alt.jsonc
+ls -a
+cd ..
+mv fastfetch ~/code/dotfiles/.config
+ls
+c zsh
+ls
+ls -a
+c
+v .zshenv
+ls
