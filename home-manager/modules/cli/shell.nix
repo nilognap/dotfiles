@@ -27,21 +27,18 @@
     };
   };
   programs = {
-    fish = {
+    fish = with builtins; {
       enable = true;
       functions = {
-        fish_prompt = builtins.readFile ./fish/fish_prompt.sh;
+        fish_prompt = readFile ./fish/fish_prompt.sh;
         fish_mode_prompt = "";
+        fish_user_key_bindings = readFile ./fish/fish_user_key_bindings.sh;
+        ls_after_cd = {
+          onEvent = "PWD";
+          body = "command ls -F --color=auto";
+        };
       };
-      interactiveShellInit = ''
-        set -g fish_key_bindings fish_vi_key_bindings
-        set fish_greeting
-        function ls_after_cd --on-variable PWD
-          if status --is-interactive
-            command ls --color=auto
-          end
-        end
-        '';
+      interactiveShellInit = readFile ./fish/interactiveShellInit.sh;
     };
     zsh = {
       # enable = true;

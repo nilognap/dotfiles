@@ -6,7 +6,7 @@ Modifications whose position can vary are listed here:
   - Any letter keys that can be used for diacritics must be changed to "action" instead of "output",
     and any letters keys that were used for diacritics on QWERTY may need to be changed back
     to "output" instead of "action", if the letter in that position has changed. -->
-<!--Last edited by Ukelele version 442 on 2025-06-27 at 10:38 (GMT+2)-->
+<!--Last edited by Ukelele version 442 on 2025-06-27 at 12:51 (GMT+2)-->
 <keyboard group="126" id="-21206" name="Gallium" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSIISO" modifiers="Modifiers"/>
@@ -100,7 +100,7 @@ Modifications whose position can vary are listed here:
             <key code="30" output="%"/>
             <key code="31" action="u"/>
             <key code="32" action="y"/>
-            <key code="33" output="*"/>
+            <key code="33" output="\"/>
             <key code="34" action="o"/>
             <key code="35" output=","/>
             <key code="36" output="&#x000D;"/>
@@ -266,7 +266,7 @@ Modifications whose position can vary are listed here:
             <key code="30" output="@"/>
             <key code="31" action="U"/>
             <key code="32" action="Y"/>
-            <key code="33" output="#"/>
+            <key code="33" output="|"/>
             <key code="34" action="O"/>
             <key code="35" output=""/>
             <key code="36" output="&#x000D;"/>
