@@ -35,8 +35,9 @@
         extraLayouts = {
           gallium = { # TODO do a let in on the layout name
             description = "gallium colstag";
-            lang = [ "eng" ];
-            symbolsFile = ./layouts/symbols/gallium;
+            languages = [ "eng" ];
+            # symbolsFile = ./layouts/symbols/gallium;
+            symbolsFile = ../layouts/gallium;
           };
         };
       };
@@ -54,30 +55,31 @@
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     # jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  users.users.nilo = {
-    isNormalUser = true;
-    description = "nilo";
-    extraGroups = [ "networkmanager" "wheel" ];
+  users = {
     defaultUserShell = pkgs.zsh;
-    packages = with pkgs; [
-      # prioritize home manager
-    ];
+    users.nilo = {
+		isNormalUser = true;
+		description = "nilo";
+		extraGroups = [ "networkmanager" "wheel" ];
+		packages = with pkgs; [
+		  # prioritize home manager
+		];
+	};
   };
 
   nixpkgs.config.allowUnfree = true;
 
   # be careful what to put in here
   programs = {
+    zsh.enable = true;
     # hyprland.enable = true;
+  };
+  services = {
     keyd = {
       enable = true;
       keyboards = {
@@ -104,10 +106,10 @@
           ids = [ "" ];
           settings = {
             main = {};
-          }:
+          };
         };
       };
-    }
+    };
   };
 
   # things that go in home manager go in home manager

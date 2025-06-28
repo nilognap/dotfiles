@@ -26,7 +26,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               # home-manager.users.nilo = ../config/home-manager/home.nix;
-              home-manager.users.nilo = ./home.nix;
+              home-manager.users.nilo = ../home-manager/home.nix;
           }
         ];
       };

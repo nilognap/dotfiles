@@ -3,7 +3,6 @@
   home = {
     username = "nilo";
     homeDirectory = "/Users/nilo";
-    # homeDirectory = "/home/nilo";
     stateVersion = "25.05";
   };
 
