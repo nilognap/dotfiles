@@ -7,5 +7,5 @@ bind -M insert -m default ae backward-char
 bind -M insert -m default ea backward-char
 
 # TODO todo
-# bind j insert
-# bind k append
+bind k insert
+bind l append

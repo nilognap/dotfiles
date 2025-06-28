@@ -24,15 +24,11 @@
   };
   programs = {
     fish = {
-      enable = true;
+      # enable = true;
       functions = {
         fish_prompt = builtins.readFile ./fish/fish_prompt.sh;
         fish_mode_prompt = "";
         fish_user_key_bindings = builtins.readFile ./fish/fish_user_key_bindings.sh;
-        # ls_after_cd = {
-          # onVariable = "PWD";
-          # body = "command ls -F --color=auto";
-        # };
       };
       interactiveShellInit = builtins.readFile ./fish/interactiveShellInit.sh;
     };
