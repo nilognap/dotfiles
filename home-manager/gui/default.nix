@@ -1,12 +1,14 @@
-{ lib, pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # kdePackages.kwave
+    kdePackages.kwave
   ];
+  # imports = [
+    # inputs.zen-browser-flake.homeModules.beta
+  # ];
   programs = {
     ghostty = {
       enable = true;
-      # package = lib.mkIf pkgs.stdenv.isDarwin null;
       settings = {
         # ui
         theme = "tokyonight";
@@ -22,8 +24,11 @@
         clipboard-paste-protection = false;
       };
     };
-    element-desktop = {
+    # zen-browser-flake = {
       # enable = true;
+    # };
+    element-desktop = {
+      enable = true;
       settings = {
       };
     };

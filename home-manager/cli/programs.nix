@@ -10,6 +10,7 @@ in
       vim
       helix
       ffmpeg
+      bucklespring # WTF? XD
     ];
     file = with config.lib.file; {
       "${configHome}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";

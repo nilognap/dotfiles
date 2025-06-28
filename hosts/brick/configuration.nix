@@ -63,11 +63,8 @@
     defaultUserShell = pkgs.zsh;
     users.nilo = {
 		isNormalUser = true;
-		description = "nilo";
+		# description = "nilo";
 		extraGroups = [ "networkmanager" "wheel" ];
-		packages = with pkgs; [
-		  # prioritize home manager
-		];
 	};
   };
 
@@ -87,14 +84,14 @@
           settings = {
             main = {
               capslock = "backspace";
-              a = "overload(a, meta)";
-              s = "overload(s, alt)";
-              d = "overload(d, shift)";
-              f = "overload(f, ctrl)";
-              j = "overload(j, ctrl)";
-              k = "overload(k, shift)";
-              l = "overload(l, alt)";
-              # ";" = "overload(;, meta)";
+              a = "overloadt(meta, a, 200)";
+              s = "overloadt(alt, s, 200)";
+              d = "overloadt(shift, d, 200)";
+              f = "overloadt(ctrl, f, 200)";
+              j = "overloadt(ctrl, j, 200)";
+              k = "overloadt(shift, k, 200)";
+              l = "overloadt(alt, l, 200)";
+              ";" = "overloadt(meta, ;, 200)";
             };
             extend = {};
             nav = {};
@@ -111,7 +108,7 @@
     };
   };
 
-  # things that go in home manager go in home manager
+  # prioritize home manager
   environment.systemPackages = with pkgs; [
     # vim
 	git
