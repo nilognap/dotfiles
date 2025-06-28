@@ -6,7 +6,7 @@
   programs = {
     ghostty = {
       enable = true;
-      package = lib.mkIf pkgs.stdenv.isDarwin null;
+      # package = lib.mkIf pkgs.stdenv.isDarwin null;
       settings = {
         # ui
         theme = "tokyonight";

@@ -3,5 +3,5 @@
   imports = [
     ./cli
     ./gui
-  ]
+  ];
 }
