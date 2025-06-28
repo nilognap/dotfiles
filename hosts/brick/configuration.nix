@@ -36,8 +36,7 @@
           gallium = { # TODO do a let in on the layout name
             description = "gallium colstag";
             languages = [ "eng" ];
-            # symbolsFile = ./layouts/symbols/gallium;
-            symbolsFile = ../layouts/gallium;
+            symbolsFile = ../../layouts/gallium;
           };
         };
       };

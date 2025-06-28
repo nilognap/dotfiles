@@ -12,7 +12,7 @@
   # nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ./modules/cli/default.nix
-    ./modules/gui/default.nix
+    ../../home-manager/cli
+    # ../../home-manager/gui
   ];
 }

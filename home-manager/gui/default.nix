@@ -22,23 +22,10 @@
         clipboard-paste-protection = false;
       };
     };
-    firefox = {
-      # enable = true;
-      profiles.nilo = {
-        # extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
-          # ublock-origin
-        # ];
-      };
-    };
     element-desktop = {
       # enable = true;
       settings = {
       };
     };
   };
-  # imports = [
-    # ./gui/ghostty.nix
-    # ./gui/firefox.nix
-    # ./gui/element-desktop.nix
-  # ];
 }
