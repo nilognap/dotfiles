@@ -20,13 +20,13 @@ highlight SignColumn NONE " for tokyonight
 set laststatus=2
 function! StatusLine()
 	let s = "   "
-	let s .= "%#ToolbarButton# " .. {
-		\ "n": "NORMAL %* ",
-		\ "i": "INSERT %* ",
-		\ "v": "VISUAL %* ",
-		\ "V": "V LINE %* ",
-		\ "c": "COMMAND %*"
-		\ }->get(mode(), "(^_^) %* ")
+	let s .= "%#ToolbarButton#" .. {
+		\ "n": " NORMAL %* ",
+		\ "i": " INSERT %* ",
+		\ "v": " VISUAL %* ",
+		\ "V": " V LINE %* ",
+		\ "c": " COMMAND %*"
+		\ }->get(mode(), "%* %#ToolbarButton# (^_^) %* ")
 	let s .= "  %<%#Cursor# %F %*"
 	let s .= " %#DiffText#%h%* %#DiffDelete#%r%* %#DiffAdd#%m%*"
 	let s .= "%="

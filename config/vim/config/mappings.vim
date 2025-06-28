@@ -7,7 +7,6 @@ set notimeout
 let g:mapleader = "\<Space>"
 
 
-
 " nnoremap <Leader>q <Cmd>x<CR>
 nnoremap <Leader>q <Cmd>q<CR>
 nnoremap <Leader>w <Cmd>call CloseBuffer()<CR>
@@ -50,8 +49,8 @@ nnoremap z<Leader> za
 
 " sus
 nnoremap gb <C-o>
-nnoremap go <C-o>
-nnoremap gi <C-i>
+" nnoremap go <C-o>
+" nnoremap gi <C-i>
 
 noremap ^ 0
 noremap 0 ^

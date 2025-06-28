@@ -15,7 +15,7 @@
       lib = nixpkgs.lib;
       system = "x86_64-darwin";
       # system = "x86_64-linux";
-      # pkgs = import nixpkgs { inherit system; };
+      # pkgs = import nixpkgs { inherit system; }; # really bad?
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       homeConfigurations = {

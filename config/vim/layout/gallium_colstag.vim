@@ -1,37 +1,52 @@
-" ~/.config/vim/layout/colemak_dh.vim
+" ~/.config/vim/layout/gallium_colstag.vim
 
 " b l d c v  j y o u ,
 " n r t s g  p h a e i
 " x q m w z  k f ' ; .
 
-noremap h h
-noremap a j
-noremap e k
-noremap i l
-noremap H H
-noremap A J
-noremap E K
-noremap I L
+let left  = 'h'
+let down  = 'a'
+let up    = 'e'
+let right = 'i'
 
-" new (l)ine
-noremap l o
-noremap L O
-" same place as qwerty
-noremap k n
-noremap K N
-" closer to home row than j
-noremap h i
-noremap H I
-" the only thing left
-noremap j e
-noremap J E
+let shift_left  = 'H'
+let shift_down  = 'A'
+let shift_up    = 'E'
+let shift_right = 'I'
 
-" yes
-inoremap ei <Esc>
-inoremap ie <Esc>
+" basic navigation
+execute "nnoremap " .. left  .. " h"
+execute "nnoremap " .. down  .. " j"
+execute "nnoremap " .. up    .. " k"
+execute "nnoremap " .. right .. " l"
+execute "nnoremap " .. shift_left  .. " <C-u>"
+execute "nnoremap " .. shift_down  .. " J"
+execute "nnoremap " .. shift_up    .. " K"
+execute "nnoremap " .. shift_right .. " <C-d>"
+execute "vnoremap " .. left  .. " h"
+execute "vnoremap " .. down  .. " j"
+execute "vnoremap " .. up    .. " k"
+execute "vnoremap " .. right .. " l"
+execute "nnoremap " .. shift_left  .. " <C-u>"
+execute "vnoremap " .. shift_down  .. " J"
+execute "vnoremap " .. shift_up    .. " K"
+execute "vnoremap " .. shift_right .. " <C-d>"
 
-" navigation
-noremap N <C-u>
-noremap O <C-d>
+execute "noremap h " .. left
+execute "noremap H " .. shift_left
+execute "noremap j " .. up
+execute "noremap J " .. shift_up
+execute "noremap k " .. right
+execute "noremap K " .. shift_right
+execute "noremap l " .. down
+execute "noremap L " .. shift_down
+
+" escape insert
+execute "inoremap " .. up .. down .. " <Esc>"
+execute "inoremap " .. down .. up .. " <Esc>"
+
+" goto mode
+execute "noremap g" .. left .. " 0"
+execute "noremap g" .. right .. " $"
 
 

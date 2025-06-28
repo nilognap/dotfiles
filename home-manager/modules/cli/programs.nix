@@ -6,8 +6,10 @@ in
 {
   home = {
     packages = with pkgs; [
+      hello
       vim
       helix
+      ffmpeg
     ];
     file = with config.lib.file; {
       "${configHome}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";

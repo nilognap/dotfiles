@@ -25,17 +25,18 @@
   time.timeZone = "Europe/Malta";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.xserver = {
-    enable = true;
-    xkb = {
-      layout = "us";
-      variant = "";
+  services = {
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
     };
+    printing.enable = true;
   };
-
-  # services.printing.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -46,7 +47,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    # jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
@@ -60,9 +61,9 @@
     isNormalUser = true;
     description = "nilo";
     extraGroups = [ "networkmanager" "wheel" ];
-    defaultUserShell = pkgs.fish;
+    defaultUserShell = pkgs.zsh;
     packages = with pkgs; [
-      # things that go in home manager go in home manager
+      # prioritize home manager
     ];
   };
 
@@ -74,11 +75,11 @@
     keyd.enable = true;
   };
 
+  # things that go in home manager go in home manager
   environment.systemPackages = with pkgs; [
     # vim
 	git
     gh
-    # gnumake
     # pythonVERSION
   ];
 

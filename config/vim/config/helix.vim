@@ -8,7 +8,6 @@ noremap ge G
 " extra navigation
 noremap t<CR> $
 
-
 " match mode
 noremap miw viw
 noremap mi( vi(
@@ -24,7 +23,9 @@ noremap mm %
 noremap mm %
 
 " misc
-nnoremap % ggVG
+" nnoremap % ggVG
+" does not work without autocmd because of random ass matchit plugin
+autocmd VimEnter * nnoremap <silent> % ggVG
 
 " macro
 let g:is_recording = v:false
