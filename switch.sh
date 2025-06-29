@@ -5,5 +5,11 @@ set -euxo pipefail
 
 git add --all
 
-sudo nixos-rebuild switch --flake .#$(hostname -s)
-home-manager switch --flake .#$USER
+if [ "$(uname)" == "Linux" ] ; then
+	sudo nixos-rebuild switch --flake .#$(hostname -s)
+elif [ "$(uname)" == "Darwin" ] ; then
+	home-manager switch --flake .#$USER
+else
+	echo "????????????????????????????????????"
+fi
+

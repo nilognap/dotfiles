@@ -60,6 +60,9 @@
       enable = true;
       userName = "nilognap";
       userEmail = "wanghan4c3@gmail.com";
+      extraConfig = {
+        pull.ff = "only";
+      }
     };
     zoxide = {
       enable = true;
