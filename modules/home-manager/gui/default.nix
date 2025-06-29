@@ -3,9 +3,9 @@
   home.packages = with pkgs; [
     kdePackages.kwave
   ];
-  # imports = [
-    # inputs.zen-browser-flake.homeModules.beta
-  # ];
+  imports = [
+    inputs.zen-browser.homeModules.beta
+  ];
   programs = {
     ghostty = {
       enable = true;
@@ -24,9 +24,9 @@
         clipboard-paste-protection = false;
       };
     };
-    # zen-browser-flake = {
-      # enable = true;
-    # };
+    zen-browser = {
+      enable = true;
+    };
     element-desktop = {
       enable = true;
       settings = {
