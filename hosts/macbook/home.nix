@@ -7,12 +7,13 @@
   };
 
   programs.home-manager.enable = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.package = pkgs.nix;
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
   # nixpkgs.config.allowUnfree = true;
 
   imports = [
-    ../../home-manager/cli
-    # ../../home-manager/gui
+    ../../modules/home-manager/cli
   ];
 }

@@ -16,12 +16,14 @@ function! DeleteTrailingSpaces() " no snapping
 endfunction
 
 function! CloseBuffer()
-	if len(getbufinfo({"buflisted": 1})) == 1
-		exit
-	else
-		update
-		bdelete
-	endif
+	" if len(getbufinfo({"buflisted": 1})) == 1
+		" exit
+	" else
+		" update
+		" bdelete
+	" endif
+	update
+	bdelete
 endfunction
 
 let comment_char_dict = {

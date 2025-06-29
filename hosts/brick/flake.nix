@@ -25,9 +25,12 @@
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.nilo = ./home.nix;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.nilo = ./home.nix;
+              extraSpecialArgs = { inherit inputs; };
+            };
           }
         ];
       };

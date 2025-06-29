@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ ... }:
 {
   home = {
     username = "nilo";
@@ -9,8 +9,6 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ../../home-manager
-    # ../../home-manager/cli
-    # ../../home-manager/gui
+    ../../modules/home-manager
   ];
 }

@@ -10,9 +10,10 @@ in
       vim
       helix
       ffmpeg
-      bucklespring # WTF? XD
     ];
     file = with config.lib.file; {
+      # "${configHome}/vim".source = "${configSource}/vim";
+      # "${configHome}/helix".source = "${configSource}/helix";
       "${configHome}/vim".source = mkOutOfStoreSymlink "${configSource}/vim";
       "${configHome}/helix".source = mkOutOfStoreSymlink "${configSource}/helix";
     };
@@ -34,11 +35,7 @@ in
       settings = {
         logo = {
           # source = "nixos";
-          padding = {
-              top = 1;
-              left = 2;
-              right = 2;
-          };
+          padding = { top = 1; left = 2; right = 2; };
         };
         modules = [
           "title" "separator" "os" "host" "kernel" "uptime" "packages" "shell" "display"
