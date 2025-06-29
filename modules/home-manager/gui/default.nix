@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     kdePackages.kwave
+    hmcl
   ];
   imports = [
     inputs.zen-browser.homeModules.beta

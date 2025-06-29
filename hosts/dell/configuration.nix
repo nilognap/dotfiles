@@ -1,14 +1,10 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
-
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   imports = [
     ./hardware-configuration.nix
+    ../../modules/nixos/services
   ];
 
   boot.loader.grub = {
@@ -18,7 +14,7 @@
   };
 
   networking = {
-    hostName = "brick";
+    hostName = "dell";
     networkmanager.enable = true;
   };
 
@@ -74,38 +70,6 @@
   programs = {
     zsh.enable = true;
     # hyprland.enable = true;
-  };
-  services = {
-    keyd = {
-      enable = true;
-      keyboards = {
-        default = {
-          ids = [ "*" ];
-          settings = {
-            main = {
-              capslock = "backspace";
-              a = "overloadt(meta, a, 200)";
-              s = "overloadt(alt, s, 200)";
-              d = "overloadt(shift, d, 200)";
-              f = "overloadt(ctrl, f, 200)";
-              j = "overloadt(ctrl, j, 200)";
-              k = "overloadt(shift, k, 200)";
-              l = "overloadt(alt, l, 200)";
-              ";" = "overloadt(meta, ;, 200)";
-            };
-            extend = {};
-            nav = {};
-          };
-          extraConfig = '''';
-        };
-        externalMapped = {
-          ids = [ "" ];
-          settings = {
-            main = {};
-          };
-        };
-      };
-    };
   };
 
   # prioritize home manager

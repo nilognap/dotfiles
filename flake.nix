@@ -1,5 +1,5 @@
 {
-  description = "nilognap's nixos configuration";
+  description = "nilognap/dotfiles/flake.nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -15,24 +15,30 @@
 
   outputs = { nixpkgs, home-manager, zen-browser, ... }@inputs:
     let
-      system = "x86_64-linux";
+      # system = "x86_64-darwin";
     in
     {
-      inherit system;
-      nixosConfigurations.brick = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      nixosConfigurations.dell = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          ./configuration.nix
+          ./hosts/dell/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.nilo = ./home.nix;
+              users.nilo = ./hosts/dell/home.nix;
               extraSpecialArgs = { inherit inputs; };
             };
           }
         ];
+      };
+      homeConfigurations = {
+        nilo = home-manager.lib.homeManagerConfiguration {
+          # inherit pkgs;
+          modules = [ ./hosts/macbook/home.nix ];
+        };
       };
     };
 }

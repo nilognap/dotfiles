@@ -1,7 +1,7 @@
 " nilo/.config/vim/config/helix.vim
 
 " goto mode
-noremap gs ^
+noremap gs 0
 noremap g. g;
 noremap ge G
 

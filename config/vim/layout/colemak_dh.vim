@@ -48,7 +48,7 @@ execute "inoremap " .. up .. down .. " <Esc>"
 execute "inoremap " .. down .. up .. " <Esc>"
 
 " goto mode
-execute "noremap g" .. left .. " 0"
+execute "noremap g" .. left .. " ^"
 execute "noremap g" .. right .. " $"
 
 
