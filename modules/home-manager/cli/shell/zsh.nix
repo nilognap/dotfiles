@@ -17,8 +17,11 @@
        %F{magenta}➜%f %F{blue}%#%f "
 
       bindkey -v
-      bindkey -M viins 'ea' vi-cmd-mode
-      bindkey -M viins 'ae' vi-cmd-mode
+
+      # this causes a lot of lag :(
+      # bindkey -M viins 'ea' vi-cmd-mode
+      # bindkey -M viins 'ae' vi-cmd-mode
+
       bindkey -M vicmd h backward-char
       bindkey -M vicmd a down-line-or-history
       bindkey -M vicmd e up-line-or-history

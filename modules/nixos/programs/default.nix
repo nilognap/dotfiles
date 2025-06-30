@@ -1,5 +1,6 @@
 {
   imports = [
+    ./zsh.nix
     ./hyprland.nix
 
     ./clash-verge.nix

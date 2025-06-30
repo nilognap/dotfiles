@@ -6,8 +6,10 @@
         ids = [ "*" ];
         settings = {
           main = let
-            idle_timeout = 300; # the amount of time the key need to be held down
-            hold_timeout = 150; # for the key to act as a hold
+            # minimum amount of time waited after the last key was struck for mod
+            idle_timeout = "100";
+            # the amount of time the key need to be held down for mod
+            hold_timeout = "300";
           in {
             capslock = "backspace";
             a = "lettermod(extend, a, ${idle_timeout}, ${hold_timeout})";

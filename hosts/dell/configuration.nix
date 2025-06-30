@@ -31,13 +31,11 @@
       enable = true;
       xkb = {
         layout = "us";
-        extraLayouts = let
-          layout_name = "gallium";
-        in {
+        extraLayouts = {
           gallium = {
             description = "gallium colstag";
             languages = [ "eng" ];
-            symbolsFile = "../../layouts/${layout_name}";
+            symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/${layout_name}";
           };
         };
       };
@@ -73,7 +71,7 @@
   # prioritize home manager
   environment.systemPackages = with pkgs; [
 	git
-    python314 jdk
+    # python314 jdk
     # gh
   ];
 }
