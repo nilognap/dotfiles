@@ -31,13 +31,13 @@
       enable = true;
       xkb = {
         layout = "us";
-        extraLayouts = {
-          gallium = {
-            description = "gallium colstag";
-            languages = [ "eng" ];
-            symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/${layout_name}";
-          };
-        };
+        # extraLayouts = {
+          # gallium = {
+            # description = "gallium colstag";
+            # languages = [ "eng" ];
+            # symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/gallium";
+          # };
+        # };
       };
     };
     printing.enable = true;
@@ -72,6 +72,6 @@
   environment.systemPackages = with pkgs; [
 	git
     # python314 jdk
-    # gh
+    gh
   ];
 }
