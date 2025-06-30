@@ -31,13 +31,13 @@
       enable = true;
       xkb = {
         layout = "us";
-        # extraLayouts = {
-          # gallium = {
-            # description = "gallium colstag";
-            # languages = [ "eng" ];
-            # symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/gallium";
-          # };
-        # };
+        extraLayouts = {
+          gallium = {
+            description = "gallium colstag";
+            languages = [ "eng" ];
+            symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/gallium";
+          };
+        };
       };
     };
     printing.enable = true;
