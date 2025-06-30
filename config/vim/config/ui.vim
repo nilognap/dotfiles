@@ -53,7 +53,7 @@ function! TabLine()
 			else
 				let s .= "     "
 			endif
-			let s .= "    "
+			" let s .= "  "
 		endif
 	endfor
 	return s

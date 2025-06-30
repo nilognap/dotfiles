@@ -24,7 +24,9 @@ function! LoadEasyMotion()
 	Plug 'easymotion/vim-easymotion'
 
 	let g:EasyMotion_do_mapping = 0
-	let g:EasyMotion_keys = "asdghklqwertyuiopzxcvbnmfj"
+	" let g:EasyMotion_keys = "asdfjkl;"
+	let g:EasyMotion_keys = "arstneio"
+	" let g:EasyMotion_keys = "nrtshaei"
 
 	nnoremap <Leader>s <Plug>(easymotion-bd-w)
 	vnoremap <Leader>s <Plug>(easymotion-bd-w)

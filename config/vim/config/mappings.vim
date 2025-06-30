@@ -14,7 +14,6 @@ nnoremap ZZ <Cmd>call CloseBuffer()<CR>
 nnoremap U <C-r>
 nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
 
-
 " tab
 inoremap <Tab> <Cmd>call Tab()<CR>
 inoremap <S-Tab> <Cmd>call ShiftTab()<CR>
@@ -33,11 +32,8 @@ for n in range(1, 9)
   execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
 endfor
 
-" uh
-nnoremap <Leader>d <Cmd>call deletebufline("", 1, line("$"))<Bar>startinsert<CR>
-
-" yank
-nnoremap <Leader>y <Cmd>update<Bar>%y*<CR>
+" yank to system clipboard
+nnoremap <Leader>y y*
 nnoremap <Leader>Y <Cmd>y*<CR>
 vnoremap <Leader>y "*y
 vnoremap <Leader>Y "*Y

@@ -19,16 +19,14 @@
       bindkey -v
       bindkey -M viins 'ea' vi-cmd-mode
       bindkey -M viins 'ae' vi-cmd-mode
-      bindkey -M vicmd h vi-back-char
-      bindkey -M vicmd a vi-down-line-or-history
-      bindkey -M vicmd e vi-up-line-or-history
-      bindkey -M vicmd i vi-forward-char
+      bindkey -M vicmd h backward-char
+      bindkey -M vicmd a down-line-or-history
+      bindkey -M vicmd e up-line-or-history
+      bindkey -M vicmd i forward-char
 
-      bindkey -M vicmd k i
-      bindkey -M vicmd l a
-      # bindkey -M vicmd k vi-insert
-      # bindkey -M vicmd l vi-add-text
-      bindkey -M vicmd j e
+      bindkey -M vicmd k vi-insert
+      bindkey -M vicmd l vi-add-next
+      # bindkey -M vicmd j forward-word
 
       function chpwd() { ls -F --color=auto }
       '';
