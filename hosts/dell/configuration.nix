@@ -25,8 +25,10 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   services = {
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
+    displayManager = {
+      # gdm.enable = true;
+      # gnome.enable = true;
+    };
     xserver = {
       enable = true;
       xkb = {
@@ -52,7 +54,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    # jack.enable = true;
+    jack.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -74,4 +76,10 @@
     # python314 jdk
     gh
   ];
+
+  # hyprland stuff
+  environment.sessionVariables = {
+    # WLR_NO_HARDWARE_CURSORS = "1";
+    # NIXOS_OZONE_WL = "1";
+  };
 }
