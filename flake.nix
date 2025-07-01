@@ -8,12 +8,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland.inputs.nixpkgs.follows = "nixpkgs";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.nixpkgs.follows = "hyprland";
-    };
+    # hyprland.url = "github:hyprwm/Hyprland";
+    # hyprland-plugins = {
+      # url = "github:hyprwm/hyprland-plugins";
+      # inputs.nixpkgs.follows = "hyprland";
+    # };
 
     stylix = {
       url = "github:danth/stylix";

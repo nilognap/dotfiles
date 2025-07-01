@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   # do not touch
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -25,10 +25,11 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   services = {
-    displayManager = {
-      # gdm.enable = true;
-      # gnome.enable = true;
-    };
+    # displayManager.gdm.enable = true;
+    # desktopManager.gnome.enable = true;
+  };
+
+  services = {
     xserver = {
       enable = true;
       xkb = {
@@ -37,13 +38,13 @@
           gallium = {
             description = "gallium colstag";
             languages = [ "eng" ];
-            symbolsFile = "${config.users.users.nilo.home}/dotfiles/layouts/gallium";
+            symbolsFile = ../../layouts/gallium;
           };
         };
       };
     };
-    printing.enable = true;
   };
+  services.printing.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;

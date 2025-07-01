@@ -3,6 +3,6 @@
   imports = [
     ./cli
     ./gui
-    ./hyprland
+    ./hypr
   ];
 }
