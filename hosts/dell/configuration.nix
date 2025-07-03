@@ -17,7 +17,7 @@
 
 
   # prioritize home manager
-  environment.systemPackages = with pkgs; [
+  # environment.systemPackages = with pkgs; [
 	# git gh
-  ];
+  # ];
 }

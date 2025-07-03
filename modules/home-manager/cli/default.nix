@@ -2,6 +2,6 @@
   imports = [
     ./shell
     ./programs
-    ./dev
+    ./development
   ];
 }

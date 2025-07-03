@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       background = {
-        # path = "$wallpaper";
+        path = "$wallpaper";
       };
     };
   };

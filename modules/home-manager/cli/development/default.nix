@@ -7,7 +7,7 @@
     # ./rust.nix
   ];
 
-  home.packags = with pkgs; [
+  home.packages = with pkgs; [
     libgcc
     python314
     rustc cargo

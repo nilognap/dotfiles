@@ -7,7 +7,7 @@
         gallium = {
           description = "gallium colstag";
           languages = [ "eng" ];
-          symbolsFile = ../../layouts/gallium;
+          symbolsFile = ../../../layouts/gallium;
         };
       };
     };
