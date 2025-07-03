@@ -1,6 +1,4 @@
-# { pkgs, ... }:
 {
-  # do not touch
   imports = [
     ./hardware-configuration.nix
     ../../modules/nixos
@@ -15,10 +13,4 @@
     # description = "nilo";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
-
-  # prioritize home manager
-  # environment.systemPackages = with pkgs; [
-	# git gh
-  # ];
 }
