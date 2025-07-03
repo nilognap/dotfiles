@@ -1,7 +1,5 @@
-{ pkgs, ... }:
 {
-  # programs.gh = {
-    # enable = true;
-  # };
-  home.packages = [ pkgs.gh ];
+  programs.gh = {
+    enable = true;
+  };
 }

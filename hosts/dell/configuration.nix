@@ -1,3 +1,4 @@
+# { pkgs, ... }:
 {
   # do not touch
   imports = [
