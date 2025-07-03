@@ -1,6 +1,7 @@
 {
   imports = [
     ./git.nix
+    ./gh.nix
 
     ./vim.nix
     ./helix.nix

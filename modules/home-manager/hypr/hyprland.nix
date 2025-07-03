@@ -1,6 +1,7 @@
 {
   wayland.windowManager.hyprland = {
-    enable = true;
+    # enable = true; # enable in nixos module
+
     package = null;
     portalPackage = null;
 
