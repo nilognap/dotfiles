@@ -1,16 +1,17 @@
 #!/usr/bin/env zsh
 
 file="$1"
+base="${file%.*}"
+
 filename="${file##*/}"
-basename="${filename%.*}"
 extension="${filename##*.}"
 
 case "$extension" in
 	c)
-		gcc -Wall "$file" -o "$basename" && ./"$basename"
+		gcc -Wall "$file" -o "$base" && ./"$base"
 		;;
 	cpp)
-		g++ -Wall -std=c++11 "$file" -o "$basename" && ./"$basename"
+		g++ -Wall -std=c++11 "$file" -o "$base" && ./"$base"
 		;;
 	py)
 		python3 "$file"
@@ -18,14 +19,17 @@ case "$extension" in
 	java)
 		package_line=$(grep -m1 "^package\s.*;$" "$file")
 		if [[ -z "$package_line" ]]; then
-			javac -Xlint:all -Werror "$file" && java "$basename"
+			javac -Xlint:all -Werror "$file" && java "$base"
 		else
 			# W deepseek
+			dir=$(dirname "$file")
+			basename="${filename%.*}"
+
 			class_path="${${package_line#package[[:space:]]}%;*}"
 			depth=$(( ${#package//[^.]} ))
 			src_path=$(printf "../%.0s" $(seq 1 $((depth + 1))))
-			javac -Xlint:all -Werror -cp "$src_path" "$filename" && \
-            java -cp "$src_path" "${class_path}.${basename}"
+			javac -Xlint:all -Werror -cp "$dir/$src_path" "$file" && \
+            java -cp "$dir/$src_path" "${class_path}.${basename}"
 		fi
 		;;
 	*)
@@ -35,7 +39,7 @@ case "$extension" in
 esac
 
 # display .out file if there is one
-if [[ -f "${BASENAME}.out" ]]; then
-	cat "${BASENAME}.out"
+if [[ -f "${base}.out" ]]; then
+	cat "${base}.out"
 fi
 

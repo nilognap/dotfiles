@@ -34,6 +34,11 @@ function! LoadEasyMotion()
 	autocmd ColorScheme * highlight link EasyMotionTarget Title
 endfunction
 
+function! LoadVimPolyglot()
+	" let g:polyglot_disabled = [ "java" ]
+	Plug 'sheerun/vim-polyglot'
+endfunction
+
 function! LoadFzf()
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
@@ -50,7 +55,7 @@ function! LoadPlugins()
 	let g:mapleader = "\<Space>"
 
 	" call LoadVimLsp()
-	Plug 'sheerun/vim-polyglot'
+	call LoadVimPolyglot()
 	call LoadEasyMotion()
 	call LoadFzf()
 

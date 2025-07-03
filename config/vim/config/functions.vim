@@ -2,10 +2,11 @@
 
 function! Run()
 	update
-	let run_sh_path = expand("~/.config/bin/run.sh")
-	if executable(run_sh_path)
-		execute "!" .. run_sh_path .. " %"
-	endif
+	" let run_sh_path = expand("~/.config/bin/run.sh")
+	" if executable(run_sh_path)
+		" execute "!" .. run_sh_path .. " %"
+	" endif
+	execute "!run.sh %"
 
 	" display .out file if there is one
 	if filereadable(expand("%<") .. ".out")
