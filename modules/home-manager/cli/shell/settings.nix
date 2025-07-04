@@ -13,12 +13,12 @@
       # good
       ls = "ls -F --color=auto";
       # shortned
-      l = "ls"; c = "cd";
+      l = "ls"; c = "cd"; o = "xdg-open";
       v = "vim"; g = "git"; h = "hx";
       rm = "rm -i"; mv = "mv -i"; cp = "cp -i";
       # misc
       du = "du -sh";
-      grep = "grep -rnw . -e";
+      grep = "grep -rnw . -e"; # TODO ripgrep?
     };
   };
 }

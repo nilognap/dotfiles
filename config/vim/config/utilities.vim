@@ -52,7 +52,7 @@ function! JavaClassAutocomplete()
 	let constructor += assignments
 	let constructor = constructor->add("}")
 
-	" getters
+	" getters and setters
 	let getters = ["// getters"]
 	let setters = ["// setters"]
 	for field in fields
@@ -65,8 +65,9 @@ function! JavaClassAutocomplete()
 			\ ]
 		if !field.is_final
 			let setters += [
-				\ "public " .. (field.is_static ? "static " : "") .. field.type .. " " ..
-				\ "set" .. toupper(field.name[0]) .. field.name[1:] .. "()",
+				\ "public " .. (field.is_static ? "static " : "") .. "void set" ..
+				\ toupper(field.name[0]) .. field.name[1:] ..
+				\ "(" .. field.type .. " " .. field.name .. ")",
 				\ "{",
 				\ GetIndent() .. "this." .. field.name .. " = " .. field.name .. ";",
 				\ "}",

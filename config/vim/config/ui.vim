@@ -30,7 +30,8 @@ function! StatusLine()
 	let s .= "  %<%#Cursor# %F %*"
 	let s .= " %#DiffText#%h%* %#DiffDelete#%r%* %#DiffAdd#%m%*"
 	let s .= "%="
-	let s .= "%-15.(%l,%c%V%) %#ToolbarButton# %P %*   "
+	" let s .= "%-15.(%l,%c%V%) %#ToolbarButton# %P %*   "
+	let s .= " %#ToolbarButton# %P %*   "
 	return s
 endfunction
 set statusline=%!StatusLine()
