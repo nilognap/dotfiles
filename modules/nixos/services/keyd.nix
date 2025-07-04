@@ -24,7 +24,7 @@
             j = "lettermod(shift, j, ${idle_timeout}, ${hold_timeout})";
             k = "lettermod(control, k, ${idle_timeout}, ${hold_timeout})";
             l = "lettermod(extend, l, ${idle_timeout}, ${hold_timeout})";
-            ";" = "lettermod(meta, ;, ${idle_timeout} ${hold_timeout})";
+            ";" = "lettermod(meta, ;, ${idle_timeout}, ${hold_timeout})";
           };
           extend = {
             q = "{"; w = 7; e = 8; r = 9; t = "}";
