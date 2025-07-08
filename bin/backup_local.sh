@@ -3,7 +3,7 @@
 local directories=(
 	"$HOME/dotfiles"
 	"$HOME/code/notes"
-	"$HOME/code
+	"$HOME/code"
 )
 
 local backup_root="$HOME/storage/bak"

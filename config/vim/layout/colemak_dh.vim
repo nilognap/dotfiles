@@ -33,7 +33,18 @@ execute "vnoremap " .. shift_down  .. " J"
 execute "vnoremap " .. shift_up    .. " K"
 execute "vnoremap " .. shift_right .. " <C-d>"
 
-" fix things
+" escape insert
+execute "inoremap " .. up .. down .. left .. " <Esc>"
+execute "inoremap " .. left .. down .. up .. " <Esc>"
+
+execute "inoremap " .. right .. up .. down .. " <Esc>"
+execute "inoremap " .. down .. up .. right .. " <Esc>"
+
+" goto mode
+execute "noremap g" .. left .. " ^"
+execute "noremap g" .. right .. " $"
+
+" SPECIFIC
 execute "noremap h " .. up
 execute "noremap H " .. shift_up
 execute "noremap j " .. down
@@ -42,13 +53,3 @@ execute "noremap k " .. left
 execute "noremap K " .. shift_left
 execute "noremap l " .. right
 execute "noremap L " .. shift_right
-
-" escape insert
-execute "inoremap " .. up .. down .. " <Esc>"
-execute "inoremap " .. down .. up .. " <Esc>"
-
-" goto mode
-execute "noremap g" .. left .. " ^"
-execute "noremap g" .. right .. " $"
-
-

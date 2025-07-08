@@ -9,6 +9,6 @@
     hmcl
     bluej
 
-    strawberry tauon
+    spotify strawberry tauon dopamine
   ];
 }

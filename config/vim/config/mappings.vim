@@ -12,7 +12,8 @@ nnoremap <Leader>q <Cmd>q<CR>
 nnoremap <Leader>w <Cmd>call CloseBuffer()<CR>
 nnoremap ZZ <Cmd>call CloseBuffer()<CR>
 nnoremap U <C-r>
-nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
+" nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
+nnoremap <CR> <Cmd>update<Bar>nohlsearch<CR>
 
 " tab
 inoremap <Tab> <Cmd>call Tab()<CR>
