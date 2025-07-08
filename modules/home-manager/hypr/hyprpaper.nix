@@ -1,11 +1,14 @@
+{ config, ... }:
+let
+  # wallpaper = "${config.home.homeDirectory}/dotfiles/wallpapers/waves.png";
+  wallpaper = ../../../wallpapers/twilight.png;
+in
 {
-  # this shit doesnt work because
-  # the path has to be in store
   services.hyprpaper = {
-    # enable = true;
+    enable = true;
     settings = {
-      preload = [ "$wallpaper" ];
-      wallpaper = [ ",$wallpaper" ];
+      preload = [ "${wallpaper}" ];
+      wallpaper = [ ",${wallpaper}" ];
     };
   };
 }

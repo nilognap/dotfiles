@@ -37,9 +37,6 @@ execute "vnoremap " .. shift_right .. " <C-d>"
 execute "inoremap " .. up .. down .. left .. " <Esc>"
 execute "inoremap " .. left .. down .. up .. " <Esc>"
 
-execute "inoremap " .. right .. up .. down .. " <Esc>"
-execute "inoremap " .. down .. up .. right .. " <Esc>"
-
 " goto mode
 execute "noremap g" .. left .. " ^"
 execute "noremap g" .. right .. " $"

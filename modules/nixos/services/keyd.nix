@@ -7,7 +7,7 @@
         settings = {
           main = let
             # minimum amount of time waited after the last key was struck for mod
-            idle_timeout = "50";
+            idle_timeout = "0";
             # the amount of time the key need to be held down for mod
             hold_timeout = "300";
           in {
@@ -22,7 +22,7 @@
             j = "lettermod(shift, j, ${idle_timeout}, ${hold_timeout})";
             k = "lettermod(control, k, ${idle_timeout}, ${hold_timeout})";
             l = "lettermod(alt, l, ${idle_timeout}, ${hold_timeout})";
-            ";" = "lettermod(meta, ;, ${idle_timeout} ${hold_timeout})";
+            ";" = "lettermod(meta, ;, ${idle_timeout}, ${hold_timeout})";
 
             space = "lettermod(extend, space, ${idle_timeout}, ${hold_timeout})";
           };

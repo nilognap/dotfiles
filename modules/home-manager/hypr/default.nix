@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland = {
-    enable = true;
+    # enable = true; # enable this somewhere else
     package = null;
     portalPackage = null;
   };
@@ -9,9 +9,9 @@
     ./variables.nix
     ./packages.nix
 
-    ./input.nix
-    ./bind.nix
     ./exec-once.nix
+
+    ./hyprpaper.nix
 
     ./hypridle.nix
     ./hyprlock.nix
