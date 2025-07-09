@@ -7,6 +7,7 @@ set notimeout
 let g:mapleader = "\<Space>"
 
 
+" basic
 " nnoremap <Leader>q <Cmd>x<CR>
 nnoremap <Leader>q <Cmd>q<CR>
 nnoremap <Leader>w <Cmd>call CloseBuffer()<CR>
@@ -15,23 +16,42 @@ nnoremap U <C-r>
 " nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
 nnoremap <CR> <Cmd>update<Bar>nohlsearch<CR>
 
+" QOL, W arijanj
+nnoremap ; :
+nnoremap : ;
+nnoremap x "_x
+vnoremap p "_dP
+vnoremap < <gv
+vnoremap > >gv
+nnoremap < <<
+nnoremap > >>
+noremap <C-right> w
+noremap <C-left> b
+inoremap <C-BS> <C-w>
+nnoremap ciq ci"
+
 " tab
 inoremap <Tab> <Cmd>call Tab()<CR>
 inoremap <S-Tab> <Cmd>call ShiftTab()<CR>
 
-
 " buffer
-noremap <Tab> <Cmd>bnext<CR>
-noremap <S-Tab> <Cmd>bprev<CR>
-noremap <C-Tab> <Cmd>bnext<CR>
-noremap <C-S-Tab> <Cmd>bprev<CR>
+nnoremap <Tab> <Cmd>bnext<CR>
+nnoremap <S-Tab> <Cmd>bprev<CR>
 
 inoremap <C-Tab> <Cmd>bnext<CR>
 inoremap <C-S-Tab> <Cmd>bprev<CR>
 
-for n in range(1, 9)
-  execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
-endfor
+" not really buffer (navigation)
+nnoremap <S-Up> <C-u>
+nnoremap <S-Down> <C-d>
+
+" maybe alt?
+nnoremap <S-Left> <Cmd>bprev<CR>
+nnoremap <S-Right> <Cmd>bnext<CR>
+
+" for n in range(1, 9)
+  " execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
+" endfor
 
 " yank to system clipboard
 nnoremap <Leader>y y*

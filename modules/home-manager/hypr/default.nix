@@ -1,21 +1,12 @@
 {
   wayland.windowManager.hyprland = {
-    # enable = true; # enable this somewhere else
-    package = null;
-    portalPackage = null;
+    enable = true;
+    extraConfig = builtins.readFile ./hyprland.conf;
   };
-
-  imports = [
-    ./variables.nix
-    ./packages.nix
-
-    ./exec-once.nix
-
-    ./hyprpaper.nix
-
-    ./hypridle.nix
-    ./hyprlock.nix
-
-    ./waybar.nix
-  ];
+  programs = {
+    hyprlock.enable = true;
+  };
+  services = {
+    hypridle.enable = true;
+  };
 }

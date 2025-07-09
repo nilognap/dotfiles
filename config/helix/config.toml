@@ -48,36 +48,35 @@ render = true
 # ---------------------------------------------------------------------------------
 
 [keys.normal]
+
 "ret" = ":update"
 
 # leader key
-"space"."ret" = ":update"
-"space".q = [":update", ":quit"]
+"space" = {
+  "ret" = ":update"
+  w = ":buffer-close"
+  q = [":update", ":quit"]
+}
 Z.Z = [":update", ":quit"]
 
 # "space".r = [":update", ":run-shell-command ~/.config/helix/run.sh %{buffer_name}"]
 "space".r = [":update", ":run-shell-command %sh{~/.config/helix/run.sh %{buffer_name}}"]
 
-"tab" = ":buffer-next"
-"S-tab" = ":buffer-previous"
+S-left = ":buffer-next"
+S-right = ":buffer-previous"
 
-H = ["page_cursor_half_up", "align_view_center"]
-L = ["page_cursor_half_down", "align_view_center"]
+S-up = ["page_cursor_half_up", "align_view_center"]
+S-down = ["page_cursor_half_down", "align_view_center"]
 
 # sus
 M = "save_selection"
 g.M = "jump_backward"
-
-# vim muslce memory
-# 0 = "goto_first_nonwhitespace"
 
 [keys.select]
 
 H = ["page_cursor_half_up", "align_view_center"]
 L = ["page_cursor_half_down", "align_view_center"]
 
-# vim muscle memory
-# 0 = "goto_first_nonwhitespace"
 
 [keys.insert]
 j.k = "normal_mode"

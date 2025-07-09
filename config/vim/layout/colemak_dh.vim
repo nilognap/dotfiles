@@ -1,5 +1,7 @@
 " ~/.config/vim/layout/colemak_dh.vim
 
+" !!!!!!!!!!!! remove this when extend layer is set up !!!!!!!!!!
+
 " q w f p b  j l u y ;
 " a r s t g  m n e i o '
 " z x c d v  k h , . /
@@ -50,3 +52,4 @@ execute "noremap k " .. left
 execute "noremap K " .. shift_left
 execute "noremap l " .. right
 execute "noremap L " .. shift_right
+

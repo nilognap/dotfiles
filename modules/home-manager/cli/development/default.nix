@@ -8,9 +8,10 @@
   ];
 
   home.packages = with pkgs; [
-    libgcc
+    # libgcc
+    gcc
     python314
-    rustc cargo
+    # rustc cargo
   ];
   programs.java.enable = true;
 }

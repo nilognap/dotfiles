@@ -1,6 +1,7 @@
 {
   programs.hyprland.enable = true;
-  home-manager.users.nilo.wayland.windowManager.hyprland.enable = true;
+  imports = [ ../../home-manager/modules/hypr ];
+  # imports = [ ../../home-manager/modules/hyprland ];
 
   # environment.sessionVariables = {
     # WLR_NO_HARDWARE_CURSORS = "1";
