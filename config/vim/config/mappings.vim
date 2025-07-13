@@ -19,10 +19,8 @@ nnoremap <CR> <Cmd>update<Bar>nohlsearch<CR>
 " QOL, W arijanj
 nnoremap ; :
 nnoremap : ;
-nnoremap x "_x
-vnoremap p "_dP
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
 noremap <C-right> w
@@ -53,13 +51,20 @@ nnoremap <S-Right> <Cmd>bnext<CR>
   " execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
 " endfor
 
-" yank to system clipboard
+" clipboard management
+nnoremap x "_x
+
 nnoremap <Leader>y y*
 nnoremap <Leader>Y <Cmd>y*<CR>
 vnoremap <Leader>y "*y
 vnoremap <Leader>Y "*Y
+
 vnoremap <Leader>d "*d
 vnoremap <Leader>D "*D
+
+vnoremap p "_dP
+nnoremap <Leader>p "+p
+vnoremap <Leader>p "_d"+p
 
 " misc
 nnoremap z<Leader> za
