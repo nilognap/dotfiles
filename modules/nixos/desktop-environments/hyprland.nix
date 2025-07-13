@@ -1,7 +1,7 @@
 {
   programs.hyprland.enable = true;
-  imports = [ ../../home-manager/modules/hypr ];
-  # imports = [ ../../home-manager/modules/hyprland ];
+  # TODO fix this. for now just go manually enable/disable it
+  # imports = [ ../../home-manager/modules/hypr ];
 
   # environment.sessionVariables = {
     # WLR_NO_HARDWARE_CURSORS = "1";

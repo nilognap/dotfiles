@@ -3,6 +3,9 @@
     enable = true;
     extraConfig = builtins.readFile ./hyprland.conf;
   };
+  imports = [
+    ../my_failed_hypr/input.nix
+  ];
   programs = {
     hyprlock.enable = true;
   };

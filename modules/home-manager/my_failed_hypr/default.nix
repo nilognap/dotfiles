@@ -9,6 +9,8 @@
     ./variables.nix
     ./packages.nix
 
+    ./input.nix
+
     ./exec-once.nix
 
     ./hyprpaper.nix
