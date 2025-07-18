@@ -1,4 +1,6 @@
 {
+  imports = [ ./wayland.nix ];
+
   programs.hyprland.enable = true;
   # TODO fix this. for now just go manually enable/disable it
   # imports = [ ../../home-manager/modules/hypr ];

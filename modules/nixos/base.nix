@@ -16,6 +16,12 @@
 
   services.printing.enable = true;
 
+  # why is this no on by default?
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 

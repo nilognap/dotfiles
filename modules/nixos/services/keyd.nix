@@ -25,6 +25,8 @@
             ";" = "lettermod(meta, ;, ${idle_timeout}, ${hold_timeout})";
 
             space = "lettermod(extend, space, ${idle_timeout}, ${hold_timeout})";
+
+            delete = "toggle(gaming)";
           };
           extend = {
             q = "{"; w = 7; e = 8; r = 9; t = "}";
@@ -33,6 +35,11 @@
             leftmeta = 0; leftalt = 0;
 
             j = "left"; k = "down"; l = "up"; ";" = "right";
+          };
+          gaming = {
+            a = "a"; s = "s"; d = "d"; f = "f";
+            j = "j"; k = "k"; l = "l"; ";" = ";";
+            # delete = "toggle(gaming)";
           };
         };
       };

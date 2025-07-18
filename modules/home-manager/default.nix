@@ -3,6 +3,6 @@
   imports = [
     ./cli
     ./gui
-    ./hypr # TODO this is bad
+    # ./hypr # TODO this is bad
   ];
 }
