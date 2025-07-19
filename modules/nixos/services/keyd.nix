@@ -1,6 +1,6 @@
 {
   services.keyd = {
-    enable = true;
+    # enable = true;
     keyboards = {
       default = {
         ids = [ "*" ];
@@ -36,11 +36,11 @@
 
             j = "left"; k = "down"; l = "up"; ";" = "right";
           };
-          gaming = {
-            a = "a"; s = "s"; d = "d"; f = "f";
-            j = "j"; k = "k"; l = "l"; ";" = ";";
-            # delete = "toggle(gaming)";
-          };
+          # gaming = {
+            # a = "a"; s = "s"; d = "d"; f = "f";
+            # j = "j"; k = "k"; l = "l"; ";" = ";";
+            # space = "space";
+          # };
         };
       };
       externalMapped = {

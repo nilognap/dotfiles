@@ -6,6 +6,9 @@
   };
   environment.systemPackages = with pkgs.gnomeExtensions; [
     forge
+    paperwm
+    tiling-shell
+
     blur-my-shell
   ];
 }
