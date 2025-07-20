@@ -4,7 +4,11 @@
   system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true;
 
-  i18n.defaultLocale = "en_US.UTF-8";
+  # i18n.defaultLocale = "en_US.UTF-8";
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16 * 1024;A
+  } ];
 
   networking.networkmanager.enable = true;
 

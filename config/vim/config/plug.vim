@@ -25,7 +25,8 @@ function! LoadEasyMotion()
 
 	let g:EasyMotion_do_mapping = 0
 	" let g:EasyMotion_keys = "asdfghjkl;"
-	let g:EasyMotion_keys = "arstgmneio"
+	let g:EasyMotion_keys = "strdy.naei"
+	" let g:EasyMotion_keys = "arstgmneio"
 	" let g:EasyMotion_keys = "nrtsgphaei"
 
 	nnoremap <Leader>s <Plug>(easymotion-bd-w)

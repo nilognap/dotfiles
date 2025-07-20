@@ -23,6 +23,8 @@ nnoremap : ;
 " vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
+" TODO ASDFASDFASDFASDFASDFASDFASDFASFASDFASFDSADSAFSA!!!!!!!!!!!!!!!!
+
 noremap <C-right> w
 noremap <C-left> b
 inoremap <C-BS> <C-w>
