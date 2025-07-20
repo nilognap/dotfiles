@@ -6,6 +6,7 @@
       # "$HOME/.nix-profile/bin" # home manager stuff
     ];
     sessionVariables = {
+      EDITOR = "vim";
       LESSHISTFILE = "$HOME/.config/less/history";
       PYTHONHISTFILE = "$HOME/.config/python/.python_history";
     };

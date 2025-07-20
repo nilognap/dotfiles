@@ -10,12 +10,10 @@
     enable32Bit = true;
   };
 
-
-  # i18n.defaultLocale = "en_US.UTF-8";
-  # swapDevices = [ {
-    # device = "/var/lib/swapfile";
-    # size = 16 * 1024;
-  # } ];
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16 * 1024;
+  } ];
 
   networking.networkmanager.enable = true;
 
