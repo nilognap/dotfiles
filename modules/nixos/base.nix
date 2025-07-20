@@ -4,11 +4,18 @@
   system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true;
 
+  # why is this no on by default?
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
+
   # i18n.defaultLocale = "en_US.UTF-8";
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 16 * 1024;A
-  } ];
+  # swapDevices = [ {
+    # device = "/var/lib/swapfile";
+    # size = 16 * 1024;
+  # } ];
 
   networking.networkmanager.enable = true;
 
@@ -19,12 +26,6 @@
   };
 
   services.printing.enable = true;
-
-  # why is this no on by default?
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
