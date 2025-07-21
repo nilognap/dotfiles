@@ -46,6 +46,23 @@
       ];
     };
 
+    nixosConfigurations.jiaolong = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/jiaolong/configuration.nix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.nilo = ./hosts/jiaolong/home.nix;
+            extraSpecialArgs = { inherit inputs; };
+          };
+        } 
+        inputs.stylix.nixosModules.stylix
+      ];
+    };
+
     homeConfigurations = {
       nilo = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-darwin;

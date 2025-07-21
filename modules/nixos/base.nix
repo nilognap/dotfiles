@@ -17,11 +17,8 @@
 
   networking.networkmanager.enable = true;
 
-  boot.loader.grub = {
-    enable = true;
-    device = "/dev/sda";
-    useOSProber = true;
-  };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   services.printing.enable = true;
 
