@@ -1,10 +1,7 @@
 { pkgs, ... }:
 {
-  # just use the web version of wechat and whatsapp
   home.packages = with pkgs; [
-    nautilus
-    gparted
-
+    # just use the web version of wechat and whatsapp
     # wechat
     # kdePackages.kwave
     audacity
@@ -13,6 +10,7 @@
 
     hmcl
     bluej
+	vial
 
     spotify tauon dopamine
   ];

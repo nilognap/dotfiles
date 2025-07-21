@@ -7,7 +7,7 @@
       background-opacity = 0.8;
       mouse-hide-while-typing = true;
       # font
-      font-size = 24;
+      font-size = 16;
       font-feature = "-calt";
       # window
       window-height = 999;
