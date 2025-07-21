@@ -4,16 +4,11 @@
   system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true;
 
-  # why is this no on by default?
+  # why is this not on by default?
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
-
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 16 * 1024;
-  } ];
 
   networking.networkmanager.enable = true;
 

@@ -5,10 +5,10 @@
     desktopManager.gnome.enable = true;
   };
   environment.systemPackages = with pkgs.gnomeExtensions; [
-    forge
-    paperwm
-    tiling-shell
-
     blur-my-shell
+    paperwm
+    just-perfection
+
+    # tiling-shell forge
   ];
 }
