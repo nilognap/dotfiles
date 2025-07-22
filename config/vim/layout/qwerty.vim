@@ -13,10 +13,9 @@ vnoremap <C-up> K
 vnoremap <C-right> <C-d>
 
 " escape insert
-inoremap <up><down><left> <Esc>
-inoremap <left><down><up> <Esc>
+" inoremap <down><left> <Esc>
 
 " goto mode
-noremap g<left> .. " ^"
-noremap g<right> .. " $"
+noremap g<left> ^
+noremap g<right> $
 

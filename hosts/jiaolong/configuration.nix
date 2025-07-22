@@ -19,15 +19,15 @@
 
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia.open = true;
+  # hardware.nvidia.open = false;
   hardware.nvidia.modesetting.enable = true;
   hardware.nvidia.prime = {
     sync.enable = true;
-    # offload = {
+    # offload ={ # add "nvidia-offload" before game launch command
       # enable = true;
       # enableOffloadCmd = true;
     # };
     amdgpuBusId = "PCI:5:0:0"; # integrated
     nvidiaBusId = "PCI:1:0:0"; # discrete
-    # add "nvidia-offload" before game launch command
   };
 }

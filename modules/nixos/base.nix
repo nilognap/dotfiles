@@ -1,15 +1,24 @@
 { pkgs, ... }:
 {
+  # BASIC
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true;
 
+  # MY OWN STUFF
+  i18n.inputMethod = {
+    type = "ibus";
+    enable = true;
+    ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+  };
   # why is this not on by default?
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
+  services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
 
+  # DO NOT TOUCH
   networking.networkmanager.enable = true;
 
   boot.loader.systemd-boot.enable = true;
