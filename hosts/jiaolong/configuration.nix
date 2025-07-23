@@ -17,17 +17,21 @@
     size = 32 * 1024;
   } ];
 
+  # boot.blacklistedKernelModules = [ "nvidia" ];
+
   services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.nvidia.open = true;
-  # hardware.nvidia.open = false;
-  hardware.nvidia.modesetting.enable = true;
-  hardware.nvidia.prime = {
-    sync.enable = true;
-    # offload ={ # add "nvidia-offload" before game launch command
-      # enable = true;
-      # enableOffloadCmd = true;
-    # };
-    amdgpuBusId = "PCI:5:0:0"; # integrated
-    nvidiaBusId = "PCI:1:0:0"; # discrete
+  boot.kernelParams = [ "amd_idle.max_cstate=0" ]; # try 1
+  hardware.nvidia = {
+    open = true;
+    modesetting.enable = true;
+    prime = {
+      sync.enable = true;
+      # offload = { # add "nvidia-offload" before game launch command
+        # enable = true;
+        # enableOffloadCmd = true;
+      # };
+      amdgpuBusId = "PCI:5:0:0"; # integrated
+      nvidiaBusId = "PCI:1:0:0"; # discrete
+    };
   };
 }

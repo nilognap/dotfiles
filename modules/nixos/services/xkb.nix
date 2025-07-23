@@ -2,12 +2,12 @@
   services.xserver = {
     enable = true;
     xkb = {
-      layout = "us";
+      # layout = "us";
       extraLayouts = {
-        gallium = {
-          description = "gallium colstag";
+        sturdy = {
+          description = "sturdy";
           languages = [ "eng" ];
-          symbolsFile = ../../../layouts/gallium;
+          symbolsFile = ../../../layouts/sturdy.xkb;
         };
       };
     };
