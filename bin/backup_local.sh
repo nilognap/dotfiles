@@ -2,7 +2,6 @@
 
 local directories=(
 	"$HOME/dotfiles"
-	"$HOME/code/notes"
 	"$HOME/code"
 )
 

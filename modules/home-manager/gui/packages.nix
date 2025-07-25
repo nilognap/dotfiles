@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # wechat
+    wechat
 
     # kdePackages.kwave
     audacity

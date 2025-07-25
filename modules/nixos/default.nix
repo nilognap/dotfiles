@@ -7,6 +7,6 @@
     ./services
     ./desktop-environments
 
-    ./stylix.nix
+    # ./stylix.nix
   ];
 }

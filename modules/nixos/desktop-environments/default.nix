@@ -1,8 +1,8 @@
 {
   imports = [
-    # ./gnome.nix
+    ./gnome.nix
     # ./hyprland.nix
     # ./niri.nix
-    ./kde_plasma.nix
+    # ./kde_plasma.nix
   ];
 }

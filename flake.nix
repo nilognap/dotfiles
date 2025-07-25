@@ -2,20 +2,11 @@
   description = "nilognap/dotfiles/flake.nix";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # hyprland.url = "github:hyprwm/Hyprland";
-    # hyprland-plugins = {
-      # url = "github:hyprwm/hyprland-plugins";
-      # inputs.nixpkgs.follows = "hyprland";
-    # };
-
-    stylix = {
-      url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -42,7 +33,6 @@
             extraSpecialArgs = { inherit inputs; };
           };
         } 
-        inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -59,7 +49,6 @@
             extraSpecialArgs = { inherit inputs; };
           };
         } 
-        inputs.stylix.nixosModules.stylix
       ];
     };
 
