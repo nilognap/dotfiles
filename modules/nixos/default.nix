@@ -3,10 +3,9 @@
   imports = [
     ./base.nix
 
+    ./gnome.nix
+
     ./programs
     ./services
-    ./desktop-environments
-
-    # ./stylix.nix
   ];
 }

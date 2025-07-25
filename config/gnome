@@ -50,6 +50,14 @@ picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[desktop/break-reminders/eyesight]
+play-sound=true
+
+[desktop/break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
+
 [desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('xkb', 'sturdy')]
 sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('xkb', 'sturdy')]
@@ -79,6 +87,10 @@ picture-options='zoom'
 picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
+
+[desktop/search-providers]
+disabled=['org.gnome.Epiphany.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop']
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [desktop/session]
 idle-delay=uint32 900
@@ -135,7 +147,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=914
+name-column-width=67
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -169,6 +181,8 @@ toggle-tiled-right=@as []
 restore-shortcuts=@as []
 
 [nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'date_created']
 default-zoom-level='medium'
 
 [nautilus/preferences]
