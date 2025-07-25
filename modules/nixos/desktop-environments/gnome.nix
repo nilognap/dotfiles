@@ -7,9 +7,8 @@
   };
   environment.systemPackages = with pkgs.gnomeExtensions; [
     blur-my-shell
-    paperwm
-    just-perfection unite
-
-    # tiling-shell forge
+    just-perfection
+    # paperwm
+    # unite
   ];
 }

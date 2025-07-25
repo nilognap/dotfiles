@@ -7,11 +7,10 @@
       background-opacity = 0.8;
       mouse-hide-while-typing = true;
       # font
-      font-size = 16;
+      font-size = 20;
       font-feature = "-calt";
       # window
-      window-height = 999;
-      window-width = 999;
+      maximize = true;
       # misc
       clipboard-paste-protection = false;
     };

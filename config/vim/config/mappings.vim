@@ -1,59 +1,54 @@
 " ~/.config/vim/config/mappings.vim
 
-" settings
+" SETTINGS
 set notimeout
 
-" leader
+" LEADER
 let g:mapleader = "\<Space>"
 
-
-" basic
-" nnoremap <Leader>q <Cmd>x<CR>
+" BASIC
 nnoremap <Leader>q <Cmd>q<CR>
 nnoremap <Leader>w <Cmd>call CloseBuffer()<CR>
 nnoremap ZZ <Cmd>call CloseBuffer()<CR>
 nnoremap U <C-r>
-" nnoremap <silent> <CR> <Cmd>update<Bar>nohlsearch<CR>
 nnoremap <CR> <Cmd>update<Bar>nohlsearch<CR>
 
 " QOL, W arijanj
 nnoremap ; :
 nnoremap : ;
-" vnoremap < <gv
-" vnoremap > >gv
+vnoremap < <gv
+vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
-" TODO ASDFASDFASDFASDFASDFASDFASDFASFASDFASFDSADSAFSA!!!!!!!!!!!!!!!!
 
-noremap <C-right> w
-noremap <C-left> b
+" EDITING
 inoremap <C-BS> <C-w>
 nnoremap ciq ci"
 
-" tab
+" TAB
 inoremap <Tab> <Cmd>call Tab()<CR>
 inoremap <S-Tab> <Cmd>call ShiftTab()<CR>
 
-" buffer
+" NAVIGATION
+noremap <S-left> <Cmd>bnext<CR>
+noremap <S-right> <Cmd>bprev<CR>
+
 nnoremap <Tab> <Cmd>bnext<CR>
 nnoremap <S-Tab> <Cmd>bprev<CR>
 
-inoremap <C-Tab> <Cmd>bnext<CR>
-inoremap <C-S-Tab> <Cmd>bprev<CR>
+noremap <C-left> b
+noremap <C-down> <C-d>
+noremap <C-up> <C-u>
+noremap <C-right> w
 
-" not really buffer (navigation)
-nnoremap <S-Up> <C-u>
-nnoremap <S-Down> <C-d>
+" escape insert
+inoremap <down><left> <Esc>
 
-" maybe alt?
-nnoremap <S-Left> <Cmd>bprev<CR>
-nnoremap <S-Right> <Cmd>bnext<CR>
+" goto mode
+noremap g<left> ^
+noremap g<right> $
 
-" for n in range(1, 9)
-  " execute "nnoremap <Leader>" .. n .. " <Cmd>execute 'buffer ' .. ([0] + range(1, bufnr('$'))->filter('buflisted(v:val)'))[" .. n .. "]<CR>"
-" endfor
-
-" clipboard management
+" CLIPBOARD
 nnoremap x "_x
 
 nnoremap <Leader>y y*
@@ -68,10 +63,10 @@ vnoremap p "_dP
 nnoremap <Leader>p "+p
 vnoremap <Leader>p "_d"+p
 
-" misc
+" MISC
 nnoremap z<Leader> za
 
-" sus
+" SUS
 nnoremap gb <C-o>
 " nnoremap go <C-o>
 " nnoremap gi <C-i>
@@ -79,7 +74,7 @@ nnoremap gb <C-o>
 noremap ^ 0
 noremap 0 ^
 
-" functions.vim
+" FUNCTIONS.VIM
 nnoremap <Leader>r <Cmd>call Run()<CR>
 nnoremap <Leader>t <Cmd>call LoadTemplate()<CR>
 

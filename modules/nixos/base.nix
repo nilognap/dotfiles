@@ -17,15 +17,7 @@
     enable32Bit = true;
   };
   services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
-  fonts = {
-    packages = with pkgs; [
-      noto-fonts-cjk-sans
-    ];
-    # fontconfig.defaultFonts = {
-      # sansSerif = [ "Noto Sans CJK SC" ];
-      # monoSpace = [ "Noto Sans CJK SC" ];
-    # };
-  };
+  fonts.packages = [ pkgs.noto-fonts-cjk-sans ];
 
   # DO NOT TOUCH
   networking.networkmanager.enable = true;

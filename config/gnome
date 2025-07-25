@@ -5,8 +5,18 @@ last-window-size=(732, 528)
 [Extensions]
 window-maximized=true
 
+[calculator]
+base=10
+button-mode='basic'
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-maximized=true
+window-size=(360, 616)
+
 [control-center]
-last-panel='mouse'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -35,8 +45,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-21-14-43-05-xuan_2.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-21-14-43-05-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -47,6 +57,7 @@ xkb-options=['terminate:ctrl_alt_bksp']
 
 [desktop/interface]
 enable-animations=true
+enable-hot-corners=false
 show-battery-percentage=true
 toolkit-accessibility=false
 
@@ -57,7 +68,7 @@ application-children=['vesktop']
 application-id='vesktop.desktop'
 
 [desktop/peripherals/mouse]
-speed=-0.64814814814814814
+speed=-0.75308641975308643
 
 [desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
@@ -65,12 +76,97 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-21-14-43-05-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
+[desktop/session]
+idle-delay=uint32 900
+
+[desktop/wm/keybindings]
+activate-window-menu=@as []
+begin-move=@as []
+begin-resize=@as []
+close=@as []
+cycle-group=@as []
+cycle-group-backward=@as []
+cycle-panels=@as []
+cycle-panels-backward=@as []
+cycle-windows=@as []
+cycle-windows-backward=@as []
+maximize=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-1=@as []
+move-to-workspace-last=@as []
+move-to-workspace-left=@as []
+move-to-workspace-right=@as []
+panel-run-dialog=['<Super>semicolon']
+switch-group=@as []
+switch-group-backward=@as []
+switch-panels=@as []
+switch-panels-backward=@as []
+switch-to-workspace-1=@as []
+switch-to-workspace-last=@as []
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-windows=@as []
+switch-windows-backward=@as []
+toggle-maximized=@as []
+unmaximize=@as []
+
 [evolution-data-server]
 migrated=true
+
+[file-roller/dialogs/extract]
+height=800
+recreate-folders=true
+skip-newer=false
+width=1000
+
+[file-roller/file-selector]
+show-hidden=false
+sidebar-size=300
+sort-method='name'
+sort-type='ascending'
+window-size=(-1, -1)
+
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=914
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[gnome-system-monitor]
+cpu-colors=[(uint32 0, '#e01b24'), (1, '#ff7800'), (2, '#f6d32d'), (3, '#33d17a'), (4, '#26a269'), (5, '#62a0ea'), (6, '#1c71d8'), (7, '#613583'), (8, '#9141ac'), (9, '#c061cb'), (10, '#ffbe6f'), (11, '#f9f06b'), (12, '#8ff0a4'), (13, '#2ec27e'), (14, '#1a5fb4'), (15, '#c061cb'), (16, '#7e607999f332'), (17, '#984df3327999'), (18, '#f3327999bbc8'), (19, '#7999df43f332'), (20, '#f332e3a57999'), (21, '#c0297999f332'), (22, '#7999f3329cae'), (23, '#f332799979ff'), (24, '#79999d7af332'), (25, '#c0f5f3327999'), (26, '#f3327999e471'), (27, '#7999f332de78'), (28, '#f332bafc7999'), (29, '#97817999f332'), (30, '#7f2cf3327999'), (31, '#f3327999a2a7')]
+current-tab='processes'
+maximized=true
+show-dependencies=false
+show-whose-processes='user'
+window-height=720
+window-width=800
+
+[gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
+
+[mutter]
+experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
+
+[mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[mutter/wayland/keybindings]
+restore-shortcuts=@as []
 
 [nautilus/list-view]
 default-zoom-level='medium'
@@ -82,7 +178,34 @@ search-filter-time-type='last_modified'
 
 [nautilus/window-state]
 initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
 maximized=true
+
+[portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/nilo/dotfiles/wallpapers'
+
+[portal/filechooser/vesktop]
+last-folder-path='/home/nilo/storage/important documents'
+
+[settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[settings-daemon/plugins/media-keys]
+calculator=['<Super>c']
+help=@as []
+home=['<Super>f']
+logout=@as []
+magnifier=@as []
+magnifier-zoom-in=@as []
+magnifier-zoom-out=@as []
+screenreader=@as []
+screensaver=@as []
+
+[settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=7200
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=7200
+sleep-inactive-battery-type='suspend'
 
 [shell]
 app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'spotify.desktop': <{'position': <9>}>, 'tauonmb.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'vesktop.desktop': <{'position': <12>}>, 'Vial.desktop': <{'position': <13>}>, 'vim.desktop': <{'position': <14>}>, 'org.gnome.Epiphany.desktop': <{'position': <15>}>, 'wechat.desktop': <{'position': <16>}>, 'xterm.desktop': <{'position': <17>}>, 'Zoom.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
@@ -153,7 +276,7 @@ support-notifier-type=0
 switcher-popup-delay=true
 weather=false
 window-demands-attention-focus=true
-window-maximized-on-create=true
+window-maximized-on-create=false
 window-picker-icon=true
 workspace=true
 workspace-peek=true
@@ -165,9 +288,14 @@ world-clock=false
 hide-window-titlebars='maximized'
 
 [shell/keybindings]
-screenshot=@as []
+focus-active-notification=@as []
+screenshot=['<Control><Super>s']
 screenshot-window=@as []
-show-screenshot-ui=['<Shift><Super>s']
+show-screen-recording-ui=@as []
+show-screenshot-ui=['<Shift><Control><Super>s']
+toggle-application-view=@as []
+toggle-message-tray=@as []
+toggle-quick-settings=@as []
 
 [shell/world-clocks]
 locations=@av []

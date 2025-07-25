@@ -18,14 +18,13 @@
   } ];
 
   services.xserver.videoDrivers = [ "nvidia" ];
-  # boot.kernelParams = [ "amd_idle.max_cstate=0" ]; # try 1
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
-    prime = {
-      sync.enable = true;
-      amdgpuBusId = "PCI:5:0:0"; # integrated
-      nvidiaBusId = "PCI:1:0:0"; # discrete
-    };
+    # prime = {
+      # sync.enable = true;
+      # amdgpuBusId = "PCI:5:0:0"; # integrated
+      # nvidiaBusId = "PCI:1:0:0"; # discrete
+    # };
   };
 }
