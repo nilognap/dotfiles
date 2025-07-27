@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    google-chrome # for zmk studio
     wechat
 
     # kdePackages.kwave

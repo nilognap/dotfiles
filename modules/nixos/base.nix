@@ -7,10 +7,13 @@
 
   # MY OWN STUFF
   i18n.inputMethod = {
-    type = "ibus";
     enable = true;
+    type = "ibus";
+    # type = "fcitx5";
     ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+    fcitx5.addons = [ pkgs.fcitx5-chinese-addons ];
   };
+  environment.sessionVariables.IBUS_USE_PORTAL = "1";
   # why is this not on by default?
   hardware.graphics = {
     enable = true;

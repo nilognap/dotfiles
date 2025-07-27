@@ -12,11 +12,11 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-maximized=true
+window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='background'
+last-panel='sound'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -59,8 +59,8 @@ interval-seconds=uint32 1800
 play-sound=true
 
 [desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('xkb', 'sturdy')]
-sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('xkb', 'sturdy')]
+mru-sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
+sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
 xkb-options=['terminate:ctrl_alt_bksp']
 
 [desktop/interface]
@@ -70,10 +70,16 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop']
+application-children=['vesktop', 'gnome-power-panel']
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
 
 [desktop/notifications/application/vesktop]
 application-id='vesktop.desktop'
+
+[desktop/peripherals/keyboard]
+numlock-state=true
 
 [desktop/peripherals/mouse]
 speed=-0.75308641975308643
@@ -94,6 +100,10 @@ sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gno
 
 [desktop/session]
 idle-delay=uint32 900
+
+[desktop/sound]
+event-sounds=true
+theme-name='__custom'
 
 [desktop/wm/keybindings]
 activate-window-menu=@as []
@@ -223,10 +233,12 @@ sleep-inactive-battery-type='suspend'
 
 [shell]
 app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'spotify.desktop': <{'position': <9>}>, 'tauonmb.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'vesktop.desktop': <{'position': <12>}>, 'Vial.desktop': <{'position': <13>}>, 'vim.desktop': <{'position': <14>}>, 'org.gnome.Epiphany.desktop': <{'position': <15>}>, 'wechat.desktop': <{'position': <16>}>, 'xterm.desktop': <{'position': <17>}>, 'Zoom.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
+command-history=['echo  strd', 'suspend']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu']
 enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'steam.desktop']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'dopamine.desktop']
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
 [shell/extensions/blur-my-shell]
