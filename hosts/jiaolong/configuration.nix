@@ -5,7 +5,6 @@
   ];
 
   networking.hostName = "jiaolong";
-  time.timeZone = "Europe/Malta";
 
   users.users.nilo = {
     isNormalUser = true;
@@ -22,7 +21,7 @@
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
-    # powerManagement.enable = true;
+    powerManagement.enable = true;
     prime = {
       sync.enable = true;
       amdgpuBusId = "PCI:5:0:0"; # integrated

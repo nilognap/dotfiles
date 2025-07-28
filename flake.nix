@@ -29,7 +29,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.nilo = ./hosts/dell/home.nix;
+            users.nilo = ./modules/home-manager/default.nix;
             extraSpecialArgs = { inherit inputs; };
           };
         } 
@@ -45,7 +45,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.nilo = ./hosts/jiaolong/home.nix;
+            users.nilo = ./modules/home-manager/default.nix;
             extraSpecialArgs = { inherit inputs; };
           };
         } 

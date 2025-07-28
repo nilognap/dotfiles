@@ -1,4 +1,3 @@
-{ ... }:
 {
   home = {
     username = "nilo";
@@ -6,9 +5,5 @@
     stateVersion = "25.05";
   };
 
-  programs.home-manager.enable = true;
-
-  imports = [
-    ../../modules/home-manager
-  ];
+  # programs.home-manager.enable = true;
 }

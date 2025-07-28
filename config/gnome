@@ -16,7 +16,7 @@ window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='sound'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -64,16 +64,20 @@ sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
 xkb-options=['terminate:ctrl_alt_bksp']
 
 [desktop/interface]
+color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
 show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop', 'gnome-power-panel']
+application-children=['vesktop', 'gnome-power-panel', 'spotify']
 
 [desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/spotify]
+application-id='spotify.desktop'
 
 [desktop/notifications/application/vesktop]
 application-id='vesktop.desktop'
@@ -138,6 +142,13 @@ switch-windows=@as []
 switch-windows-backward=@as []
 toggle-maximized=@as []
 unmaximize=@as []
+
+[epiphany]
+ask-for-default=false
+
+[epiphany/state]
+is-maximized=true
+window-size=(1464, 915)
 
 [evolution-data-server]
 migrated=true

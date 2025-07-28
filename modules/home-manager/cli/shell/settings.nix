@@ -1,3 +1,4 @@
+{ config, ... }:
 {
   home = {
     sessionPath = [
@@ -13,13 +14,15 @@
     shellAliases = {
       # good
       ls = "ls -F --color=auto";
-      # shortned
-      l = "ls"; c = "cd"; o = "xdg-open";
+      # shortened
+      l = "ls"; c = "cd"; o = "xdg-open"; open = "xdg-open";
       v = "vim"; g = "git"; h = "hx";
+      # confirmation
       rm = "rm -i"; mv = "mv -i"; cp = "cp -i";
       # misc
       du = "du -sh";
       grep = "grep -rnw . -e"; # TODO ripgrep?
     };
   };
+  xdg.configFile."nixpkgs/config.nix".text = "{ allowUnfree = true; }";
 }

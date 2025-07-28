@@ -6,6 +6,9 @@
   nixpkgs.config.allowUnfree = true;
 
   # MY OWN STUFF
+  users.defaultUserShell = pkgs.zsh;
+  time.timeZone = "Europe/Malta";
+
   i18n.inputMethod = {
     enable = true;
     type = "ibus";
@@ -13,7 +16,7 @@
     ibus.engines = [ pkgs.ibus-engines.libpinyin ];
     fcitx5.addons = [ pkgs.fcitx5-chinese-addons ];
   };
-  environment.sessionVariables.IBUS_USE_PORTAL = "1";
+
   # why is this not on by default?
   hardware.graphics = {
     enable = true;
@@ -41,6 +44,4 @@
     # If you want to use JACK applications, uncomment this
     jack.enable = true;
   };
-
-  users.defaultUserShell = pkgs.zsh;
 }
