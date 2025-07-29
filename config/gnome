@@ -59,9 +59,9 @@ interval-seconds=uint32 1800
 play-sound=true
 
 [desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
-sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
-xkb-options=['terminate:ctrl_alt_bksp']
+mru-sources=[('xkb', 'us'), ('ibus', 'rime')]
+sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('ibus', 'rime')]
+xkb-options=['terminate:ctrl_alt_bksp', 'compose:ralt', 'lv3:menu_switch']
 
 [desktop/interface]
 color-scheme='default'
@@ -217,7 +217,7 @@ initial-size-file-chooser=(890, 550)
 maximized=true
 
 [portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/nilo/dotfiles/wallpapers'
+last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
 
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/storage/important documents'

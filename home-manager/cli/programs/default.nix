@@ -3,6 +3,8 @@
     ./git.nix
     ./gh.nix
 
+    ./ripgrep.nix
+
     ./vim.nix
     ./helix.nix
 
