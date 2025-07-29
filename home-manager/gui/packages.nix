@@ -13,6 +13,6 @@
     bluej
     vial
 
-    spotify tauon dopamine
+    spotify dopamine
   ];
 }
