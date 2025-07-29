@@ -1,7 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/nixos
+    ../../nixos
   ];
 
   networking.hostName = "jiaolong";

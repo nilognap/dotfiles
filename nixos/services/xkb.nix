@@ -7,7 +7,7 @@
         sturdy = {
           description = "sturdy";
           languages = [ "eng" ];
-          symbolsFile = ../../../layouts/sturdy.xkb;
+          symbolsFile = ../../layouts/sturdy.xkb;
         };
       };
     };

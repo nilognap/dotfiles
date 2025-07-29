@@ -18,8 +18,6 @@
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
   {
-    # system = "x86_64-linux";
-
     nixosConfigurations.dell = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
@@ -29,7 +27,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.nilo = ./modules/home-manager/default.nix;
+            users.nilo = ./home-manager;
             extraSpecialArgs = { inherit inputs; };
           };
         } 
@@ -45,7 +43,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.nilo = ./modules/home-manager/default.nix;
+            users.nilo = ./home-manager;
             extraSpecialArgs = { inherit inputs; };
           };
         } 

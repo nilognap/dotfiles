@@ -12,9 +12,8 @@
   i18n.inputMethod = {
     enable = true;
     type = "ibus";
-    # type = "fcitx5";
-    ibus.engines = [ pkgs.ibus-engines.libpinyin ];
-    fcitx5.addons = [ pkgs.fcitx5-chinese-addons ];
+    # ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+    ibus.engines = [ pkgs.ibus-engines.rime ];
   };
 
   # why is this not on by default?
