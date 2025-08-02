@@ -5,6 +5,9 @@ last-window-size=(732, 528)
 [Extensions]
 window-maximized=true
 
+[Geary]
+migrated-config=true
+
 [calculator]
 base=10
 button-mode='basic'
@@ -16,7 +19,7 @@ window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='keyboard'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -45,8 +48,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -72,6 +75,7 @@ toolkit-accessibility=false
 
 [desktop/notifications]
 application-children=['vesktop', 'gnome-power-panel', 'spotify']
+show-banners=true
 
 [desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -94,7 +98,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -219,6 +223,9 @@ maximized=true
 [portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
 
+[portal/filechooser/spotify]
+last-folder-path='/home/nilo/Music'
+
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/storage/important documents'
 
@@ -243,12 +250,12 @@ sleep-inactive-battery-timeout=7200
 sleep-inactive-battery-type='suspend'
 
 [shell]
-app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'spotify.desktop': <{'position': <9>}>, 'tauonmb.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'vesktop.desktop': <{'position': <12>}>, 'Vial.desktop': <{'position': <13>}>, 'vim.desktop': <{'position': <14>}>, 'org.gnome.Epiphany.desktop': <{'position': <15>}>, 'wechat.desktop': <{'position': <16>}>, 'xterm.desktop': <{'position': <17>}>, 'Zoom.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
+app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'google-chrome.desktop': <{'position': <9>}>, 'OpenRGB.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'Vial.desktop': <{'position': <12>}>, 'vim.desktop': <{'position': <13>}>, 'org.gnome.Epiphany.desktop': <{'position': <14>}>, 'wechat.desktop': <{'position': <15>}>, 'xterm.desktop': <{'position': <16>}>, 'Zoom.desktop': <{'position': <17>}>, 'steam.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
 command-history=['echo  strd', 'suspend']
 disable-user-extensions=false
-disabled-extensions=['unite@hardpixel.eu']
+disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'dopamine.desktop']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
@@ -321,8 +328,15 @@ workspace-switcher-should-show=false
 workspaces-in-app-grid=false
 world-clock=false
 
+[shell/extensions/rounded-window-corners-reborn]
+border-width=0
+global-rounded-corner-settings={'padding': <{'left': uint32 10, 'right': 10, 'top': 10, 'bottom': 10}>, 'keepRoundedCorners': <{'maximized': true, 'fullscreen': false}>, 'borderRadius': <uint32 13>, 'smoothing': <0.0>, 'borderColor': <(0.5, 0.5, 0.5, 1.0)>, 'enabled': <true>}
+settings-version=uint32 7
+skip-libadwaita-app=false
+
 [shell/extensions/unite]
-hide-window-titlebars='maximized'
+hide-window-titlebars='always'
+show-window-title='never'
 
 [shell/keybindings]
 focus-active-notification=@as []

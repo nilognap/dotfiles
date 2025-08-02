@@ -9,7 +9,5 @@
     blur-my-shell
     just-perfection
     # paperwm
-    unite
-    rounded-window-corners-reborn
   ];
 }

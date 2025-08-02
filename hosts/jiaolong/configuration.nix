@@ -11,17 +11,17 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 32 * 1024;
-  } ];
+  # swapDevices = [ {
+    # device = "/var/lib/swapfile";
+    # size = 32 * 1024;
+  # } ];
 
   services.xserver.videoDrivers = [ "nvidia" ];
   # boot.kernelParams = [ "amd_idle.max_cstate=0" ]; # try 1
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
-    powerManagement.enable = true;
+    # powerManagement.enable = true;
     prime = {
       sync.enable = true;
       amdgpuBusId = "PCI:5:0:0"; # integrated

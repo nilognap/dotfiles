@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     google-chrome # for zmk studio
@@ -13,6 +13,7 @@
     bluej
     vial
 
-    spotify dopamine
+    dopamine
+    # spotify
   ];
 }

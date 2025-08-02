@@ -13,6 +13,7 @@
       maximize = true;
       # misc
       clipboard-paste-protection = false;
+      window-decoration = "none";
     };
   };
 }

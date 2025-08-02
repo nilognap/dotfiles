@@ -24,6 +24,8 @@
   services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
   fonts.packages = [ pkgs.noto-fonts-cjk-sans ];
 
+  boot.plymouth.enable = true;
+
   # DO NOT TOUCH
   networking.networkmanager.enable = true;
 
