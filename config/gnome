@@ -87,7 +87,7 @@ application-id='spotify.desktop'
 application-id='vesktop.desktop'
 
 [desktop/peripherals/keyboard]
-numlock-state=true
+numlock-state=false
 
 [desktop/peripherals/mouse]
 speed=-0.75308641975308643
@@ -118,8 +118,8 @@ activate-window-menu=@as []
 begin-move=@as []
 begin-resize=@as []
 close=@as []
-cycle-group=@as []
-cycle-group-backward=@as []
+cycle-group=['<Super>BackSpace']
+cycle-group-backward=['<Shift><Super>BackSpace']
 cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
@@ -134,6 +134,8 @@ move-to-workspace-last=@as []
 move-to-workspace-left=@as []
 move-to-workspace-right=@as []
 panel-run-dialog=['<Super>semicolon']
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
 switch-group=@as []
 switch-group-backward=@as []
 switch-panels=@as []
@@ -251,7 +253,7 @@ sleep-inactive-battery-type='suspend'
 
 [shell]
 app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'google-chrome.desktop': <{'position': <9>}>, 'OpenRGB.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'Vial.desktop': <{'position': <12>}>, 'vim.desktop': <{'position': <13>}>, 'org.gnome.Epiphany.desktop': <{'position': <14>}>, 'wechat.desktop': <{'position': <15>}>, 'xterm.desktop': <{'position': <16>}>, 'Zoom.desktop': <{'position': <17>}>, 'steam.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
-command-history=['echo  strd', 'suspend', 'which hmcl']
+command-history=['echo  strd', 'suspend', 'which hmcl', 'vim']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']

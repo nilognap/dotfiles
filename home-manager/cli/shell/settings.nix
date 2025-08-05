@@ -1,11 +1,7 @@
 { config, ... }:
 {
   home = {
-    sessionPath = [
-      "$HOME/dotfiles/bin"
-      # "/nix/var/nix/profiles/default/bin" # nix stuff
-      # "$HOME/.nix-profile/bin" # home manager stuff
-    ];
+    sessionPath = [ "$HOME/dotfiles/bin" ];
     sessionVariables = {
       EDITOR = "vim";
       LESSHISTFILE = "$HOME/.config/less/history";
@@ -25,4 +21,5 @@
     };
   };
   xdg.configFile."nixpkgs/config.nix".text = "{ allowUnfree = true; }";
+  xdg.configFile."bin".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/helix";
 }

@@ -33,7 +33,7 @@
   services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
   fonts.packages = [ pkgs.noto-fonts-cjk-sans ];
 
-  boot.plymouth.enable = true;
+  # boot.plymouth.enable = true;
 
   services.udev.extraRules = ''
     ACTION=="add", SUBSYSTEM=="pci", DRIVER=="pcieport", ATTR{power/wakeup}="disabled"

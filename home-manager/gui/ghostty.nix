@@ -4,7 +4,7 @@
     settings = {
       # ui
       theme = "tokyonight";
-      background-opacity = 0.8;
+      # background-opacity = 0.8;
       mouse-hide-while-typing = true;
       # font
       font-size = 20;

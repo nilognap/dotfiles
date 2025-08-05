@@ -1,5 +1,4 @@
-# nilognap's helix languages.toml
-
+# ~/.config/helix/languages.toml
 
 [[language]]
 name = "python"
@@ -16,8 +15,4 @@ indent = { tab-width = 4, unit = "\t" }
 [[language]]
 name = "java"
 indent = { tab-width = 4, unit = "\t" }
-language-servers = ["jdtls", "snippets-ls"]
 
-[language-server.snippets-ls]
-command = "snippets-ls"
-args = ["-config", "~/.config/helix/snippets/java.json"]

@@ -12,6 +12,7 @@
     gcc
     python314
     # rustc cargo
+    jdt-language-server
   ];
   programs.java.enable = true;
 }
