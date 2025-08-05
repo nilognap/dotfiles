@@ -13,6 +13,8 @@
     bluej
     vial
 
+    wordbook
+
     dopamine
     # spotify
   ];

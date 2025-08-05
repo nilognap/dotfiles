@@ -19,7 +19,7 @@ window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='background'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -48,8 +48,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -62,8 +62,8 @@ interval-seconds=uint32 1800
 play-sound=true
 
 [desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('ibus', 'rime')]
-sources=[('xkb', 'us'), ('ibus', 'libpinyin'), ('ibus', 'rime')]
+mru-sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
+sources=[('xkb', 'us'), ('ibus', 'libpinyin')]
 xkb-options=['terminate:ctrl_alt_bksp', 'compose:ralt', 'lv3:menu_switch']
 
 [desktop/interface]
@@ -98,7 +98,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -172,7 +172,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=67
+name-column-width=914
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -251,7 +251,7 @@ sleep-inactive-battery-type='suspend'
 
 [shell]
 app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'org.gnome.Music.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'org.gnome.Totem.desktop': <{'position': <8>}>, 'audacity.desktop': <{'position': <9>}>, 'org.gnome.Snapshot.desktop': <{'position': <10>}>, 'org.gnome.Characters.desktop': <{'position': <11>}>, 'Utilities': <{'position': <12>}>, 'System': <{'position': <13>}>, 'org.gnome.Console.desktop': <{'position': <14>}>, 'org.gnome.Tour.desktop': <{'position': <15>}>, 'yelp.desktop': <{'position': <16>}>, 'org.gnome.Decibels.desktop': <{'position': <17>}>, 'BAPBAP.desktop': <{'position': <18>}>, 'bluej.desktop': <{'position': <19>}>, 'org.gnome.Calculator.desktop': <{'position': <20>}>, 'clash-verge.desktop': <{'position': <21>}>, 'dopamine.desktop': <{'position': <22>}>, 'element-desktop.desktop': <{'position': <23>}>}, {'org.gnome.Extensions.desktop': <{'position': <0>}>, 'fish.desktop': <{'position': <1>}>, 'Helix.desktop': <{'position': <2>}>, 'HMCL.desktop': <{'position': <3>}>, 'org.kde.kdenlive.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'com.obsproject.Studio.desktop': <{'position': <8>}>, 'google-chrome.desktop': <{'position': <9>}>, 'OpenRGB.desktop': <{'position': <10>}>, 'org.gnome.TextEditor.desktop': <{'position': <11>}>, 'Vial.desktop': <{'position': <12>}>, 'vim.desktop': <{'position': <13>}>, 'org.gnome.Epiphany.desktop': <{'position': <14>}>, 'wechat.desktop': <{'position': <15>}>, 'xterm.desktop': <{'position': <16>}>, 'Zoom.desktop': <{'position': <17>}>, 'steam.desktop': <{'position': <18>}>, 'org.gnome.Calendar.desktop': <{'position': <19>}>, 'org.gnome.Nautilus.desktop': <{'position': <20>}>}]
-command-history=['echo  strd', 'suspend']
+command-history=['echo  strd', 'suspend', 'which hmcl']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']

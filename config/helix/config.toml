@@ -3,7 +3,6 @@
 # theme = "onedark"
 theme = "tokyonight"
 
-
 [editor]
 mouse = false
 line-number = "relative"
@@ -30,7 +29,7 @@ select = "underline"
 hidden = false
 
 [editor.auto-pairs]
-'{' = '}'
+# '{' = '}'
 
 [editor.auto-save]
 # focus-lost = true
@@ -45,38 +44,53 @@ render = true
 # cursor-line = "hint"
 # other-lines = "error"
 
-# ---------------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 
 [keys.normal]
 
-"ret" = ":update"
+ret = ":update"
 
-# leader key
-"space" = {
-  "ret" = ":update"
-  w = ":buffer-close"
-  q = [":update", ":quit"]
-}
-Z.Z = [":update", ":quit"]
+# keys.select overlap
 
-# "space".r = [":update", ":run-shell-command ~/.config/helix/run.sh %{buffer_name}"]
-"space".r = [":update", ":run-shell-command %sh{~/.config/helix/run.sh %{buffer_name}}"]
+backspace = "collapse_selection"
+";" = "command_mode"
+
+C-left = "move_prev_word_start"
+C-right = [ "move_next_word_end", "move_char_right" ]
+
+C-up = [ "page_cursor_half_up", "align_view_center" ]
+C-down = [ "page_cursor_half_down", "align_view_center" ]
 
 S-left = ":buffer-next"
 S-right = ":buffer-previous"
 
-S-up = ["page_cursor_half_up", "align_view_center"]
-S-down = ["page_cursor_half_down", "align_view_center"]
+space.s = "goto_word"
 
 # sus
 M = "save_selection"
 g.M = "jump_backward"
 
+# leader key # not doing [keys.normal.space] because space.s
+space.r = [ ":update", ":run-shell-command %sh{~/.config/bin/run.sh %{buffer_name}}" ]
+# space.w = ":buffer-close"
+# space.q = ":quit"
+
 [keys.select]
 
-H = ["page_cursor_half_up", "align_view_center"]
-L = ["page_cursor_half_down", "align_view_center"]
+backspace = "collapse_selection"
+";" = "command_mode"
 
+C-left = "move_prev_word_start"
+C-right = [ "move_next_word_end", "move_char_right" ]
+
+C-up = [ "page_cursor_half_up", "align_view_center" ]
+C-down = [ "page_cursor_half_down", "align_view_center" ]
+
+S-left = ":buffer-next"
+S-right = ":buffer-previous"
+
+space.s = "goto_word"
 
 [keys.insert]
-j.k = "normal_mode"
+down.left = "normal_mode"
+

@@ -16,8 +16,8 @@ nnoremap <CR> <Cmd>update<Bar>nohlsearch<CR>
 " QOL, W arijanj
 nnoremap ; :
 nnoremap : ;
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
 
@@ -39,7 +39,7 @@ nnoremap <S-Tab> <Cmd>bprev<CR>
 noremap <C-left> b
 noremap <C-down> <C-d>
 noremap <C-up> <C-u>
-noremap <C-right> w
+noremap <C-right> el
 
 " escape insert
 inoremap <down><left> <Esc>

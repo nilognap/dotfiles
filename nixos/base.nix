@@ -5,6 +5,11 @@
   system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true;
 
+  users.users.nilo = {
+    isNormalUser = true;
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
+
   # MY OWN STUFF
   users.defaultUserShell = pkgs.zsh;
   time.timeZone = "Europe/Malta";
@@ -12,8 +17,12 @@
   i18n.inputMethod = {
     enable = true;
     type = "ibus";
-    # ibus.engines = [ pkgs.ibus-engines.libpinyin ];
-    ibus.engines = [ pkgs.ibus-engines.rime ];
+    # type = "fcitx5";
+    ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+    fcitx5.addons = with pkgs; [
+      libsForQt5.fcitx5-chinese-addons
+      fcitx5-tokyonight
+    ];
   };
 
   # why is this not on by default?
@@ -25,6 +34,10 @@
   fonts.packages = [ pkgs.noto-fonts-cjk-sans ];
 
   boot.plymouth.enable = true;
+
+  services.udev.extraRules = ''
+    ACTION=="add", SUBSYSTEM=="pci", DRIVER=="pcieport", ATTR{power/wakeup}="disabled"
+  '';
 
   # DO NOT TOUCH
   networking.networkmanager.enable = true;

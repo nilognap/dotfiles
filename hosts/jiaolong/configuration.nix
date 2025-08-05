@@ -6,22 +6,14 @@
 
   networking.hostName = "jiaolong";
 
-  users.users.nilo = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
-
-  # swapDevices = [ {
-    # device = "/var/lib/swapfile";
-    # size = 32 * 1024;
-  # } ];
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
 
   services.xserver.videoDrivers = [ "nvidia" ];
-  # boot.kernelParams = [ "amd_idle.max_cstate=0" ]; # try 1
+  boot.kernelParams = [ "amd_idle.max_cstate=0" ]; # try 1
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
-    # powerManagement.enable = true;
+    powerManagement.enable = true;
     prime = {
       sync.enable = true;
       amdgpuBusId = "PCI:5:0:0"; # integrated

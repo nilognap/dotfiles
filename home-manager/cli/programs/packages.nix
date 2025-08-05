@@ -4,6 +4,5 @@
     hello
     tree
     zip unzip
-    ffmpeg
   ];
 }
