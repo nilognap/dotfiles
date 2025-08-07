@@ -15,7 +15,6 @@
     "amdgpu.dcdebugmask=0x10"
   ];
 
-  # services.xserver.videoDrivers = [ "nvidia" "amdgpu" ];
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     open = true;
