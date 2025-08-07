@@ -4,7 +4,9 @@
 theme = "tokyonight"
 
 [editor]
+scrolloff = 999
 mouse = false
+scroll-lines = 1
 line-number = "relative"
 cursorline = true
 continue-comments = false
@@ -28,17 +30,30 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
-[editor.auto-pairs]
+# [editor.auto-pairs]
 # '{' = '}'
 
 [editor.auto-save]
 # focus-lost = true
-# after-delay.enable = true
+after-delay.enable = true
+after-delay.timeout = 5000
 
+[editor.whitespace]
+# render = "all"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
 
 [editor.indent-guides]
 render = true
 # skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
 
 [editor.inline-diagnostics]
 # cursor-line = "hint"
@@ -52,12 +67,13 @@ ret = ":update"
 ";" = "command_mode"
 
 tab = ":buffer-next"
-A-left = ":buffer-next"
-A-right = ":buffer-previous"
+S-tab = ":buffer-previous"
+A-left = ":buffer-previous"
+A-right = ":buffer-next"
 
 # keys.insert overlap
 C-left = "move_prev_word_start"
-C-right = [ "move_next_word_end", "extend_char_right" ]
+C-right = "move_next_word_end"
 
 # keys.select overlap
 space.s = "goto_word"
@@ -76,22 +92,26 @@ S-down = "extend_visual_line_down"
 S-up = "extend_visual_line_up"
 S-right = "extend_char_right"
 
-M = "save_selection"
-g.M = "jump_backward"
+# too sus
+# M = "save_selection"
+# g.M = "jump_backward"
 
 # leader key
 # not doing [keys.normal.space] because space.s
-space.r = [ ":update", ":run-shell-command ~/.config/bin/run.sh %{buffer_name}" ]
+space.r = [ ":update", ":run-shell-command run.sh %{buffer_name}" ]
 space.w = ":buffer-close"
 space.q = ":quit"
 
 [keys.insert]
-down.left = "normal_mode"
+# down.left = "normal_mode"
 C-backspace = "delete_word_backward"
 
 # overlap
 C-left = "move_prev_word_start"
-C-right = [ "move_next_word_end", "extend_char_right" ]
+C-right = "move_next_word_end"
+
+C-up = [ "page_cursor_half_up", "align_view_center" ]
+C-down = [ "page_cursor_half_down", "align_view_center" ]
 
 [keys.select]
 C-left = "extend_prev_word_start"

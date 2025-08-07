@@ -35,9 +35,9 @@
 
   # boot.plymouth.enable = true;
 
-  services.udev.extraRules = ''
-    ACTION=="add", SUBSYSTEM=="pci", DRIVER=="pcieport", ATTR{power/wakeup}="disabled"
-  '';
+  # services.udev.extraRules = ''
+  #   ACTION=="add", SUBSYSTEM=="pci", DRIVER=="pcieport", ATTR{power/wakeup}="disabled"
+  # '';
 
   # DO NOT TOUCH
   networking.networkmanager.enable = true;

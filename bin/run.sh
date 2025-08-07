@@ -21,14 +21,17 @@ case "$extension" in
 		dir=$(dirname "$file")
 		basename="${filename%.*}"
 		if [[ -z "$package_line" ]]; then
-			javac -Xlint:all -Werror $dir/*.java && java -cp "$dir" "$basename"
+			# javac -Xlint:all -Werror $dir/*.java && java -cp "$dir" "$basename"
+			javac $dir/*.java && java -cp "$dir" "$basename"
 		else
 			# W deepseek
 			class_path="${${package_line#package[[:space:]]}%;*}"
 			depth=$(( ${#package//[^.]} ))
 			src_path=$(printf "../%.0s" $(seq 1 $((depth + 1))))
-			javac -Xlint:all -Werror -cp "$dir/$src_path" $dir/*.java && \
-            java -cp "$dir/$src_path" "${class_path}.${basename}"
+			# javac -Xlint:all -Werror -cp "$dir/$src_path" $dir/*.java && \
+			# 	java -cp "$dir/$src_path" "${class_path}.${basename}"
+			javac -cp "$dir/$src_path" $dir/*.java && \
+				java -cp "$dir/$src_path" "${class_path}.${basename}"
 		fi
 		;;
 	*)

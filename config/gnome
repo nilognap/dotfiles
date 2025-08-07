@@ -19,7 +19,7 @@ window-maximized=false
 window-size=(360, 616)
 
 [control-center]
-last-panel='keyboard'
+last-panel='bluetooth'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -87,7 +87,7 @@ application-id='spotify.desktop'
 application-id='vesktop.desktop'
 
 [desktop/peripherals/keyboard]
-numlock-state=false
+numlock-state=true
 
 [desktop/peripherals/mouse]
 speed=-0.75308641975308643
@@ -174,7 +174,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=914
+name-column-width=67
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -211,11 +211,13 @@ restore-shortcuts=@as []
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
 default-visible-columns=['name', 'size', 'date_modified', 'date_created']
 default-zoom-level='medium'
+use-tree-view=true
 
 [nautilus/preferences]
 default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
+show-delete-permanently=false
 
 [nautilus/window-state]
 initial-size=(890, 550)
@@ -226,7 +228,7 @@ maximized=true
 last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
 
 [portal/filechooser/spotify]
-last-folder-path='/home/nilo/Music'
+last-folder-path='/home/nilo/dotfiles/wallpapers'
 
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/storage/important documents'
@@ -257,7 +259,7 @@ command-history=['echo  strd', 'suspend', 'which hmcl', 'vim']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'spotify.desktop', 'vesktop.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 

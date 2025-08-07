@@ -3,7 +3,7 @@
   home = {
     sessionPath = [ "$HOME/dotfiles/bin" ];
     sessionVariables = {
-      EDITOR = "vim";
+      EDITOR = "helix";
       LESSHISTFILE = "$HOME/.config/less/history";
       PYTHONHISTFILE = "$HOME/.config/python/.python_history";
     };
@@ -21,5 +21,5 @@
     };
   };
   xdg.configFile."nixpkgs/config.nix".text = "{ allowUnfree = true; }";
-  xdg.configFile."bin".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/helix";
+  xdg.configFile."bin".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/bin";
 }
