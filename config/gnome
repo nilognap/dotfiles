@@ -15,12 +15,12 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
-window-maximized=false
+window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='universal-access'
-window-state=(980, 640, false)
+last-panel='background'
+window-state=(980, 640, true)
 
 [desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -48,8 +48,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -70,6 +70,7 @@ xkb-options=['terminate:ctrl_alt_bksp', 'compose:ralt', 'lv3:menu_switch']
 color-scheme='default'
 enable-animations=true
 enable-hot-corners=false
+gtk-theme='Tokyonight-Dark'
 show-battery-percentage=true
 toolkit-accessibility=false
 
@@ -93,12 +94,13 @@ numlock-state=true
 speed=-0.75308641975308643
 
 [desktop/peripherals/touchpad]
+send-events='enabled'
 two-finger-scrolling-enabled=true
 
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -134,7 +136,7 @@ move-to-workspace-1=@as []
 move-to-workspace-last=@as []
 move-to-workspace-left=@as []
 move-to-workspace-right=@as []
-panel-run-dialog=['<Super>semicolon']
+panel-run-dialog=@as []
 switch-applications=['<Super>Tab']
 switch-applications-backward=['<Shift><Super>Tab']
 switch-group=@as []
@@ -228,6 +230,9 @@ show-delete-permanently=false
 initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 maximized=true
+
+[portal/filechooser/cursor]
+last-folder-path='/home/nilo/code/calcmaster'
 
 [portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/nilo/dotfiles/wallpapers/bad'

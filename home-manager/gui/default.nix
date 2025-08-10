@@ -10,7 +10,8 @@
     ./vesktop.nix
 
     ./spicetify.nix
-    ./element-desktop.nix
-    ./obs-studio.nix
+
+    # ./element-desktop.nix
+    # ./obs-studio.nix
   ];
 }

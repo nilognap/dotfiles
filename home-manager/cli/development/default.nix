@@ -10,9 +10,12 @@
   home.packages = with pkgs; [
     # libgcc
     gcc
+
     python314
+
     # rustc cargo
-    jdt-language-server
+
+    jdt-language-server maven
   ];
   programs.java.enable = true;
 }

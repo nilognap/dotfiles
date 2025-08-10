@@ -1,21 +1,17 @@
 { pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
-    google-chrome # for zmk studio
+    # google-chrome # for zmk studio
     wechat
 
     # kdePackages.kwave
-    audacity
+    # audacity
     # libsForQt5.kdenlive # bad
-    kdePackages.kdenlive # better
+    # kdePackages.kdenlive # better
 
-    hmcl
-    bluej
     vial
 
-    wordbook
-
     dopamine
-    # spotify
+    code-cursor
   ];
 }

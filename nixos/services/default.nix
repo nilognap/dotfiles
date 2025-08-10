@@ -1,7 +1,6 @@
 {
   imports = [
-    ./xkb.nix
+    # ./xkb.nix
     ./keyd.nix
   ];
-  # services.hardware.openrgb.enable = true;
 }

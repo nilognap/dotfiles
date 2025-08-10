@@ -8,6 +8,6 @@
   environment.systemPackages = with pkgs.gnomeExtensions; [
     blur-my-shell
     just-perfection
-    # paperwm
+    bluetooth-battery-meter
   ];
 }
