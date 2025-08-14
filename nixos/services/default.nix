@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./xkb.nix
+    ./libinput.nix
     ./keyd.nix
   ];
 }
