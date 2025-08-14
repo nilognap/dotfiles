@@ -27,7 +27,7 @@ window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='keyboard'
+last-panel='sound'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -105,6 +105,7 @@ numlock-state=true
 speed=-0.75308641975308643
 
 [desktop/peripherals/touchpad]
+send-events='enabled'
 tap-and-drag=false
 two-finger-scrolling-enabled=true
 

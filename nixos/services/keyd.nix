@@ -10,15 +10,17 @@
           # the amount of time the key need to be held down for mod
           hold_timeout = "300";
         in {
-          main = { # external keyboard
+          main = { # nothing
             delete = "toggle(laptop)";
           };
           laptop = {
-            capslock = "backspace";
+            tab = "esc";
+            capslock = "tab";
+            rightalt = "backspace";
+            "leftshift+leftmeta+f23" = "oneshot(shift)";
 
             space = "lettermod(nav, space, ${idle_timeout}, ${hold_timeout})";
-            # rightalt = "overload(oneshot(shift), layer(sym))";
-            rightalt = "oneshot(shift)";
+
             "\\" = "rightalt"; # compose key
 
             q = "v"; w = "m"; e = "l"; r = "c"; t = "p";
@@ -29,7 +31,7 @@
             g = "y";
             leftshift = "z"; z = "k"; x = "q"; c = "g"; v = "w";
 
-            b = "noop"; y = "noop"; h = "noop"; n = "noop";
+            b = "shift"; y = "shift"; h = "shift"; n = "shift";
 
             u = "x"; i = "f"; o = "o"; p = "u"; "[" = "j";
             j = ".";
@@ -38,18 +40,28 @@
             ";" = "lettermod(alt, e, ${idle_timeout}, ${hold_timeout})";
             "'" = "lettermod(meta, i, ${idle_timeout}, ${hold_timeout})";
             m = "b"; "," = "h"; "." = "'"; "/" = ";"; rightshift = ",";
+            "<" = "?";
           };
           nav = {
-            j = "left"; k = "down"; l = "up"; ";" = "right";
+            q = "C-q"; w = "C-w"; e = "C-l"; r = "C-r"; t = "C-t";
+            a = "lettermod(meta, C-a, ${idle_timeout}, ${hold_timeout})";
+            s = "lettermod(alt, back, ${idle_timeout}, ${hold_timeout})";
+            d = "lettermod(shift, forward, ${idle_timeout}, ${hold_timeout})";
+            f = "lettermod(control, C-f, ${idle_timeout}, ${hold_timeout})";
+            leftshift = "C-z"; z = "C-x"; x = "C-c"; c = "C-v";
+
+            i = "home"; o = "C-left"; p = "C-right"; "[" = "end";
+            k = "left"; l = "down"; ";" = "up"; "'" = "right";
+            "." = "pagedown"; "/" = "pageup";
           };
         };
       };
-      externalMapped = {
-        ids = [ "" ];
-        settings = {
-          main = {};
-        };
-      };
+      # externalMapped = {
+      #   ids = [ "" ];
+      #   settings = {
+      #     main = {};
+      #   };
+      # };
     };
   };
 }
