@@ -85,6 +85,7 @@ g.o = "flip_selections"
 C-up = [ "page_cursor_half_up", "align_view_center" ]
 C-down = [ "page_cursor_half_down", "align_view_center" ]
 
+home = "goto_first_nonwhitespace"
 
 # sus
 S-left = "extend_char_left"
@@ -113,6 +114,8 @@ C-right = "move_next_word_end"
 C-up = [ "page_cursor_half_up", "align_view_center" ]
 C-down = [ "page_cursor_half_down", "align_view_center" ]
 
+home = "goto_first_nonwhitespace"
+
 [keys.select]
 C-left = "extend_prev_word_start"
 C-right = [ "extend_next_word_end", "extend_char_right" ]
@@ -125,4 +128,5 @@ g.o = "flip_selections"
 C-up = [ "page_cursor_half_up", "align_view_center" ]
 C-down = [ "page_cursor_half_down", "align_view_center" ]
 
+home = "goto_first_nonwhitespace"
 
