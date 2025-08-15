@@ -82,8 +82,8 @@ g.o = "flip_selections"
 
 # keys.insert and keys.select overlap
 
-C-up = [ "page_cursor_half_up", "align_view_center" ]
-C-down = [ "page_cursor_half_down", "align_view_center" ]
+pageup = "page_cursor_half_up"
+pagedown = "page_cursor_half_down"
 
 home = "goto_first_nonwhitespace"
 
@@ -111,8 +111,8 @@ C-backspace = "delete_word_backward"
 C-left = "move_prev_word_start"
 C-right = "move_next_word_end"
 
-C-up = [ "page_cursor_half_up", "align_view_center" ]
-C-down = [ "page_cursor_half_down", "align_view_center" ]
+pageup = "page_cursor_half_up"
+pagedown = "page_cursor_half_down"
 
 home = "goto_first_nonwhitespace"
 
@@ -125,8 +125,8 @@ space.s = "goto_word"
 backspace = "collapse_selection"
 g.o = "flip_selections"
 
-C-up = [ "page_cursor_half_up", "align_view_center" ]
-C-down = [ "page_cursor_half_down", "align_view_center" ]
+pageup = "page_cursor_half_up"
+pagedown = "page_cursor_half_down"
 
 home = "goto_first_nonwhitespace"
 

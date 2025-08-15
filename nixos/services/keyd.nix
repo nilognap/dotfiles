@@ -53,6 +53,8 @@
             i = "home"; o = "C-left"; p = "C-right"; "[" = "end";
             k = "left"; l = "down"; ";" = "up"; "'" = "right";
             "." = "pagedown"; "/" = "pageup";
+
+            rightalt = "C-backspace";
           };
         };
       };

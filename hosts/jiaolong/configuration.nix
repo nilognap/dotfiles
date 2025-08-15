@@ -29,11 +29,11 @@
     powerManagement.enable = true;
 
     prime = {
-      # sync.enable = true;
-      offload = {
-        enable = true;
-        enableOffloadCmd = true;
-      };
+      sync.enable = true;
+      # offload = {
+      #   enable = true;
+      #   enableOffloadCmd = true;
+      # };
       amdgpuBusId = "PCI:5:0:0"; # integrated
       nvidiaBusId = "PCI:1:0:0"; # discrete
     };

@@ -27,7 +27,7 @@ window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='sound'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -56,8 +56,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -112,7 +112,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -278,10 +278,24 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.sh']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
-enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection']
+enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'Bluetooth-Battery-Meter@maniacx.github.com']
 favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
+
+[shell/extensions/Bluetooth-Battery-Meter]
+color-10='#ff7800'
+color-100='#15c931'
+color-20='#ff7800'
+color-30='#15c931'
+color-40='#15c931'
+color-50='#15c931'
+color-60='#15c931'
+color-70='#15c931'
+color-80='#15c931'
+color-90='#15c931'
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}']
+swap-icon-text=false
 
 [shell/extensions/blur-my-shell]
 settings-version=2
