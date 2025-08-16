@@ -28,7 +28,7 @@ window-size=(360, 616)
 
 [control-center]
 last-panel='background'
-window-state=(980, 640, true)
+window-state=(980, 640, false)
 
 [desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -56,8 +56,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -112,7 +112,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-west_of_the_sun.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -294,7 +294,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755359560,"disconnected-time":1755360204}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755377175,"disconnected-time":1755294744}']
 swap-icon-text=false
 
 [shell/extensions/blur-my-shell]
