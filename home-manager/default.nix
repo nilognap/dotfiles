@@ -1,7 +1,9 @@
 {
   imports = [
     ./base.nix
-    ./cli
-    ./gui
+    ./shell.nix
+    ./cli.nix
+    ./gui.nix
+    ./development.nix
   ];
 }

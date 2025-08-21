@@ -27,8 +27,8 @@ window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='background'
-window-state=(980, 640, false)
+last-panel='mouse'
+window-state=(980, 640, true)
 
 [desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -56,8 +56,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -106,13 +106,14 @@ speed=-0.75308641975308643
 
 [desktop/peripherals/touchpad]
 send-events='enabled'
+speed=-0.12757201646090532
 tap-and-drag=false
 two-finger-scrolling-enabled=true
 
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-17-08-05-xuan_3.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -133,8 +134,8 @@ activate-window-menu=@as []
 begin-move=@as []
 begin-resize=@as []
 close=@as []
-cycle-group=@as []
-cycle-group-backward=@as []
+cycle-group=['<Super>BackSpace']
+cycle-group-backward=['<Shift><Super>BackSpace']
 cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
@@ -149,8 +150,8 @@ move-to-workspace-last=@as []
 move-to-workspace-left=@as []
 move-to-workspace-right=@as []
 panel-run-dialog=@as []
-switch-group=['<Super>BackSpace']
-switch-group-backward=['<Shift><Super>BackSpace']
+switch-group=@as []
+switch-group-backward=@as []
 switch-panels=@as []
 switch-panels-backward=@as []
 switch-to-workspace-1=@as []
@@ -191,7 +192,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=67
+name-column-width=914
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -251,15 +252,13 @@ last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
 last-folder-path='/home/nilo/dotfiles/wallpapers'
 
 [portal/filechooser/vesktop]
-last-folder-path='/home/nilo/storage/important documents'
+last-folder-path='/home/nilo/dotfiles/wallpapers'
 
 [settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 
 [settings-daemon/plugins/media-keys]
-calculator=['<Super>c']
 help=@as []
-home=['<Super>f']
 logout=@as []
 magnifier=@as []
 magnifier-zoom-in=@as []
@@ -294,7 +293,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755359560,"disconnected-time":1755360204}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755377175,"disconnected-time":1755294744}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755703368,"disconnected-time":1755703364}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755776215,"disconnected-time":1755635544}']
 swap-icon-text=false
 
 [shell/extensions/blur-my-shell]
@@ -388,3 +387,6 @@ toggle-quick-settings=@as []
 
 [shell/world-clocks]
 locations=@av []
+
+[tweaks]
+show-extensions-notice=false

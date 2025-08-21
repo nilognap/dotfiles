@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -7,14 +7,15 @@
 
   networking.hostName = "jiaolong";
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.kernelParams = [
     "acpi_enforce_resources=lax"
 
     # "amd_idle.max_cstate=0" # this is useless
-    "amdgpu.ppfeaturemask=0xfff73fff"
-    "amdgpu.dcdebugmask=0x10"
+
+    # "amdgpu.ppfeaturemask=0xfff73fff"
+    "amdgpu.dcdebugmask=0x10" # for debug
   ];
 
   services.udev.extraRules = ''
