@@ -10,5 +10,6 @@
       blur-my-shell
       just-perfection
       bluetooth-battery-meter
+      kimpanel
     ]);
 }

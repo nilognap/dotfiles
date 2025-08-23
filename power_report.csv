@@ -1,0 +1,845 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;2.15 ran at Fri Aug 22 20:05:23 2025
+
+Kernel Version;Linux version 6.12.42
+System Name;MECHREVOJIAOLONG Series-X6xR55xK-B2Standard
+CPU Information;32 AMD Ryzen 9 8945HX with Radeon Graphics
+OS Information;NixOS 25.05 (Warbler)
+
+Target: 1 units/s;System:  2318.5 wakeup/s;CPU:  10.1% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description
+  0.3%;764.1;Timer;tick_nohz_handler
+  3.9%;661.9;Process;[PID 3297] /etc/profiles/per-user/nilo/bin/zen-beta --name=zen-beta --name zen-beta 
+  1.6%;272.1;Process;[PID 2520] /nix/store/35wqbdb1d1hx7bl3waig0qbg068nvi0j-gnome-shell-48.2/bin/gnome-shell 
+  1.4%;117.8;Process;[PID 3604] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+  0.0%; 84.9;Timer;inactive_task_timer
+  0.1%; 61.8;Interrupt;[92] amdgpu
+  0.0%; 54.5;Process;[PID 19] [rcu_preempt]
+  0.3%; 35.2;Interrupt;[7] sched(softirq)
+  0.0%; 33.8;kWork;drm_sched_free_job_work
+  0.1%; 30.6;kWork;drm_sched_run_job_work
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+POLL;  0.0%
+C1;  0.2%
+C2;  2.7%
+C3; 93.2%
+;
+;
+
+;Core 0
+POLL;  0.0%
+C1;  0.4%
+C2;  5.1%
+C3; 92.7%
+;Core 1
+POLL;  0.0%
+C1;  0.4%
+C2;  2.2%
+C3; 96.7%
+;Core 2
+POLL;  0.0%
+C1;  0.2%
+C2;  3.5%
+C3; 95.3%
+;Core 3
+POLL;  0.0%
+C1;  0.2%
+C2;  1.6%
+C3; 97.7%
+;Core 4
+POLL;  0.0%
+C1;  1.1%
+C2; 14.6%
+C3; 82.4%
+;Core 5
+POLL;  0.0%
+C1;  0.1%
+C2;  1.2%
+C3; 97.6%
+;Core 6
+POLL;  0.0%
+C1;  0.1%
+C2;  2.7%
+C3; 96.6%
+;Core 7
+POLL;  0.0%
+C1;  0.2%
+C2; 11.2%
+C3; 87.8%
+;Core 8
+POLL;  0.0%
+C1;  0.0%
+C2;  0.1%
+C3; 98.5%
+;Core 9
+POLL;  0.0%
+C1;  0.0%
+C2;  0.1%
+C3; 90.9%
+;Core 10
+POLL;  0.0%
+C1;  0.0%
+C2;  0.1%
+C3; 90.2%
+;Core 11
+POLL;  0.0%
+C1;  0.0%
+C2;  0.1%
+C3; 91.0%
+;Core 12
+POLL;  0.0%
+C1;  0.0%
+C2;  0.0%
+
+CPU;0;CPU;16
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.7%;   0.2 ms;  0.1%;   0.1 ms
+C2;  7.4%;   0.5 ms;  2.8%;   0.5 ms
+C3; 89.4%;   4.5 ms; 95.9%;   8.4 ms
+CPU;1;CPU;17
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.7%;   0.2 ms;  0.0%;   0.2 ms
+C2;  3.5%;   0.5 ms;  0.9%;   0.5 ms
+C3; 94.7%;   6.3 ms; 98.7%;  28.1 ms
+CPU;2;CPU;18
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.3%;   0.2 ms;  0.1%;   0.1 ms
+C2;  4.7%;   0.5 ms;  2.4%;   0.5 ms
+C3; 93.8%;   5.8 ms; 96.7%;   7.1 ms
+CPU;3;CPU;19
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.3%;   0.2 ms;  0.0%;   0.1 ms
+C2;  2.0%;   0.5 ms;  1.1%;   0.6 ms
+C3; 96.8%;   8.9 ms; 98.5%;  19.0 ms
+CPU;4;CPU;20
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  2.1%;   0.3 ms;  0.2%;   0.3 ms
+C2; 28.5%;   1.2 ms;  0.6%;   0.5 ms
+C3; 66.4%;   8.0 ms; 98.3%;  20.3 ms
+CPU;5;CPU;21
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.1%;   0.2 ms;  0.2%;   0.2 ms
+C2;  1.9%;   0.8 ms;  0.6%;   0.4 ms
+C3; 96.3%;  15.7 ms; 98.9%;  31.6 ms
+CPU;6;CPU;22
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.1%;   0.2 ms;  0.0%;   0.2 ms
+C2;  4.6%;   0.5 ms;  0.7%;   0.5 ms
+C3; 94.2%;   7.0 ms; 98.9%;  30.5 ms
+CPU;7;CPU;23
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.4%;   0.2 ms;  0.0%;   0.2 ms
+C2; 22.1%;   3.8 ms;  0.2%;   0.4 ms
+C3; 76.9%;  14.8 ms; 98.6%;  80.2 ms
+CPU;8;CPU;24
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.0%;   0.3 ms;  0.0%;   0.0 ms
+C2;  0.1%;   0.4 ms;  0.0%;   0.3 ms
+C3; 99.7%;  78.3 ms; 97.3%;  57.6 ms
+CPU;9;CPU;25
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.0%;   0.0 ms;  0.1%;   0.4 ms
+C2;  0.1%;   0.4 ms;  0.0%;   0.3 ms
+C3; 99.9%; 159.9 ms; 82.0%; 111.6 ms
+CPU;10;CPU;26
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.0%;   0.1 ms;  0.1%;   0.2 ms
+C2;  0.0%;   0.4 ms;  0.2%;   0.3 ms
+C3;100.0%; 294.1 ms; 80.4%;  99.9 ms
+CPU;11;CPU;27
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C2;  0.0%;   0.3 ms;  0.1%;   0.5 ms
+C3;100.0%; 769.5 ms; 81.9%;  84.1 ms
+CPU;12;CPU;28
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C2;  0.0%;   0.3 ms;  0.0%;   0.4 ms
+;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+;Core 0
+Idle; 100.0% 
+;Core 1
+Idle; 100.0% 
+;Core 2
+Idle; 100.0% 
+;Core 3
+Idle; 100.0% 
+;Core 4
+Idle; 100.0% 
+;Core 5
+Idle; 100.0% 
+;Core 6
+Idle; 100.0% 
+;Core 7
+Idle; 100.0% 
+;Core 8
+Idle; 100.0% 
+;Core 9
+Idle; 100.0% 
+;Core 10
+Idle; 100.0% 
+;Core 11
+Idle; 100.0% 
+;Core 12
+Idle; 100.0% 
+;Core 13
+Idle; 100.0% 
+;Core 14
+Idle; 100.0% 
+;Core 15
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+
+CPU 0;CPU 16
+Idle; 100.0% ; 100.0% 
+CPU 1;CPU 17
+Idle; 100.0% ; 100.0% 
+CPU 2;CPU 18
+Idle; 100.0% ; 100.0% 
+CPU 3;CPU 19
+Idle; 100.0% ; 100.0% 
+CPU 4;CPU 20
+Idle; 100.0% ; 100.0% 
+CPU 5;CPU 21
+Idle; 100.0% ; 100.0% 
+CPU 6;CPU 22
+Idle; 100.0% ; 100.0% 
+CPU 7;CPU 23
+Idle; 100.0% ; 100.0% 
+CPU 8;CPU 24
+Idle; 100.0% ; 100.0% 
+CPU 9;CPU 25
+Idle; 100.0% ; 100.0% 
+CPU 10;CPU 26
+Idle; 100.0% ; 100.0% 
+CPU 11;CPU 27
+Idle; 100.0% ; 100.0% 
+CPU 12;CPU 28
+Idle; 100.0% ; 100.0% 
+CPU 13;CPU 29
+Idle; 100.0% ; 100.0% 
+CPU 14;CPU 30
+Idle; 100.0% ; 100.0% 
+CPU 15;CPU 31
+Idle; 100.0% ; 100.0% 
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description
+  3.0 ms/s;764.1;;;;Timer;tick_nohz_handler
+ 39.0 ms/s;661.9;;;;Process;[PID 3297] /etc/profiles/per-user/nilo/bin/zen-beta --name=zen-beta --name zen-beta 
+ 16.3 ms/s;272.1;;;;Process;[PID 2520] /nix/store/35wqbdb1d1hx7bl3waig0qbg068nvi0j-gnome-shell-48.2/bin/gnome-shell 
+ 14.1 ms/s;117.8;;;;Process;[PID 3604] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+240.8 us/s; 84.9;;;;Timer;inactive_task_timer
+  1.2 ms/s; 61.8;;;;Interrupt;[92] amdgpu
+329.1 us/s; 54.5;;;;Process;[PID 19] [rcu_preempt]
+  3.0 ms/s; 35.2;;;;Interrupt;[7] sched(softirq)
+ 62.7 us/s; 33.8;;;;kWork;drm_sched_free_job_work
+  0.7 ms/s; 30.6;;;;kWork;drm_sched_run_job_work
+  2.4 ms/s; 23.4;;;;kWork;commit_work
+432.6 us/s; 19.5;;;;kWork;usb_giveback_urb_bh
+453.4 us/s; 11.9;;;;Timer;timerfd_tmrproc
+219.2 us/s; 10.4;;;;Process;[PID 3647] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+109.8 us/s; 10.0;;;;kWork;psi_avgs_work
+ 24.1 us/s;  9.0;;;;kWork;toggle_allocation_gate
+164.9 us/s;  8.7;;;;Process;[PID 3319] /etc/profiles/per-user/nilo/bin/zen-beta --name=zen-beta --name zen-beta 
+  0.7 ms/s;  8.2;;;;Timer;hrtimer_wakeup
+ 53.0 us/s;  7.8;;;;Timer;watchdog_timer_fn
+125.0 us/s;  6.3;;;;Process;[PID 165678] /etc/profiles/per-user/nilo/bin/zen-beta --name=zen-beta --name zen-beta 
+296.0 us/s;  5.4;;;;Interrupt;[6] tasklet(softirq)
+155.3 us/s;  5.3;;;;Process;[PID 3327] /etc/profiles/per-user/nilo/bin/zen-beta --name=zen-beta --name zen-beta 
+  0.9 ms/s;  4.7;;;;Process;[PID 169322] /etc/profiles/per-user/nilo/bin/ghostty 
+178.7 us/s;  4.6;;;;Process;[PID 1195] [napi/phy0-386]
+100.3 us/s;  4.5;;;;Process;[PID 174627] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  0.7 ms/s;  4.1;;;;Process;[PID 3780] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+381.8 us/s;  3.3;;;;Process;[PID 159570] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 60.5 us/s;  3.2;;;;Process;[PID 1800] [mt76-tx phy0]
+132.2 us/s;  2.8;;;;Process;[PID 174610] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 50.5 us/s;  2.7;;;;Process;[PID 3785] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+ 46.5 us/s;  2.5;;;;Process;[PID 1198] [napi/phy0-388]
+ 67.1 us/s;  2.3;;;;Process;[PID 159587] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 19.9 us/s;  2.3;;;;kWork;mt792x_pm_power_save_work
+  2.4 ms/s;  1.2;;;;kWork;mt792x_pm_wake_work
+ 27.8 us/s;  2.0;;;;Process;[PID 222] [kcompactd0]
+ 11.0 us/s;  1.8;;;;kWork;amdgpu_dm_crtc_vblank_control_w
+149.7 us/s;  1.7;;;;Process;[PID 3756] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+ 25.1 us/s;  1.6;;;;Process;[PID 1197] [napi/phy0-387]
+ 10.5 us/s;  1.6;;;;kWork;ttm_bo_delayed_delete
+ 47.1 us/s;  1.4;;;;Process;[PID 3775] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+  2.1 us/s;  1.2;;;;kWork;iova_depot_work_func
+ 81.5 us/s;  1.2;;;;Process;[PID 169387] /etc/profiles/per-user/nilo/bin/ghostty 
+  1.5 ms/s;  0.6;;;;Process;[PID 186583] [kworker/u128:0]
+  2.4 ms/s; 0.15;;;;Process;[PID 188129] powertop --csv=power_report.csv 
+ 30.4 us/s;  1.0;;;;Process;[PID 2861] /nix/store/q2sj7x09ha787399lj2q3k23fj7pjhw6-gvfs-1.57.2/libexec/gvfs-afc-volume-monitor 
+144.9 us/s;  0.9;;;;Process;[PID 1418] /nix/store/kak79wrar59cxam1v63f8ssiq3qnwr3r-networkmanager-1.52.1/sbin/NetworkManager --no-daemon 
+  8.8 us/s;  1.0;;;;kWork;blk_mq_requeue_work
+ 42.0 us/s;  0.9;;;;Process;[PID 405] [jbd2/nvme0n1p4-]
+ 13.0 us/s;  0.8;;;;kWork;kfree_rcu_monitor
+ 62.8 us/s;  0.8;;;;Process;[PID 159619] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 37.1 us/s;  0.7;;;;Process;[PID 3506] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+157.2 us/s;  0.6;;;;Process;[PID 835] /nix/store/ksz6ygnl9f1l6jff3mwmjsmw7qyyxa59-systemd-257.7/lib/systemd/systemd-oomd 
+277.8 us/s;  0.6;;;;kWork;amdgpu_device_delay_enable_gfx_
+ 10.8 us/s;  0.7;;;;Interrupt;[42] nvme0q2
+ 65.2 us/s;  0.6;;;;Process;[PID 2437] /nix/store/f7bdxj10z0zschj9z1vkkw75grmjhxkn-dbus-1.14.10/bin/dbus-daemon --session --address=systemd: --nofork --nop
+ 15.8 us/s;  0.6;;;;kWork;pci_pme_list_scan
+  0.8 ms/s; 0.30;;;;Process;[PID 183689] [kworker/u128:1]
+ 33.8 us/s;  0.5;;;;Process;[PID 163764] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 70.9 us/s;  0.5;;;;Process;[PID 1808] /nix/store/zykypmdzblyss1yk4hpdk7z461ywqdwj-wpa_supplicant-2.11/sbin/wpa_supplicant -u 
+ 21.4 us/s;  0.5;;;;Process;[PID 159637] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+ 21.3 us/s;  0.5;;;;kWork;vmstat_shepherd
+ 88.6 us/s;  0.4;;;;kWork;flush_memcg_stats_dwork
+201.4 us/s;  0.4;;;;Process;[PID 169386] /etc/profiles/per-user/nilo/bin/ghostty 
+ 28.4 us/s;  0.4;;;;kWork;wb_workfn
+  1.1 ms/s;;;;;Process;[PID 185231] [kworker/u129:3]
+ 29.7 us/s;  0.4;;;;Process;[PID 4647] /nix/store/s982f58h5kvl2jdxgb3kwlvy28zy4p1n-geoclue-2.7.2/libexec/geoclue 
+ 21.1 us/s;  0.4;;;;Process;[PID 3613] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+146.3 us/s;  0.3;;;;Process;[PID 1234] /nix/store/f7bdxj10z0zschj9z1vkkw75grmjhxkn-dbus-1.14.10/bin/dbus-daemon --system --address=systemd: --nofork --nopi
+ 13.0 us/s;  0.4;;;;Process;[PID 159632] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  9.0 us/s;  0.4;;;;Process;[PID 1223] /nix/store/s7jnx2bmn36zk55c7piz7zw32zkhj5pz-acpid-2.0.34/bin/acpid --foreground --netlink --confdir /nix/store/a76sa
+  2.4 us/s;  0.4;;;;kWork;pm_runtime_work
+ 73.2 us/s;  0.3;;;;Process;[PID 4652] /nix/store/s982f58h5kvl2jdxgb3kwlvy28zy4p1n-geoclue-2.7.2/libexec/geoclue 
+ 10.1 us/s;  0.3;;;;Process;[PID 159624] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  9.2 us/s;  0.3;;;;kWork;cfg80211_wiphy_work
+434.6 us/s; 0.15;;;;Process;[PID 176288] [kworker/u128:3]
+ 17.0 us/s; 0.30;;;;Process;[PID 3964] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+  0.8 ms/s;;;;;Interrupt;[1] timer(softirq)
+  0.6 us/s; 0.30;;;;kWork;wb_update_bandwidth_workfn
+ 27.6 us/s; 0.25;;;;Process;[PID 3030] /nix/store/2k0g3jbhc0vjhrvlhsqh6m165j54a650-xdg-desktop-portal-gnome-48.0/libexec/xdg-desktop-portal-gnome 
+ 12.8 us/s; 0.25;;;;Process;[PID 2686] /nix/store/krnq74nh0zghv8k0k68ad13497fs7sj1-ibus-with-plugins-1.5.31/bin/ibus-daemon --cache=refresh --panel disable
+  9.8 us/s; 0.25;;;;Process;[PID 159583] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  7.6 us/s; 0.25;;;;Process;[PID 3512] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc -i
+  6.8 us/s; 0.25;;;;Process;[PID 163778] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  6.3 us/s; 0.25;;;;kWork;blk_mq_run_work_fn
+623.5 us/s;;;;;Process;[PID 1243] /nix/store/gaplbbpqsv9l58n9njrhj94zpyglb7rn-keyd-2.5.0/bin/keyd 
+ 42.4 us/s; 0.20;;;;kWork;handle_update
+ 22.9 us/s; 0.20;;;;Process;[PID 3140] /nix/store/d84sss8w1s6yd4prwi2adfks3jcm9qv0-gnome-settings-daemon-48.1/libexec/gsd-xsettings 
+ 22.3 us/s; 0.20;;;;Process;[PID 2795] /nix/store/0bfq5alch75b2k2zbgd24z3vihms3a8b-ibus-1.5.31/libexec/ibus-extension-gtk3 
+524.4 us/s;;;;;Timer;delayed_work_timer_fn
+ 11.3 us/s; 0.20;;;;Process;[PID 2847] /nix/store/1ffby2nzrx2icsl032mrsa6y1jbgv7ff-evolution-data-server-3.56.2/libexec/evolution-data-server/evolution-ala
+ 10.5 us/s; 0.20;;;;Process;[PID 2497] /nix/store/3i3izy0gp14gd32q4p0gzjw7myyq3pgn-gnome-session-48.0/libexec/gnome-session-binary --systemd-service --sess
+  6.5 us/s; 0.20;;;;Process;[PID 2674] /nix/store/d84sss8w1s6yd4prwi2adfks3jcm9qv0-gnome-settings-daemon-48.1/libexec/gsd-sharing 
+  4.6 us/s; 0.20;;;;Interrupt;[48] nvme0q8
+  1.1 us/s; 0.20;;;;Process;[PID 34] [ksoftirqd/2]
+ 16.0 us/s; 0.15;;;;Process;[PID 2747] /nix/store/d84sss8w1s6yd4prwi2adfks3jcm9qv0-gnome-settings-daemon-48.1/libexec/gsd-sharing 
+ 11.6 us/s; 0.15;;;;Process;[PID 3015] /nix/store/2ldnh7w8y2n8hhd0niba940ixg3ysi9r-xdg-desktop-portal-1.20.3/libexec/xdg-desktop-portal 
+ 10.5 us/s; 0.15;;;;Process;[PID 3031] /nix/store/2k0g3jbhc0vjhrvlhsqh6m165j54a650-xdg-desktop-portal-gnome-48.0/libexec/xdg-desktop-portal-gnome 
+  5.6 us/s; 0.15;;;;kWork;ext4_end_io_rsv_work
+  4.0 us/s; 0.15;;;;Process;[PID 159642] /nix/store/q0vhdwzrkj5wgmnhysjik1xznlnghmyd-zen-beta-bin-unwrapped-1.14.11b/lib/zen-bin-1.14.11b/zen -contentproc 
+  3.8 us/s; 0.15;;;;Interrupt;[41] nvme0q1
+
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name
+ 10.2%;CPU misc
+ 10.2%;CPU core
+100.0%;Display backlight
+ 50.0%;Display backlight
+100.0%;PCI Device: Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller
+100.0%;Radio device: btusb
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 5
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 1
+100.0%;USB device: xHCI Host Controller
+100.0%;USB device: xHCI Host Controller
+100.0%;USB device: usb-device-05e3-0608
+100.0%;USB device: USB2.1 Hub (GenesysLogic)
+100.0%;USB device: silakka54 (Squalius-cephalus)
+100.0%;USB device: Wireless_Device (MediaTek Inc.)
+100.0%;USB device: USB Receiver (Logitech)
+100.0%;Radio device: mt7921e
+100.0%;PCI Device: MEDIATEK Corp. MT7922 802.11ax PCI Express Wireless Network Adapter
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 3
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+100.0%;PCI Device: Yangtze Memory Technologies Co.,Ltd Device 1081
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD/ATI] Raphael
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 7
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge
+100.0%;PCI Device: NVIDIA Corporation AD108M [GeForce RTX 5070 Max-Q / Mobile]
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge IOMMU
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 0
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Internal GPP Bridge to Bus [C:A]
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 6
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Internal GPP Bridge to Bus [C:A]
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 4
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 2.0 xHCI
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 2
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Root Complex
+  2.6 pkts/s;Network interface: wlp2s0 (mt7921e)
+  0.0%;USB device: USB3.2 Hub (GenesysLogic)
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] ACP/ACP3X/ACP6x Audio Coprocessor
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;PCI Device: NVIDIA Corporation Device 22eb
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: HD Webcam (SunplusIT Inc)
+  0.0%;Audio codec hwC1D0: ATI
+  0.0%;Audio codec hwC0D0: Nvidia
+  0.0%;Audio codec hwC2D0: Conexant
+  0.0 pkts/s;Network interface: enp4s0 (r8169)
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h/19h/1ah HD Audio Controller
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt Radeon High Definition Audio Controller
+  0.0%;runtime-PNP0C14:00
+  0.0%;runtime-PNP0C14:01
+  0.0%;runtime-reg-dummy
+  0.0%;runtime-PNP0C0D:00
+  0.0%;runtime-PNP0C09:00
+  0.0%;runtime-PNP0C0A:00
+  0.0%;runtime-ACPI0003:00
+  0.0%;runtime-acpi-cpufreq
+  0.0%;runtime-AMDI0008:00
+  0.0%;runtime-microcode
+  0.0%;runtime-snd-soc-dummy
+  0.0%;runtime-intel_rapl_msr.0
+  0.0%;runtime-Fixed MDIO bus.0
+  0.0%;runtime-USBC000:00
+  0.0%;runtime-PNP0C0C:00
+  0.0%;runtime-ACPI000C:00
+  0.0%;runtime-rtc-efi.0
+  0.0%;runtime-PNP0C14:02
+  0.0%;runtime-PNP0800:00
+  0.0%;runtime-regulatory.0
+  0.0%;runtime-PNP0C0E:00
+  0.0%;runtime-MSFT0101:00
+  0.0%;runtime-AMDI0010:01
+  0.0%;runtime-AMDI0052:00
+  0.0%;runtime-PNP0103:00
+  0.0%;runtime-INOU0000:00
+  0.0%;runtime-AMDI0030:00
+  0.0%;I2C Adapter (i2c-7): AMDGPU DM aux hw bus 0
+  0.0%;runtime-efivars.0
+  0.0%;runtime-sp5100-tco
+  0.0%;runtime-serial8250
+  0.0%;runtime-i8042
+  0.0%;runtime-NVDA0820:00
+  0.0%;I2C Adapter (i2c-9): AMDGPU DM aux hw bus 2
+  0.0%;runtime-pcspkr
+  0.0%;I2C Adapter (i2c-3): SMBus PIIX4 adapter port 1 at 0b20
+  0.0%;I2C Adapter (i2c-12): NVIDIA i2c adapter 5 at 1:00.0
+  0.0%;I2C Adapter (i2c-10): NVIDIA i2c adapter 1 at 1:00.0
+  0.0%;I2C Adapter (i2c-1): SMBus PIIX4 adapter port 0 at 0b00
+  0.0%;I2C Adapter (i2c-8): AMDGPU DM aux hw bus 1
+  0.0%;I2C Device (1-0050): spd5118
+  0.0%;I2C Device (i2c-UNIW0001:00): UNIW0001:00
+  0.0%;I2C Adapter (i2c-6): AMDGPU DM i2c hw bus 2
+  0.0%;I2C Adapter (i2c-13): NVIDIA i2c adapter 6 at 1:00.0
+  0.0%;I2C Adapter (i2c-4): AMDGPU DM i2c hw bus 0
+  0.0%;I2C Adapter (i2c-11): NVIDIA i2c adapter 4 at 1:00.0
+  0.0%;I2C Adapter (i2c-5): AMDGPU DM i2c hw bus 1
+  0.0%;I2C Adapter (i2c-2): SMBus PIIX4 adapter port 2 at 0b00
+  0.0%;I2C Adapter (i2c-0): Synopsys DesignWare I2C adapter
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/dri/card2
+;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event14
+;/dev/input/event16
+;/dev/input/event2
+;/dev/input/event26
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/input/event9
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+acpid;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event13
+;/dev/input/event13
+;/dev/input/event13
+;/dev/input/event15
+;/dev/input/event17
+;/dev/input/event18
+;/dev/input/event19
+;/dev/input/event2
+;/dev/input/event20
+;/dev/input/event21
+;/dev/input/event22
+;/dev/input/event24
+;/dev/input/event25
+;/dev/input/event26
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event7
+;/dev/input/event9
+bluetoothd;/dev/rfkill
+;/dev/uinput
+keyd;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event13
+;/dev/input/event13 (deleted)
+;/dev/input/event14
+;/dev/input/event16
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/uinput
+;/dev/uinput
+systemd-logind;/dev/dri/card2
+;/dev/input/event0
+;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event11
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event13
+;/dev/input/event14
+;/dev/input/event16
+;/dev/input/event2
+;/dev/input/event2
+;/dev/input/event26
+;/dev/input/event26
+;/dev/input/event3
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event7
+;/dev/input/event8
+;/dev/input/event9
+;/dev/input/event9
+wpa_supplicant;/dev/rfkill
+upowerd;/dev/input/event4
+.gnome-shell-wr;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/renderD128
+;/dev/dri/renderD128
+;/dev/dri/renderD129
+;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event11
+;/dev/input/event12
+;/dev/input/event13
+;/dev/input/event14
+;/dev/input/event16
+;/dev/input/event2
+;/dev/input/event26
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/input/event9
+;/dev/nvidia-modeset
+;/dev/nvidia-modeset
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidia0
+;/dev/nvidiactl
+;/dev/nvidiactl
+;/dev/nvidiactl
+;/dev/nvidiactl
+.gvfsd-fuse-wra;/dev/fuse
+.gsd-rfkill-wra;/dev/rfkill
+;/dev/rfkill
+pipewire;/dev/snd/seq
+;/dev/snd/seq
+wireplumber;/dev/media0
+;/dev/snd/controlC0
+;/dev/snd/controlC1
+;/dev/snd/controlC2
+Xwayland;/dev/dri/card1
+;/dev/dri/card2
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+.flameshot-wrap;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+.xdg-document-p;/dev/fuse
+.gsd-xsettings-;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+.mutter-x11-fra;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+.zen-beta-wrapp;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+RDD Process;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+.ghostty-wrappe;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Enable Audio codec power management;echo '1' > '/sys/module/snd_hda_intel/parameters/power_save';
+NMI watchdog should be turned off;echo '0' > '/proc/sys/kernel/nmi_watchdog';
+Autosuspend for USB device silakka54 [Squalius-cephalus];echo 'auto' > '/sys/bus/usb/devices/3-2.1/power/control';
+Autosuspend for USB device USB Receiver [Logitech];echo 'auto' > '/sys/bus/usb/devices/3-2.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 5;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.5/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:14.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 7;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.7/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+Runtime PM for PCI Device Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller;echo 'auto' > '/sys/bus/pci/devices/0000:04:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 0;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD/ATI] Raphael;echo 'auto' > '/sys/bus/pci/devices/0000:05:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 2;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP;echo 'auto' > '/sys/bus/pci/devices/0000:05:00.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 4;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.4/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:14.3/power/control';
+Runtime PM for PCI Device Yangtze Memory Technologies Co.,Ltd Device 1081;echo 'auto' > '/sys/bus/pci/devices/0000:03:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge IOMMU;echo 'auto' > '/sys/bus/pci/devices/0000:00:00.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 6;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.6/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device MEDIATEK Corp. MT7922 802.11ax PCI Express Wireless Network Adapter;echo 'auto' > '/sys/bus/pci/devices/0000:02:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 1;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.1/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Root Complex;echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 3;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.3/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:08.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+I2C Adapter i2c-3 has no runtime power management
+I2C Adapter i2c-10 has no runtime power management
+I2C Adapter i2c-1 has no runtime power management
+I2C Adapter i2c-8 has no runtime power management
+I2C Device i2c-UNIW0001:00 has no runtime power management
+I2C Adapter i2c-6 has no runtime power management
+I2C Adapter i2c-13 has no runtime power management
+I2C Adapter i2c-4 has no runtime power management
+I2C Adapter i2c-11 has no runtime power management
+I2C Adapter i2c-2 has no runtime power management
+I2C Adapter i2c-0 has no runtime power management
+I2C Adapter i2c-9 has no runtime power management
+I2C Adapter i2c-7 has no runtime power management
+I2C Adapter i2c-5 has no runtime power management
+I2C Device 1-0050 has no runtime power management
+I2C Adapter i2c-12 has no runtime power management
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+Bluetooth device interface status
+Autosuspend for USB device HD Webcam [SunplusIT Inc]
+Autosuspend for USB device xHCI Host Controller [usb6]
+Autosuspend for USB device xHCI Host Controller [usb4]
+Autosuspend for USB device USB2.1 Hub [GenesysLogic]
+Autosuspend for USB device xHCI Host Controller [usb2]
+Autosuspend for unknown USB device 5-1 (05e3:0608)
+Autosuspend for USB device xHCI Host Controller [usb1]
+Autosuspend for USB device xHCI Host Controller [usb3]
+Autosuspend for USB device USB3.2 Hub [GenesysLogic]
+Autosuspend for USB device Wireless_Device [MediaTek Inc.]
+Autosuspend for USB device xHCI Host Controller [usb5]
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h/19h/1ah HD Audio Controller
+Runtime PM for PCI Device NVIDIA Corporation AD108M [GeForce RTX 5070 Max-Q / Mobile]
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt Radeon High Definition Audio Controller
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Internal GPP Bridge to Bus [C:A]
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 2.0 xHCI
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Internal GPP Bridge to Bus [C:A]
+Runtime PM for PCI Device NVIDIA Corporation Device 22eb
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] ACP/ACP3X/ACP6x Audio Coprocessor
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge GPP Bridge
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake-on-lan status for device enp4s0;echo 'enabled' > '/sys/class/net/enp4s0/device/power/wakeup';
+Wake-on-lan status for device wlp2s0;echo 'enabled' > '/sys/class/net/wlp2s0/device/power/wakeup';
+Wake status for USB device usb5;echo 'enabled' > '/sys/bus/usb/devices/usb5/power/wakeup';
+Wake status for USB device 4-2;echo 'enabled' > '/sys/bus/usb/devices/4-2/power/wakeup';
+Wake status for USB device usb3;echo 'enabled' > '/sys/bus/usb/devices/usb3/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 5-1;echo 'enabled' > '/sys/bus/usb/devices/5-1/power/wakeup';
+Wake status for USB device 3-2;echo 'enabled' > '/sys/bus/usb/devices/3-2/power/wakeup';
+Wake status for USB device usb6;echo 'enabled' > '/sys/bus/usb/devices/usb6/power/wakeup';
+Wake status for USB device 3-2.1;echo 'enabled' > '/sys/bus/usb/devices/3-2.1/power/wakeup';
+Wake status for USB device usb4;echo 'enabled' > '/sys/bus/usb/devices/usb4/power/wakeup';
+Wake status for USB device usb2;echo 'enabled' > '/sys/bus/usb/devices/usb2/power/wakeup';
+Wake status for USB device 5-1.2;echo 'enabled' > '/sys/bus/usb/devices/5-1.2/power/wakeup';

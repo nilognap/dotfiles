@@ -16,12 +16,18 @@
 
   i18n.inputMethod = {
     enable = true;
-    type = "ibus";
-    # type = "fcitx5";
-    ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+
+    # type = "ibus";
+    # ibus.engines = [ pkgs.ibus-engines.libpinyin ];
+
+    type = "fcitx5";
     fcitx5.addons = with pkgs; [
       libsForQt5.fcitx5-chinese-addons
+      fcitx5-configtool
       fcitx5-tokyonight
+
+      # fcitx5-gtk
+      # fcitx5-qt
     ];
   };
 
@@ -30,12 +36,12 @@
     enable = true;
     enable32Bit = true;
   };
-  services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
-  fonts.packages = [ pkgs.noto-fonts-cjk-sans ];
 
+  services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
+  fonts.packages = [ pkgs.lxgw-wenkai ];
 
   # would be cooked if this was on and there is some error so i get stuck
-  # boot.plymouth.enable = true;
+  boot.plymouth.enable = true;
 
   # DO NOT TOUCH
   networking.networkmanager.enable = true;
