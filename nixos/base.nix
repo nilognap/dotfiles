@@ -23,11 +23,9 @@
     type = "fcitx5";
     fcitx5.addons = with pkgs; [
       libsForQt5.fcitx5-chinese-addons
-      fcitx5-configtool
+      fcitx5-configtool # uh what does this do
       fcitx5-tokyonight
-
-      # fcitx5-gtk
-      # fcitx5-qt
+      fcitx5-fluent
     ];
   };
 
