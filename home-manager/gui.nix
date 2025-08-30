@@ -11,14 +11,15 @@
 
   # packages
   home.packages = with pkgs; [
-    # google-chrome # for zmk studio
+    # ungoogled-chromium # for zmk studio
     wechat
     # kdePackages.kwave audacity
     # libsForQt5.kdenlive # bad
     # kdePackages.kdenlive # better
-    dopamine
-    vial
-    code-cursor
+    dopamine vial code-cursor
+    tesseract4
+    # normcap
+    resonance
   ];
 
   # theme

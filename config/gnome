@@ -27,7 +27,7 @@ window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='background'
+last-panel='bluetooth'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -194,7 +194,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=914
+name-column-width=67
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -227,6 +227,9 @@ toggle-tiled-right=@as []
 [mutter/wayland/keybindings]
 restore-shortcuts=@as []
 
+[nautilus/icon-view]
+default-zoom-level='extra-large'
+
 [nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
 default-visible-columns=['name', 'size', 'date_modified', 'date_created']
@@ -246,6 +249,9 @@ maximized=true
 
 [portal/filechooser/cursor]
 last-folder-path='/home/nilo/code/calcmaster'
+
+[portal/filechooser/io.github.nate_xyz.Resonance]
+last-folder-path='/home/nilo/Music/S'
 
 [portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
@@ -279,7 +285,7 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.sh']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
-enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'Bluetooth-Battery-Meter@maniacx.github.com']
+enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'Bluetooth-Battery-Meter@maniacx.github.com']
 favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
@@ -295,8 +301,10 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755703368,"disconnected-time":1755703364}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755884277,"disconnected-time":1755886039}']
-swap-icon-text=false
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1756469922,"disconnected-time":1756469929}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1756496870,"disconnected-time":1756484965}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1756490725,"disconnected-time":1756490805}']
+enable-battery-level-text=true
+sort-devices-by-history=true
+swap-icon-text=true
 
 [shell/extensions/blur-my-shell]
 settings-version=2
@@ -366,6 +374,10 @@ workspace-peek=true
 workspace-switcher-should-show=false
 workspaces-in-app-grid=false
 world-clock=false
+
+[shell/extensions/kimpanel]
+font='Sans 15'
+vertical=true
 
 [shell/extensions/rounded-window-corners-reborn]
 border-width=0
