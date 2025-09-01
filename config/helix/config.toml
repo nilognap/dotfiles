@@ -64,7 +64,7 @@ enable = true
 [keys.normal]
 
 ret = ":update"
-";" = "command_mode"
+"?" = "command_mode"
 
 tab = ":buffer-next"
 S-tab = ":buffer-previous"

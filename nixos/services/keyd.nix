@@ -11,10 +11,12 @@
           hold_timeout = "300";
         in {
           main = { # nothing
-            delete = "toggle(laptop)";
+            numlock = "togglem(laptop, numlock)";
           };
           laptop = {
-            tab = "esc";
+            numlock = "togglem(laptop, numlock)";
+
+            # tab = "esc";
             capslock = "tab";
             rightalt = "backspace";
             "leftshift+leftmeta+f23" = "oneshot(shift)";
@@ -31,7 +33,7 @@
             g = "y";
             leftshift = "z"; z = "k"; x = "q"; c = "g"; v = "w";
 
-            b = "shift"; y = "shift"; h = "shift"; n = "shift";
+            b = "shift"; y = "["; h = "\\"; n = "]";
 
             u = "x"; i = "f"; o = "o"; p = "u"; "[" = "j";
             j = ".";
@@ -39,10 +41,13 @@
             l = "lettermod(shift, a, ${idle_timeout}, ${hold_timeout})";
             ";" = "lettermod(alt, e, ${idle_timeout}, ${hold_timeout})";
             "'" = "lettermod(meta, i, ${idle_timeout}, ${hold_timeout})";
-            m = "b"; "," = "h"; "." = "'"; "/" = ";"; rightshift = ",";
-            "<" = "?";
+            m = "b"; "," = "h"; "." = "'"; "/" = "?"; rightshift = ",";
+            "S-," = ";"; "S-." = ":";
           };
           nav = {
+            tab = "C-tab";
+            enter = "C-enter";
+            
             q = "C-q"; w = "C-w"; e = "C-l"; r = "C-r"; t = "C-t";
             a = "lettermod(meta, C-a, ${idle_timeout}, ${hold_timeout})";
             s = "lettermod(alt, back, ${idle_timeout}, ${hold_timeout})";
@@ -50,9 +55,9 @@
             f = "lettermod(control, C-f, ${idle_timeout}, ${hold_timeout})";
             leftshift = "C-z"; z = "C-x"; x = "C-c"; c = "C-v";
 
-            i = "home"; o = "C-left"; p = "C-right"; "[" = "end";
-            k = "left"; l = "down"; ";" = "up"; "'" = "right";
-            "." = "pagedown"; "/" = "pageup";
+            i = "C-left"; o = "up"; p = "C-right"; "[" = "pageup";
+            k = "left"; l = "down"; ";" = "right"; "'" = "pagedown";
+            "," = "home"; "/" = "end";
 
             rightalt = "C-backspace";
           };
