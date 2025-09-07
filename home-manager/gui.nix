@@ -11,7 +11,8 @@
 
   # packages
   home.packages = with pkgs; [
-    # ungoogled-chromium # for zmk studio
+    ungoogled-chromium # for zmk studio
+
     wechat
     # kdePackages.kwave audacity
     # libsForQt5.kdenlive # bad

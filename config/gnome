@@ -8,6 +8,11 @@ window-maximized=true
 [Geary]
 migrated-config=true
 
+[Snapshot]
+is-maximized=false
+window-height=640
+window-width=800
+
 [Totem]
 active-plugins=['variable-rate', 'recent', 'screensaver', 'rotation', 'open-directory', 'skipto', 'save-file', 'screenshot', 'mpris', 'movie-properties', 'autoload-subtitles']
 subtitle-encoding='UTF-8'
@@ -27,7 +32,7 @@ window-maximized=true
 window-size=(360, 616)
 
 [control-center]
-last-panel='bluetooth'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -56,8 +61,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -83,7 +88,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab']
+application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus']
 show-banners=true
 
 [desktop/notifications/application/gnome-power-panel]
@@ -91,6 +96,9 @@ application-id='gnome-power-panel.desktop'
 
 [desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
 
 [desktop/notifications/application/spotify]
 application-id='spotify.desktop'
@@ -105,6 +113,7 @@ numlock-state=false
 speed=-0.75308641975308643
 
 [desktop/peripherals/touchpad]
+edge-scrolling-enabled=false
 send-events='enabled'
 speed=-0.12757201646090532
 tap-and-drag=false
@@ -113,7 +122,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-xuan_2.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -122,7 +131,7 @@ disabled=['org.gnome.Epiphany.desktop', 'org.gnome.seahorse.Application.desktop'
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [desktop/session]
-idle-delay=uint32 900
+idle-delay=uint32 0
 
 [desktop/sound]
 allow-volume-above-100-percent=true
@@ -194,7 +203,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=67
+name-column-width=914
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -260,7 +269,7 @@ last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
 last-folder-path='/home/nilo/dotfiles/wallpapers'
 
 [portal/filechooser/vesktop]
-last-folder-path='/home/nilo/dotfiles/wallpapers'
+last-folder-path='/home/nilo/Downloads'
 
 [settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -275,6 +284,7 @@ screenreader=@as []
 screensaver=@as []
 
 [settings-daemon/plugins/power]
+idle-dim=false
 sleep-inactive-ac-timeout=7200
 sleep-inactive-ac-type='suspend'
 sleep-inactive-battery-timeout=7200
@@ -285,8 +295,8 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.sh']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
-enabled-extensions=['blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'Bluetooth-Battery-Meter@maniacx.github.com']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop']
+enabled-extensions=['just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
@@ -301,8 +311,15 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1756469922,"disconnected-time":1756469929}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1755251930,"disconnected-time":1755251930}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1756581688,"disconnected-time":1756586271}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1756490725,"disconnected-time":1756490805}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1756469922,"disconnected-time":1756469929}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1757272518,"disconnected-time":1757185530}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255235,"disconnected-time":1757255200}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757255186}']
+enable-battery-indicator=true
+enable-battery-indicator-text=false
+enable-battery-level-icon=true
 enable-battery-level-text=true
+enable-upower-level-icon=true
+hide-bluetooth-indicator=0
+level-indicator-color=1
+level-indicator-type=0
 sort-devices-by-history=true
 swap-icon-text=true
 
@@ -391,10 +408,10 @@ show-window-title='never'
 
 [shell/keybindings]
 focus-active-notification=@as []
-screenshot=['<Control><Super>s']
+screenshot=['<Super>s']
 screenshot-window=@as []
 show-screen-recording-ui=@as []
-show-screenshot-ui=['<Shift><Control><Super>s']
+show-screenshot-ui=['<Shift><Super>s']
 toggle-application-view=@as []
 toggle-message-tray=@as []
 toggle-quick-settings=@as []

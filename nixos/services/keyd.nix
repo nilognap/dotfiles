@@ -12,12 +12,20 @@
         in {
           main = { # nothing
             numlock = "togglem(laptop, numlock)";
+            delete = "toggle(laptop)";
+
+            "f8" = "mute";
+            "f9" = "volumedown";
+            "f10" = "volumeup";
+            "f11" = "brightnessdown";
+            "f12" = "brightnessup";
           };
           laptop = {
-            numlock = "togglem(laptop, numlock)";
+            # numlock = "togglem(laptop, numlock)";
 
-            # tab = "esc";
+            tab = "esc";
             capslock = "tab";
+            leftalt = "leftmeta";
             rightalt = "backspace";
             "leftshift+leftmeta+f23" = "oneshot(shift)";
 
@@ -33,7 +41,7 @@
             g = "y";
             leftshift = "z"; z = "k"; x = "q"; c = "g"; v = "w";
 
-            b = "shift"; y = "["; h = "\\"; n = "]";
+            b = "\\"; y = "["; h = ";"; n = "]"; "]" = "/";
 
             u = "x"; i = "f"; o = "o"; p = "u"; "[" = "j";
             j = ".";
@@ -45,8 +53,12 @@
             "S-," = ";"; "S-." = ":";
           };
           nav = {
-            tab = "C-tab";
+            capslock = "C-tab";
             enter = "C-enter";
+
+            "1" = "C-1"; "2" = "C-2"; "3" = "C-3"; "4" = "C-4"; "5" = "C-5";
+            "6" = "C-6"; "7" = "C-7"; "8" = "C-8"; "9" = "C-9"; "0" = "C-0";
+            "-" = "C--"; "=" = "C-=";
             
             q = "C-q"; w = "C-w"; e = "C-l"; r = "C-r"; t = "C-t";
             a = "lettermod(meta, C-a, ${idle_timeout}, ${hold_timeout})";
