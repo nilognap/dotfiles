@@ -24,9 +24,12 @@
             # numlock = "togglem(laptop, numlock)";
 
             tab = "esc";
+            esc = "backspace";
             capslock = "tab";
             leftalt = "leftmeta";
+            leftmeta = "leftmeta + tab";
             rightalt = "backspace";
+            # backspace = "capslock";
             "leftshift+leftmeta+f23" = "oneshot(shift)";
 
             space = "lettermod(nav, space, ${idle_timeout}, ${hold_timeout})";
@@ -56,9 +59,8 @@
             capslock = "C-tab";
             enter = "C-enter";
 
-            "1" = "C-1"; "2" = "C-2"; "3" = "C-3"; "4" = "C-4"; "5" = "C-5";
-            "6" = "C-6"; "7" = "C-7"; "8" = "C-8"; "9" = "C-9"; "0" = "C-0";
-            "-" = "C--"; "=" = "C-=";
+            "1" = "C-1"; "2" = "C-2"; "3" = "C-3"; "4" = "C-4"; "5" = "C-9";
+            "-" = "C--"; "=" = "C-="; # TODO
             
             q = "C-q"; w = "C-w"; e = "C-l"; r = "C-r"; t = "C-t";
             a = "lettermod(meta, C-a, ${idle_timeout}, ${hold_timeout})";

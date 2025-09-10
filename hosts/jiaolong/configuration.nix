@@ -12,9 +12,7 @@
   boot.kernelParams = [
     "acpi_enforce_resources=lax"
 
-    # "amd_idle.max_cstate=0" # this is useless
-
-    # "amdgpu.ppfeaturemask=0xfff73fff"
+    "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
     "amdgpu.dcdebugmask=0x10" # for debug
   ];
 
@@ -22,6 +20,15 @@
     ACTION=="add", SUBSYSTEM=="*", TEST=="power/wakeup", ATTR{power/wakeup}="disabled"
   '';
     # ACTION=="add", SUBSYSTEM=="platform", KERNEL=="PNP0C0C:00", ATTR{power/wakeup}="enabled"
+
+  services.udev.extraHwdb = ''
+    # Decrease touchpad scroll speed for MECHREVO JIAOLONG Series
+    evdev:name:UNIW0001:00 093A:0255 Touchpad*
+     EVDEV_ABS_00=::60
+     EVDEV_ABS_01=::60
+     EVDEV_ABS_35=::60
+     EVDEV_ABS_36=::60
+  '';
 
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
