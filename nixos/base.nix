@@ -35,7 +35,13 @@
     enable32Bit = true;
   };
 
-  services.udev = { packages = [ pkgs.qmk-udev-rules ]; };
+  services.udev = {
+    packages = [ pkgs.qmk-udev-rules ];
+    extraRules = ''
+      ATTRS{manufacturer}=="ZMK", MODE="0666"
+      KERNEL=="hidraw*", ATTRS{manufacturer}=="ZMK", MODE="0666"
+    '';
+  };
   fonts.packages = [ pkgs.lxgw-wenkai ];
 
   # would be cooked if this was on and there is some error so i get stuck

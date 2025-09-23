@@ -22,7 +22,7 @@
     # ACTION=="add", SUBSYSTEM=="platform", KERNEL=="PNP0C0C:00", ATTR{power/wakeup}="enabled"
 
   services.udev.extraHwdb = ''
-    # Decrease touchpad scroll speed for MECHREVO JIAOLONG Series
+    # Decrease touchpad scroll speed
     evdev:name:UNIW0001:00 093A:0255 Touchpad*
      EVDEV_ABS_00=::60
      EVDEV_ABS_01=::60
@@ -46,4 +46,8 @@
       nvidiaBusId = "PCI:1:0:0"; # discrete
     };
   };
+
+  # networking.nameservers = [
+  #   "8.8.8.8"
+  # ];
 }

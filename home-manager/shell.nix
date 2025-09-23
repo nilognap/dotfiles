@@ -46,6 +46,7 @@
        %F{magenta}➜%f %F{blue}%#%f "
 
       function chpwd() { ls -F --color=auto }
+      setopt HIST_IGNORE_SPACE
       '';
   };
 

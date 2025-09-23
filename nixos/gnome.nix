@@ -1,11 +1,13 @@
 { pkgs, ... }:
 {
-  # services = {
   services.xserver = {
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
-  environment.systemPackages = [ pkgs.dconf-editor ] ++ (
+  environment.systemPackages = with pkgs; [
+    dconf-editor
+    komorebi
+  ] ++ (
     with pkgs.gnomeExtensions; [
       blur-my-shell
       just-perfection

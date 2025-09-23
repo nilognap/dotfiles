@@ -31,8 +31,13 @@ target-units='radian'
 window-maximized=true
 window-size=(360, 616)
 
+[calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
 [control-center]
-last-panel='mouse'
+last-panel='network'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -61,8 +66,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -88,7 +93,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus']
+application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus', 'zen-beta']
 show-banners=true
 
 [desktop/notifications/application/gnome-power-panel]
@@ -105,6 +110,9 @@ application-id='spotify.desktop'
 
 [desktop/notifications/application/vesktop]
 application-id='vesktop.desktop'
+
+[desktop/notifications/application/zen-beta]
+application-id='zen-beta.desktop'
 
 [desktop/peripherals/keyboard]
 numlock-state=false
@@ -123,7 +131,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-eclipse.jpg'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -204,7 +212,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=914
+name-column-width=67
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -229,6 +237,7 @@ col-26-width=0
 
 [mutter]
 experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
+output-luminance=@a(ssssud) []
 
 [mutter/keybindings]
 toggle-tiled-left=@as []
@@ -272,6 +281,9 @@ last-folder-path='/home/nilo/dotfiles/wallpapers'
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/Downloads'
 
+[portal/filechooser/zen-beta]
+last-folder-path='/home/nilo/Downloads/raidland-windows'
+
 [settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 
@@ -297,7 +309,7 @@ command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
@@ -312,7 +324,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1757426545,"disconnected-time":1757426556}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1757442710,"disconnected-time":1757449433}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255235,"disconnected-time":1757255200}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1758382504,"disconnected-time":1758385608}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1758570327,"disconnected-time":1758571004}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1757255200}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
 enable-battery-indicator=true
 enable-battery-indicator-text=false
 enable-battery-level-icon=true

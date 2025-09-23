@@ -1,14 +1,5 @@
 { pkgs, inputs, ... }:
 {
-  # default applications
-  xdg.mimeApps.defaultApplications = {
-    "text/*" = "hx";
-    "image/*" = "zen";
-    "application/pdf" = "zen";
-    "video/*" = "zen";
-    "application/json" = "hx";
-  };
-
   # packages
   home.packages = with pkgs; [
     ungoogled-chromium # for zmk studio
@@ -19,9 +10,22 @@
     # kdePackages.kdenlive # better
     dopamine vial code-cursor
     tesseract4
-    # normcap
     resonance
+
+    logseq libreoffice-fresh
+    
+    ariang
+    transmission_4-gtk qbittorrent axel
   ];
+
+  # default applications
+  xdg.mimeApps.defaultApplications = {
+    "text/*" = "hx";
+    "image/*" = "zen";
+    "application/pdf" = "zen";
+    "video/*" = "zen";
+    "application/json" = "hx";
+  };
 
   # theme
   gtk = {
@@ -67,6 +71,17 @@
        shuffle
      ];
      theme = spicePkgs.themes.hazy;
+    };
+
+    aria2 = {
+      # enable = true;
+      settings = {
+        #
+      };
+    };
+
+    lutris = {
+      enable = true;
     };
   };
 

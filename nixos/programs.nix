@@ -13,8 +13,8 @@
 
     zoom-us.enable = true;
 
-    # steam.enable = true;
-    # steam.gamescopeSession.enable = true;
-    # gamemode.enable = true;
+    steam.enable = true;
+    steam.gamescopeSession.enable = true;
+    gamemode.enable = true;
   };
 }

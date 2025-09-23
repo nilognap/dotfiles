@@ -1,11 +1,8 @@
-{ ... }:
 {
   imports = [
     ./base.nix
-
     ./gnome.nix
-
-    ./programs
-    ./services
+    ./services.nix
+    ./programs.nix
   ];
 }

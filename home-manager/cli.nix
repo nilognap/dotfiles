@@ -6,6 +6,9 @@
     zip unzip
 
     vim helix wl-clipboard
+
+    gnumake
+    qmk
   ];
 
   programs = { 
@@ -45,7 +48,8 @@
         modules = [
           "title" "separator" "os" "host" "kernel"
           "uptime" "packages" "shell" "display"
-          "de" "wm" "wmtheme" "theme" "icons"
+          "de"
+          # "wm" "wmtheme" "theme" "icons"
           "cpu" "gpu" "memory" "disk" "battry" "poweradapter"
         ];
       };
