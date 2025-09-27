@@ -49,6 +49,21 @@
       ];
     };
 
+    nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/thinkpad/configuration.nix
+        home-manager.nixosModules.home-manager {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.nilo = ./home-manager;
+            extraSpecialArgs = { inherit inputs; };
+          };
+        } 
+      ];
+    };
+
     homeConfigurations = {
       nilo = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-darwin;
