@@ -1,4 +1,5 @@
 [Console]
+font-scale=1.7000000000000006
 last-window-maximised=true
 last-window-size=(732, 528)
 
@@ -37,7 +38,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [control-center]
-last-panel='network'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -66,8 +67,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-galaxy.jpg'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-galaxy.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -93,7 +94,7 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus', 'zen-beta']
+application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus', 'zen-beta', 'org-gnome-epiphany']
 show-banners=true
 
 [desktop/notifications/application/gnome-power-panel]
@@ -101,6 +102,9 @@ application-id='gnome-power-panel.desktop'
 
 [desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[desktop/notifications/application/org-gnome-epiphany]
+application-id='org.gnome.Epiphany.desktop'
 
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
@@ -115,7 +119,7 @@ application-id='vesktop.desktop'
 application-id='zen-beta.desktop'
 
 [desktop/peripherals/keyboard]
-numlock-state=false
+numlock-state=true
 
 [desktop/peripherals/mouse]
 speed=-0.75308641975308643
@@ -124,14 +128,14 @@ speed=-0.75308641975308643
 disable-while-typing=true
 edge-scrolling-enabled=false
 send-events='enabled'
-speed=1.0
+speed=0.0
 tap-and-drag=false
 two-finger-scrolling-enabled=true
 
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-07-25-14-14-30-night_sky.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-galaxy.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -273,7 +277,7 @@ last-folder-path='/home/nilo/code/calcmaster'
 last-folder-path='/home/nilo/Music/S'
 
 [portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/nilo/dotfiles/wallpapers/bad'
+last-folder-path='/home/nilo/dotfiles-main/wallpapers'
 
 [portal/filechooser/spotify]
 last-folder-path='/home/nilo/dotfiles/wallpapers'
@@ -310,7 +314,7 @@ disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com']
 favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
-last-selected-power-profile='power-saver'
+last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='48.2'
 
 [shell/extensions/Bluetooth-Battery-Meter]

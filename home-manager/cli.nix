@@ -26,9 +26,6 @@
     };
   };
   
-  xdg.configFile."vim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/vim";
-  xdg.configFile."helix".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/config/helix";
-
   programs = {
     yt-dlp = {
       enable = true;
