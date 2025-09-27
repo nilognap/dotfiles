@@ -15,6 +15,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
@@ -31,23 +32,24 @@
             extraSpecialArgs = { inherit inputs; };
           };
         } 
+        inputs.nixos-hardware.nixosModules.common-gpu-nvidia-disable
       ];
     };
 
-    nixosConfigurations.dell = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./hosts/dell/configuration.nix
-        home-manager.nixosModules.home-manager {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.nilo = ./home-manager;
-            extraSpecialArgs = { inherit inputs; };
-          };
-        } 
-      ];
-    };
+    # nixosConfigurations.dell = nixpkgs.lib.nixosSystem {
+    #   specialArgs = { inherit inputs; };
+    #   modules = [
+    #     ./hosts/dell/configuration.nix
+    #     home-manager.nixosModules.home-manager {
+    #       home-manager = {
+    #         useGlobalPkgs = true;
+    #         useUserPackages = true;
+    #         users.nilo = ./home-manager;
+    #         extraSpecialArgs = { inherit inputs; };
+    #       };
+    #     } 
+    #   ];
+    # };
 
     nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
@@ -64,11 +66,11 @@
       ];
     };
 
-    homeConfigurations = {
-      nilo = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-darwin;
-        modules = [ ./hosts/macbook/home.nix ];
-      };
-    };
+    # homeConfigurations = {
+    #   nilo = home-manager.lib.homeManagerConfiguration {
+    #     pkgs = nixpkgs.legacyPackages.x86_64-darwin;
+    #     modules = [ ./hosts/macbook/home.nix ];
+    #   };
+    # };
   };
 }
