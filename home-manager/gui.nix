@@ -2,20 +2,16 @@
 {
   # packages
   home.packages = with pkgs; [
-    ungoogled-chromium # for zmk studio
+    # ungoogled-chromium # for zmk studio
 
     wechat
-    # kdePackages.kwave audacity
-    # libsForQt5.kdenlive # bad
-    # kdePackages.kdenlive # better
-    dopamine vial code-cursor
+    dopamine vial
+    code-cursor
     tesseract4
     resonance
 
-    logseq libreoffice-fresh
-    
     ariang
-    transmission_4-gtk qbittorrent axel
+    transmission_4-gtk axel
   ];
 
   # default applications

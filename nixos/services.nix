@@ -37,7 +37,7 @@
 
               # right
               rightalt = "backspace";
-              backspace = "capslock";
+              # backspace = "capslock";
               "leftshift+leftmeta+f23" = "lettermod(sym, oneshot(shift), ${idle_timeout}, ${hold_timeout})";
 
               # misc
