@@ -32,7 +32,7 @@
             extraSpecialArgs = { inherit inputs; };
           };
         } 
-        inputs.nixos-hardware.nixosModules.common-gpu-nvidia-disable
+        # inputs.nixos-hardware.nixosModules.common-gpu-nvidia-disable
       ];
     };
 

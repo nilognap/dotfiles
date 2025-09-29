@@ -66,7 +66,8 @@
        hidePodcasts
        shuffle
      ];
-     theme = spicePkgs.themes.hazy;
+     theme = spicePkgs.themes.starryNight;
+     colorScheme = "Forest";
     };
 
     aria2 = {

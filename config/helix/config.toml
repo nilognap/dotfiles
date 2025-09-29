@@ -63,6 +63,7 @@ enable = true
 
 [keys.normal]
 
+# basic
 ret = ":update"
 "?" = "command_mode"
 
@@ -70,22 +71,6 @@ tab = ":buffer-next"
 S-tab = ":buffer-previous"
 A-left = ":buffer-previous"
 A-right = ":buffer-next"
-
-# keys.insert overlap
-C-left = "move_prev_word_start"
-C-right = "move_next_word_end"
-
-# keys.select overlap
-space.s = "goto_word"
-backspace = "collapse_selection"
-g.o = "flip_selections"
-
-# keys.insert and keys.select overlap
-
-pageup = "page_cursor_half_up"
-pagedown = "page_cursor_half_down"
-
-home = "goto_first_nonwhitespace"
 
 # sus
 S-left = "extend_char_left"
@@ -103,14 +88,31 @@ space.r = [ ":update", ":run-shell-command run.sh %{buffer_name}" ]
 space.w = ":buffer-close"
 space.q = ":quit"
 
+# keys.normal
+C-left = "move_prev_word_start"
+C-right = "move_next_word_end"
+
+# keys.select overlap
+space.s = "goto_word"
+backspace = "collapse_selection"
+g.o = "flip_selections"
+
+# keys.insert and keys.select overlap
+
+pageup = "page_cursor_half_up"
+pagedown = "page_cursor_half_down"
+
+home = "goto_first_nonwhitespace"
+
+
 [keys.insert]
 # down.left = "normal_mode"
 C-backspace = "delete_word_backward"
 
-# overlap
-C-left = "move_prev_word_start"
-C-right = "move_next_word_end"
+C-left = "move_next_word_end"
+C-right =  [ "move_prev_word_start", "move_char_right" ]
 
+# overlap
 pageup = "page_cursor_half_up"
 pagedown = "page_cursor_half_down"
 
