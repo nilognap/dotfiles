@@ -23,8 +23,11 @@ active-chart='rings'
 is-maximized=true
 
 [calculator]
+angle-units='radians'
 base=10
 button-mode='basic'
+number-format='automatic'
+refresh-interval=604800
 source-currency=''
 source-units='degree'
 target-currency=''
@@ -38,7 +41,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [control-center]
-last-panel='mouse'
+last-panel='keyboard'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -67,8 +70,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-valley.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-valley.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -119,7 +122,7 @@ application-id='vesktop.desktop'
 application-id='zen-beta.desktop'
 
 [desktop/peripherals/keyboard]
-numlock-state=true
+numlock-state=false
 
 [desktop/peripherals/mouse]
 speed=-0.75308641975308643
@@ -128,14 +131,14 @@ speed=-0.75308641975308643
 disable-while-typing=true
 edge-scrolling-enabled=false
 send-events='enabled'
-speed=0.81069958847736623
+speed=0.67901234567901225
 tap-and-drag=false
 two-finger-scrolling-enabled=true
 
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-valley.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -156,8 +159,8 @@ activate-window-menu=@as []
 begin-move=@as []
 begin-resize=@as []
 close=@as []
-cycle-group=['<Super>BackSpace']
-cycle-group-backward=['<Shift><Super>BackSpace']
+cycle-group=['<Super>Escape']
+cycle-group-backward=['<Shift><Super>Escape']
 cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
@@ -196,7 +199,20 @@ ask-for-default=false
 
 [epiphany/state]
 is-maximized=true
-window-size=(1464, 915)
+window-size=(1536, 960)
+
+[evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=132
+sizing-mode='automatic'
+window-ratio=(0.99281677742761332, 1.0084452838256779)
 
 [evolution-data-server]
 migrated=true
@@ -280,7 +296,7 @@ last-folder-path='/home/nilo/Music/S'
 last-folder-path='/home/nilo/dotfiles-main/wallpapers'
 
 [portal/filechooser/spotify]
-last-folder-path='/home/nilo/dotfiles/wallpapers'
+last-folder-path='/home/nilo/Music'
 
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/Downloads'
@@ -312,9 +328,9 @@ app-picker-layout=[{'org.gnome.Geary.desktop': <{'position': <0>}>, 'org.gnome.C
 command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.sh']
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
-enabled-extensions=['just-perfection-desktop@just-perfection', 'kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com']
+enabled-extensions=['kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com', 'just-perfection-desktop@just-perfection']
 favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
-last-selected-power-profile='performance'
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
 [shell/extensions/Bluetooth-Battery-Meter]
@@ -328,7 +344,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1758984423,"disconnected-time":1758988698}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1758894367,"disconnected-time":1759003405}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1757255200}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1759588198,"disconnected-time":1758988698}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1760211708,"disconnected-time":1759954866}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
 enable-battery-indicator=true
 enable-battery-indicator-text=false
 enable-battery-level-icon=true

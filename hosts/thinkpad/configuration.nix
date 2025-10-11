@@ -19,7 +19,6 @@
      EVDEV_ABS_35=::100
      EVDEV_ABS_36=::100
   '';
-    # evdev:name:ELAN0683:00 04F3:320B Touchpad*
 
   # networking.nameservers = [
   #   "8.8.8.8"

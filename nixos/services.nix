@@ -42,7 +42,7 @@
 
               # misc
               space = "lettermod(nav, space, ${idle_timeout}, ${hold_timeout})";
-              "\\" = "rightalt"; # compose key
+              # "\\" = "rightalt"; # compose key
 
               # left
               q = "v"; w = "m"; e = "l"; r = "c"; t = "p";
@@ -54,7 +54,7 @@
               leftshift = "z"; z = "k"; x = "q"; c = "g"; v = "w";
 
               # middle
-              b = "\\"; y = "["; h = ";"; n = "]"; "]" = "/";
+              b = "\\"; y = "["; h = ";"; n = "]"; "]" = "rightalt";
 
               # right
               u = "x"; i = "f"; o = "o"; p = "u"; "[" = "j";
@@ -103,9 +103,9 @@
               leftalt = "0";
             };
             nav2 = {
-              "1" = "M-1"; "2" = "M-2"; "3" = "M-3"; "4" = "M-4"; "5" = "M-5";
-              w = "C-7"; e = "C-8"; r = "C-9"; t = "C--";
-              s = "C-4"; d = "C-5"; f = "C-6"; g = "C-=";
+              # "1" = "M-1"; "2" = "M-2"; "3" = "M-3"; "4" = "M-4"; "5" = "M-5";
+              w = "M-1"; e = "M-2"; r = "M-3"; t = "C-=";
+              s = "C-4"; d = "C-5"; f = "C-9"; g = "C--";
               z = "C-1"; x = "C-2"; c = "C-3"; v = "C-0"; # TODO
             };
           };

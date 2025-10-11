@@ -15,7 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
@@ -32,7 +31,6 @@
             extraSpecialArgs = { inherit inputs; };
           };
         } 
-        # inputs.nixos-hardware.nixosModules.common-gpu-nvidia-disable
       ];
     };
 

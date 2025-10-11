@@ -1,0 +1,48 @@
+;; nilo
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(deflayer qwerty
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _
+)
+
+;; start from here
+
+
+(defalias
+  tap-time 300
+  hold-time 0
+
+  a (tap-hold $tap-time $hold-time s lmet)
+  s (tap-hold $tap-time $hold-time t lalt)
+  d (tap-hold $tap-time $hold-time r lctl)
+  f (tap-hold $tap-time $hold-time d lsft)
+  j (tap-hold $tap-time $hold-time n rsft)
+  k (tap-hold $tap-time $hold-time a rctl)
+  l (tap-hold $tap-time $hold-time e ralt)
+  ; (tap-hold $tap-time $hold-time i rmet)
+)
+
+(deflayer main
+  esc  v    m    l    c    p    [    x    f    o    u    j    /    ralt
+  tab  @a   @s   @d   @f   y    ;    .    @n   @a   @e   @i   ret
+       z    k    q    g    w  \ ]    b    h    '    ?    ,
+)
+
+(deflayer nav
+  _    C-q    _    _
+)
+  
