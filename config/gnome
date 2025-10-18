@@ -41,7 +41,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [control-center]
-last-panel='keyboard'
+last-panel='display'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -125,7 +125,8 @@ application-id='zen-beta.desktop'
 numlock-state=false
 
 [desktop/peripherals/mouse]
-speed=-0.75308641975308643
+accel-profile='flat'
+speed=-0.48847736625514404
 
 [desktop/peripherals/touchpad]
 disable-while-typing=true
@@ -232,7 +233,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=67
+name-column-width=986
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -305,7 +306,10 @@ last-folder-path='/home/nilo/Downloads'
 last-folder-path='/home/nilo/Downloads/raidland-windows'
 
 [settings-daemon/plugins/color]
+night-light-enabled=true
 night-light-schedule-automatic=false
+night-light-schedule-from=21.5
+night-light-temperature=uint32 4700
 
 [settings-daemon/plugins/media-keys]
 help=@as []
@@ -318,6 +322,7 @@ screensaver=@as []
 
 [settings-daemon/plugins/power]
 idle-dim=false
+power-button-action='suspend'
 sleep-inactive-ac-timeout=7200
 sleep-inactive-ac-type='suspend'
 sleep-inactive-battery-timeout=7200
@@ -344,7 +349,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1759588198,"disconnected-time":1758988698}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1760211708,"disconnected-time":1759954866}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1759588198,"disconnected-time":1758988698}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1760380618,"disconnected-time":1760386937}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
 enable-battery-indicator=true
 enable-battery-indicator-text=false
 enable-battery-level-icon=true
