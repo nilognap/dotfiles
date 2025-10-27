@@ -1,7 +1,8 @@
 {
+  # security.pam.services.sudo.fprintAuth = true;
+  security.pam.services.gdm-password.fprintAuth = true;
   services = {
     fprintd.enable = true;
-    # security.pam.services.sudo.fprintAuth = true;
     
     kanata = {
       # enable = true;
@@ -103,7 +104,7 @@
               u = "%"; i = "{"; o = "("; p = ")"; "[" = "}";
               j = "="; k = "+"; l = "-"; ";" = "*"; "'" = "/";
               m = "^"; "," = "["; "." = "<"; "/" = ">"; rightshift = "]";
-              leftalt = "0";
+              leftmenu = "."; leftalt = "0";
             };
             nav2 = {
               # "1" = "M-1"; "2" = "M-2"; "3" = "M-3"; "4" = "M-4"; "5" = "M-5";

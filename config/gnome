@@ -3,6 +3,12 @@ font-scale=1.7000000000000006
 last-window-maximised=true
 last-window-size=(732, 528)
 
+[Disks/benchmark]
+do-write=false
+num-access-samples=1000
+num-samples=100
+sample-size-mib=10
+
 [Extensions]
 window-maximized=true
 
@@ -41,7 +47,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [control-center]
-last-panel='display'
+last-panel='background'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -70,8 +76,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
-picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-eclipse.jpg'
+picture-uri-dark='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-eclipse.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -139,7 +145,7 @@ two-finger-scrolling-enabled=true
 [desktop/screensaver]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-west_of_the_sun.png'
+picture-uri='file:///home/nilo/.local/share/backgrounds/2025-09-27-10-49-47-eclipse.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -233,7 +239,7 @@ window-size=(-1, -1)
 
 [file-roller/listing]
 list-mode='as-folder'
-name-column-width=986
+name-column-width=383
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -268,7 +274,7 @@ toggle-tiled-right=@as []
 restore-shortcuts=@as []
 
 [nautilus/icon-view]
-default-zoom-level='extra-large'
+default-zoom-level='small'
 
 [nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
@@ -298,6 +304,9 @@ last-folder-path='/home/nilo/dotfiles-main/wallpapers'
 
 [portal/filechooser/spotify]
 last-folder-path='/home/nilo/Music'
+
+[portal/filechooser/transient]
+last-folder-path='/home/nilo/Desktop/books'
 
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/Downloads'
@@ -334,7 +343,7 @@ command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com', 'just-perfection-desktop@just-perfection']
-favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'vesktop.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'spotify.desktop', 'org.gnome.Nautilus.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
@@ -349,7 +358,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1759588198,"disconnected-time":1758988698}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1760380618,"disconnected-time":1760386937}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1761580179,"disconnected-time":1761580184}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1761555718,"disconnected-time":1761557743}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}', '{"path":"/org/bluez/hci0/dev_40_B3_FA_22_42_54","icon":"audio-headphones","alias":"AirPods Pro","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1761507698,"disconnected-time":1761546601}']
 enable-battery-indicator=true
 enable-battery-indicator-text=false
 enable-battery-level-icon=true

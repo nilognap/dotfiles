@@ -12,6 +12,8 @@
 
     ariang
     transmission_4-gtk axel
+
+    foliate
   ];
 
   # default applications
@@ -75,10 +77,6 @@
       settings = {
         #
       };
-    };
-
-    lutris = {
-      enable = true;
     };
   };
 
