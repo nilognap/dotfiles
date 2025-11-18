@@ -16,14 +16,13 @@
           ids = [ "*" ];
           settings = let
             # minimum amount of time waited after the last key was struck for mod
-            # idle_timeout = "100";
-            idle_timeout = "0";
+            idle_timeout = "100";
             # the amount of time the key need to be held down for mod
             hold_timeout = "300";
           in {
             main = { # nothing
               numlock = "togglem(laptop, numlock)";
-              delete = "toggle(laptop)";
+              insert = "toggle(laptop)";
             };
             laptop = {
               "f8" = "mute";

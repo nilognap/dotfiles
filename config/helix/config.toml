@@ -4,7 +4,7 @@
 theme = "tokyonight"
 
 [editor]
-scrolloff = 999
+# scrolloff = 999
 # mouse = false
 scroll-lines = 1
 line-number = "relative"

@@ -16,15 +16,9 @@
 
   i18n.inputMethod = {
     enable = true;
-
-    # type = "ibus";
-    # ibus.engines = [ pkgs.ibus-engines.libpinyin ];
-
     type = "fcitx5";
     fcitx5.addons = with pkgs; [
       libsForQt5.fcitx5-chinese-addons
-      # fcitx5-configtool # uh what does this do
-      # fcitx5-tokyonight
       fcitx5-fluent
     ];
   };
@@ -45,7 +39,7 @@
   fonts.packages = [ pkgs.lxgw-wenkai ];
 
   # would be cooked if this was on and there is some error so i get stuck
-  # boot.plymouth.enable = true;
+  boot.plymouth.enable = true;
 
   # DO NOT TOUCH
   networking.networkmanager.enable = true;

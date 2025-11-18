@@ -6,7 +6,6 @@
   };
   environment.systemPackages = with pkgs; [
     dconf-editor
-    komorebi
   ] ++ (
     with pkgs.gnomeExtensions; [
       blur-my-shell

@@ -14,6 +14,8 @@
     transmission_4-gtk axel
 
     foliate
+    protonvpn-gui
+
   ];
 
   # default applications
