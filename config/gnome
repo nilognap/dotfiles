@@ -21,7 +21,7 @@ window-height=640
 window-width=800
 
 [Totem]
-active-plugins=['variable-rate', 'recent', 'screensaver', 'rotation', 'open-directory', 'skipto', 'save-file', 'screenshot', 'mpris', 'movie-properties', 'autoload-subtitles']
+active-plugins=['movie-properties', 'rotation', 'autoload-subtitles', 'recent', 'mpris', 'vimeo', 'screensaver', 'open-directory', 'save-file', 'apple-trailers', 'skipto', 'variable-rate', 'screenshot']
 subtitle-encoding='UTF-8'
 
 [baobab/ui]
@@ -47,7 +47,7 @@ window-maximized=true
 window-size=(768, 600)
 
 [control-center]
-last-panel='keyboard'
+last-panel='mouse'
 window-state=(980, 640, true)
 
 [desktop/app-folders]
@@ -103,11 +103,14 @@ show-battery-percentage=true
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus', 'zen-beta', 'org-gnome-epiphany']
+application-children=['vesktop', 'gnome-power-panel', 'spotify', 'org-gnome-baobab', 'org-gnome-nautilus', 'zen-beta', 'org-gnome-epiphany', 'motrix']
 show-banners=true
 
 [desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/motrix]
+application-id='motrix.desktop'
 
 [desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
@@ -132,13 +135,13 @@ numlock-state=false
 
 [desktop/peripherals/mouse]
 accel-profile='flat'
-speed=-0.48847736625514404
+speed=-0.60493827160493829
 
 [desktop/peripherals/touchpad]
 disable-while-typing=true
 edge-scrolling-enabled=false
 send-events='enabled'
-speed=0.67901234567901225
+speed=-0.21810699588477367
 tap-and-drag=false
 two-finger-scrolling-enabled=true
 
@@ -165,14 +168,12 @@ theme-name='__custom'
 activate-window-menu=@as []
 begin-move=@as []
 begin-resize=@as []
-close=@as []
 cycle-group=['<Super>BackSpace']
 cycle-group-backward=['<Shift><Super>BackSpace']
 cycle-panels=@as []
 cycle-panels-backward=@as []
 cycle-windows=@as []
 cycle-windows-backward=@as []
-maximize=@as []
 move-to-monitor-down=@as []
 move-to-monitor-left=@as []
 move-to-monitor-right=@as []
@@ -195,7 +196,6 @@ switch-to-workspace-right=@as []
 switch-windows=@as []
 switch-windows-backward=@as []
 toggle-maximized=@as []
-unmaximize=@as []
 
 [desktop/wm/preferences]
 visual-bell=false
@@ -266,15 +266,11 @@ col-26-width=0
 experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
 output-luminance=@a(ssssud) []
 
-[mutter/keybindings]
-toggle-tiled-left=@as []
-toggle-tiled-right=@as []
-
 [mutter/wayland/keybindings]
 restore-shortcuts=@as []
 
 [nautilus/icon-view]
-default-zoom-level='small'
+default-zoom-level='large'
 
 [nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
@@ -286,6 +282,7 @@ use-tree-view=true
 default-folder-viewer='list-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
+show-create-link=false
 show-delete-permanently=false
 
 [nautilus/window-state]
@@ -293,8 +290,14 @@ initial-size=(890, 550)
 initial-size-file-chooser=(890, 550)
 maximized=true
 
+[portal/filechooser/com.github.johnfactotum.Foliate]
+last-folder-path='/home/nilo/Desktop'
+
 [portal/filechooser/cursor]
 last-folder-path='/home/nilo/code/calcmaster_cursor'
+
+[portal/filechooser/io.bassi.Amberol]
+last-folder-path='/home/nilo/Music/9 Tribez'
 
 [portal/filechooser/io.github.nate_xyz.Resonance]
 last-folder-path='/home/nilo/Music'
@@ -302,11 +305,14 @@ last-folder-path='/home/nilo/Music'
 [portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/nilo/storage/random'
 
+[portal/filechooser/org.gnome.baobab]
+last-folder-path='/home/nilo/academic'
+
 [portal/filechooser/spotify]
 last-folder-path='/home/nilo/Music'
 
 [portal/filechooser/transient]
-last-folder-path='/home/nilo/Desktop/books'
+last-folder-path='/home/nilo/Music/9 Tribez'
 
 [portal/filechooser/vesktop]
 last-folder-path='/home/nilo/Downloads'
@@ -318,7 +324,7 @@ last-folder-path='/home/nilo/Downloads/raidland-windows'
 night-light-enabled=true
 night-light-schedule-automatic=false
 night-light-schedule-from=20.000000000000028
-night-light-temperature=uint32 3700
+night-light-temperature=uint32 2700
 
 [settings-daemon/plugins/media-keys]
 help=@as []
@@ -343,7 +349,7 @@ command-history=['echo  strd', 'suspend', 'which hmcl', 'vim', 'backup_dotfiles.
 disable-user-extensions=false
 disabled-extensions=['unite@hardpixel.eu', 'rounded-window-corners@fxgn']
 enabled-extensions=['kimpanel@kde.org', 'blur-my-shell@aunetx', 'Bluetooth-Battery-Meter@maniacx.github.com', 'just-perfection-desktop@just-perfection']
-favorite-apps=['org.gnome.Nautilus.desktop', 'zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'dopamine.desktop', 'spotify.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'zen-beta.desktop', 'com.mitchellh.ghostty.desktop', 'dopamine.desktop', 'com.github.johnfactotum.Foliate.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='48.2'
 
@@ -358,7 +364,7 @@ color-60='#15c931'
 color-70='#15c931'
 color-80='#15c931'
 color-90='#15c931'
-device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1763482566,"disconnected-time":1763483505}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":false,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1761555718,"disconnected-time":1761557743}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757846064,"disconnected-time":1760187169}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}', '{"path":"/org/bluez/hci0/dev_40_B3_FA_22_42_54","icon":"audio-headphones","alias":"AirPods Pro","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1763494408,"disconnected-time":1763413088}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_27","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1761647416,"disconnected-time":1761648745}']
+device-list=['{"path":"/org/bluez/hci0/dev_00_0C_8A_E4_D4_81","icon":"audio-speakers","alias":"Bose Mini SoundLink","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1766654254,"disconnected-time":1766606014}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_26","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757253726,"disconnected-time":1757253872}', '{"path":"/org/bluez/hci0/dev_60_BE_C4_87_DB_0C","icon":"audio-headphones","alias":"not your airpods","paired":false,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1761555718,"disconnected-time":1761557743}', '{"path":"/org/bluez/hci0/dev_C5_F2_AA_D3_E8_80","icon":"input-keyboard","alias":"Lily58","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1764835483,"disconnected-time":1764835635}', '{"path":"/org/bluez/hci0/dev_90_F0_52_D4_C6_2D","icon":"phone","alias":"not your phone","paired":false,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1757255091,"disconnected-time":1757277602}', '{"path":"/org/bluez/hci0/dev_40_B3_FA_22_42_54","icon":"audio-headphones","alias":"AirPods Pro","paired":true,"battery-reported":false,"qs-level":false,"indicator-mode":0,"connected-time":1766480889,"disconnected-time":1766486720}', '{"path":"/org/bluez/hci0/dev_FA_63_EC_51_DC_27","icon":"input-mouse","alias":"HUAWEI  Mouse","paired":true,"battery-reported":true,"qs-level":true,"indicator-mode":2,"connected-time":1761647416,"disconnected-time":1761648745}']
 enable-battery-indicator=true
 enable-battery-indicator-text=false
 enable-battery-level-icon=true

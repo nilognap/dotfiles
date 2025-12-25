@@ -9,6 +9,15 @@
       # TODO
     };
 
+    syncthing = {
+      enable = true;
+      user = "nilo";
+      group = "users";
+      dataDir = "/home/nilo";
+      configDir = "/home/nilo/.config/syncthing";
+      openDefaultPorts = true;
+    };
+
     keyd = {
       enable = true;
       keyboards = {

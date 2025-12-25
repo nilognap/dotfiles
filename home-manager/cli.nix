@@ -1,14 +1,10 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
-    hello
-    tree
-    zip unzip
+    hello tree
+    zstd
 
     vim helix wl-clipboard
-
-    gnumake
-    qmk
   ];
 
   programs = { 

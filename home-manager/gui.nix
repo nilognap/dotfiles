@@ -3,38 +3,35 @@
   # packages
   home.packages = with pkgs; [
     # ungoogled-chromium # for zmk studio
-
     wechat
     dopamine vial
-    code-cursor
-    tesseract4
-    resonance
+    # tesseract4
+    # resonance
 
-    ariang
-    transmission_4-gtk axel
+    motrix
+    # ariang transmission_4-gtk
 
     foliate
     protonvpn-gui
-
   ];
 
   # default applications
   xdg.mimeApps.defaultApplications = {
-    "text/*" = "hx";
+    "text/*" = "zen";
     "image/*" = "zen";
     "application/pdf" = "zen";
     "video/*" = "zen";
-    "application/json" = "hx";
+    "application/json" = "zen";
   };
 
   # theme
-  gtk = {
-    # enable = true;
-    theme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark";
-    };
-  };
+  # gtk = {
+  #   enable = true;
+  #   theme = {
+  #     package = pkgs.tokyonight-gtk-theme;
+  #     name = "Tokyonight-Dark";
+  #   };
+  # };
 
   # flake inputs
   imports = with inputs; [
@@ -74,15 +71,8 @@
      colorScheme = "Forest";
     };
 
-    aria2 = {
-      # enable = true;
-      settings = {
-        #
-      };
-    };
-  };
-
-  services = {
-    flameshot.enable = true;
+    # aria2 = {
+    #   enable = true;
+    # };
   };
 }
